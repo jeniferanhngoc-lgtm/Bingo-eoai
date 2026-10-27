@@ -1,0 +1,27 @@
+/* Adapted from Basic by WebThemez, CC BY 3.0. Attribution retained in footer. */
+@import url('basic-original.css');
+/* The app loads only the rules below; the legacy Bootstrap/jQuery bundle is a reference. */
+:root{--bingo-blue:#2FADDE;--bingo-ink:#243542}
+[data-testid="stAppViewContainer"]{background:#fbfdff}
+[data-testid="stHeader"]{background:rgba(251,253,255,.94)}
+.block-container{padding-top:2rem;max-width:1440px;padding-bottom:3rem}
+h1,h2,h3{color:var(--bingo-ink);font-weight:700;letter-spacing:-.035em}
+[data-testid="stSidebar"]{background:#f0f6fa;border-right:1px solid #e2edf3}
+.bingo-logo{font-size:36px;font-weight:850;letter-spacing:-2px;color:#2FADDE;margin:0}
+.bingo-logo span{color:#243542}
+.eyebrow{color:#1885b0;font-size:11px;letter-spacing:2.5px;font-weight:800;text-transform:uppercase}
+.hero{padding:32px 36px;border-radius:18px;border:1px solid #d9edf5;background:linear-gradient(120deg,#eaf7fc,#f7fcff 60%,#edf8f4);margin:12px 0 26px}
+.hero h1{font-size:46px;line-height:1.1;margin:12px 0 14px;max-width:720px}
+.hero p{color:#56707e;max-width:620px;font-size:17px;line-height:1.7;margin:0}
+.bingo-card-title{font-size:23px;color:#243542;font-weight:750;margin:12px 0 3px}
+.tag{display:inline-block;font-size:11px;font-weight:750;border-radius:6px;background:#e5f5fc;color:#1683af;padding:4px 9px;margin-right:5px}
+.tag.reading{background:#e8f6ef;color:#25825e}
+.muted{color:#6b8493;font-size:13px;line-height:1.6}
+.timer{font-variant-numeric:tabular-nums;font-size:30px;font-weight:800;color:#1b86b1;letter-spacing:2px}
+.footer{font-size:12px;color:#7b8e99;border-top:1px solid #e2edf3;padding-top:20px;margin-top:30px}
+.footer a{color:#1885b0}
+[data-testid="stMetric"]{background:#fff;border:1px solid #e0ebf1;border-radius:12px;padding:17px}
+[data-testid="stButton"] button{border-radius:8px;min-height:42px;font-weight:650}
+[data-testid="stVerticalBlockBorderWrapper"]{border-radius:14px!important}
+[data-testid="stTextInput"] input{font-size:15px}
+@media(max-width:700px){.hero{padding:24px}.hero h1{font-size:32px}.block-container{padding:1rem}.bingo-logo{font-size:30px}}
