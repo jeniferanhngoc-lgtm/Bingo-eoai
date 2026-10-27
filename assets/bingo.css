@@ -4,7 +4,7 @@
 :root{--bingo-blue:#2FADDE;--bingo-ink:#243542}
 [data-testid="stAppViewContainer"]{background:#fbfdff}
 [data-testid="stHeader"]{background:rgba(251,253,255,.94)}
-.block-container{padding-top:2rem;max-width:1440px;padding-bottom:3rem}
+.block-container{padding-top:5rem;max-width:1440px;padding-bottom:3rem}
 h1,h2,h3{color:var(--bingo-ink);font-weight:700;letter-spacing:-.035em}
 [data-testid="stSidebar"]{background:#f0f6fa;border-right:1px solid #e2edf3}
 .bingo-logo{font-size:36px;font-weight:850;letter-spacing:-2px;color:#2FADDE;margin:0}
@@ -24,4 +24,4 @@ h1,h2,h3{color:var(--bingo-ink);font-weight:700;letter-spacing:-.035em}
 [data-testid="stButton"] button{border-radius:8px;min-height:42px;font-weight:650}
 [data-testid="stVerticalBlockBorderWrapper"]{border-radius:14px!important}
 [data-testid="stTextInput"] input{font-size:15px}
-@media(max-width:700px){.hero{padding:24px}.hero h1{font-size:32px}.block-container{padding:1rem}.bingo-logo{font-size:30px}}
+@media(max-width:700px){.hero{padding:24px}.hero h1{font-size:32px}.block-container{padding:4.5rem 1rem 1rem}.bingo-logo{font-size:30px}}
