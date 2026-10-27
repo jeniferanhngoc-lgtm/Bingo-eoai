@@ -39,6 +39,8 @@ class GradingTests(unittest.TestCase):
     def test_band_boundaries(self):
         self.assertEqual(band(40,'reading'),9)
         self.assertEqual(band(30,'listening'),7)
+        self.assertEqual(band(32,'listening'),7.5)
+        self.assertEqual(band(32,'reading'),7)
 
     def test_catalog_integrity(self):
         catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8'))

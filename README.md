@@ -42,6 +42,7 @@ Repo triển khai có thể để cấu trúc phẳng: `app.py`, `core.py`, `cat
 - Một số PDF chứa cả Listening và Reading: chọn đúng trang/phần theo kỹ năng.
 - Giữ nguyên file đề, đáp án và lời giải. Chưa chuyển mọi câu hỏi thành dạng tương tác trực tiếp trong văn bản; trả lời bằng phiếu bên cạnh.
 - Đáp án được trích tự động, chưa được giáo viên kiểm định. Luôn có tài liệu gốc để đối chiếu. Band chỉ là tham khảo; bảng Reading áp dụng cho Academic.
+- Tham khảo bảng điểm trung bình của [IDP Listening](https://ielts.idp.com/vietnam/results/scores/listening/en-gb) và [IELTS scoring](https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail); ngưỡng thực tế có thể thay đổi theo phiên bản đề.
 - Các file WMA có nút tải xuống vì hỗ trợ trình duyệt không đồng nhất.
 
 Chỉ chủ ứng dụng được cung cấp tài liệu có quyền sử dụng. Giấy phép giao diện không cấp quyền với đề thi/audio.

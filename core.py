@@ -70,7 +70,9 @@ def grade(test, responses):
 
 
 def band(score, skill):
-    thresholds = ([(39,9),(37,8.5),(35,8),(33,7.5),(30,7),(27,6.5),(23,6),(19,5.5),(15,5),(13,4.5),(10,4),(8,3.5),(6,3),(4,2.5)]
+    # Average conversion tables; actual thresholds vary between exam versions.
+    # https://ielts.idp.com/vietnam/results/scores/listening/en-gb
+    thresholds = ([(39,9),(37,8.5),(35,8),(32,7.5),(30,7),(26,6.5),(23,6),(18,5.5),(16,5),(13,4.5),(10,4),(8,3.5),(6,3),(4,2.5)]
                   if skill == 'listening' else
                   [(39,9),(37,8.5),(35,8),(33,7.5),(30,7),(27,6.5),(23,6),(19,5.5),(15,5),(13,4.5),(10,4),(8,3.5),(6,3),(4,2.5)])
     return next((b for minimum,b in thresholds if score >= minimum), 0)
