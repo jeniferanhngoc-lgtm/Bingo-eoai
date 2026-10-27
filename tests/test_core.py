@@ -6,7 +6,7 @@ import zipfile
 from pathlib import Path
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
-from core import ROOT, accepted_forms, band, docx_html, grade, normalize, resource_bytes
+from core import ROOT, accepted_forms, audio_files, audio_part, missing_audio_parts, band, docx_html, grade, normalize, resource_bytes
 
 
 class GradingTests(unittest.TestCase):
@@ -28,6 +28,13 @@ class GradingTests(unittest.TestCase):
 
     def test_empty_not_correct(self):
         self.assertFalse(grade({'answers':{'1':['hotel']}},{})['1']['correct'])
+
+    def test_audio_order_and_missing_parts(self):
+        resources={'a':{'name':'section1.m4a','role':'audio'},'b':{'name':'section 3.m4a','role':'audio'}}
+        test={'resources':['b','a']}
+        self.assertEqual(audio_files(test,resources),['a','b'])
+        self.assertEqual(missing_audio_parts(test,resources),[2,4])
+        self.assertEqual(audio_part({'name':'AudioTrack 02.mp3'}),2)
 
     def test_band_boundaries(self):
         self.assertEqual(band(40,'reading'),9)

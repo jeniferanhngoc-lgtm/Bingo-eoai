@@ -38,6 +38,7 @@ Repo triển khai có thể để cấu trúc phẳng: `app.py`, `core.py`, `cat
 - 88 bài Reading, 51 bài Listening.
 - 51 bài có khóa chấm tự động đủ 40 câu; các bài khác hiển thị rõ số câu có thể chấm, không tính band toàn bài nếu thiếu khóa.
 - 40 bài Listening có audio; bài chưa có audio được gắn cảnh báo.
+- Nhiều bài chỉ có audio một số phần. Bingo hiển thị các phần còn thiếu theo tên file và sắp xếp bản ghi theo số phần.
 - Một số PDF chứa cả Listening và Reading: chọn đúng trang/phần theo kỹ năng.
 - Giữ nguyên file đề, đáp án và lời giải. Chưa chuyển mọi câu hỏi thành dạng tương tác trực tiếp trong văn bản; trả lời bằng phiếu bên cạnh.
 - Đáp án được trích tự động, chưa được giáo viên kiểm định. Luôn có tài liệu gốc để đối chiếu. Band chỉ là tham khảo; bảng Reading áp dụng cho Academic.

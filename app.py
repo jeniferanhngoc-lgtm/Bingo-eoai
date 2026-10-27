@@ -10,7 +10,7 @@ from pathlib import Path
 
 import streamlit as st
 
-from core import ROOT, band, docx_html, grade, read_json, resource_bytes, write_json
+from core import ROOT, audio_files, audio_part, missing_audio_parts, band, docx_html, grade, read_json, resource_bytes, write_json
 
 st.set_page_config(page_title='Bingo · IELTS Practice', page_icon='🎯', layout='wide')
 css_path = ROOT/'assets/bingo.css' if (ROOT/'assets/bingo.css').exists() else ROOT/'bingo.css'
@@ -162,6 +162,8 @@ def library():
                 st.caption(f"Chấm tự động {t['key_count']}/40 câu" if t['key_count'] else 'Đối chiếu đáp án gốc')
                 if t['skill']=='listening' and not t['has_audio']:
                     st.warning('ZIP chưa có audio cho bài này.',icon='🎧')
+                elif t['skill']=='listening' and missing_audio_parts(t,resources):
+                    st.caption('⚠ Thiếu audio phần '+', '.join(map(str,missing_audio_parts(t,resources)))+' trong ZIP')
                 done = sum(h['test_id']==t['id'] for h in progress['history'])
                 if done:
                     st.caption(f'✓ Đã luyện {done} lần')
@@ -196,11 +198,14 @@ def clock_panel(test):
 
 @st.fragment
 def audio_panel(test):
-    audio = [r for r in test['resources'] if resources[r]['role']=='audio']
+    audio = audio_files(test,resources)
     if not audio:
         st.warning('Chưa có audio trong ZIP cho bài này. Bạn có thể luyện bài khác hoặc bổ sung audio sau.')
         return
-    rid = st.selectbox('Bản ghi',audio,format_func=lambda r:resources[r]['name'],key='audio-'+test['id'])
+    missing = missing_audio_parts(test,resources)
+    if missing:
+        st.warning('ZIP này chưa có audio phần '+', '.join(map(str,missing))+'. Bạn có thể luyện các phần đang có.')
+    rid = st.selectbox('Bản ghi',audio,format_func=lambda r:(f'Phần {audio_part(resources[r])} · ' if audio_part(resources[r]) else '')+resources[r]['name'],key='audio-'+test['id'])
     try:
         data = load_resource(rid,test['id'],settings())
         ext = resources[rid]['ext']

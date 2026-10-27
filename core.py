@@ -17,6 +17,23 @@ ROOT = Path(__file__).parent
 MAGIC = b'BINGO1'
 
 
+def audio_part(resource):
+    name = resource['name'].casefold()
+    match = re.search(r'(?:audiotrack|track|part|secction|section|\b[ps])[\s_]*(0?[1-4])\b', name)
+    if not match:
+        match = re.match(r'^(0?[1-4])(?:\s+track|\.)',name)
+    return int(match[1]) if match else 0
+
+
+def audio_files(test, resources):
+    return sorted([r for r in test['resources'] if resources[r]['role']=='audio'],key=lambda r:(audio_part(resources[r]),resources[r]['name'].casefold()))
+
+
+def missing_audio_parts(test, resources):
+    parts = {audio_part(resources[r]) for r in audio_files(test,resources)} - {0}
+    return sorted({1,2,3,4}-parts) if parts else []
+
+
 def normalize(value):
     value = unicodedata.normalize('NFKC', str(value)).casefold().strip()
     value = re.sub(r'(?<=\d),(?=\d{3}(?:\D|$))', '', value)
