@@ -1,27 +1,45 @@
-/* Adapted from Basic by WebThemez, CC BY 3.0. Attribution retained in footer. */
-@import url('basic-original.css');
-/* The app loads only the rules below; the legacy Bootstrap/jQuery bundle is a reference. */
-:root{--bingo-blue:#2FADDE;--bingo-ink:#243542}
-[data-testid="stAppViewContainer"]{background:#fbfdff}
-[data-testid="stHeader"]{background:rgba(251,253,255,.94)}
-.block-container{padding-top:5rem;max-width:1440px;padding-bottom:3rem}
-h1,h2,h3{color:var(--bingo-ink);font-weight:700;letter-spacing:-.035em}
-[data-testid="stSidebar"]{background:#f0f6fa;border-right:1px solid #e2edf3}
-.bingo-logo{font-size:36px;font-weight:850;letter-spacing:-2px;color:#2FADDE;margin:0}
-.bingo-logo span{color:#243542}
-.eyebrow{color:#1885b0;font-size:11px;letter-spacing:2.5px;font-weight:800;text-transform:uppercase}
-.hero{padding:32px 36px;border-radius:18px;border:1px solid #d9edf5;background:linear-gradient(120deg,#eaf7fc,#f7fcff 60%,#edf8f4);margin:12px 0 26px}
-.hero h1{font-size:46px;line-height:1.1;margin:12px 0 14px;max-width:720px}
-.hero p{color:#56707e;max-width:620px;font-size:17px;line-height:1.7;margin:0}
-.bingo-card-title{font-size:23px;color:#243542;font-weight:750;margin:12px 0 3px}
-.tag{display:inline-block;font-size:11px;font-weight:750;border-radius:6px;background:#e5f5fc;color:#1683af;padding:4px 9px;margin-right:5px}
-.tag.reading{background:#e8f6ef;color:#25825e}
-.muted{color:#6b8493;font-size:13px;line-height:1.6}
-.timer{font-variant-numeric:tabular-nums;font-size:30px;font-weight:800;color:#1b86b1;letter-spacing:2px}
-.footer{font-size:12px;color:#7b8e99;border-top:1px solid #e2edf3;padding-top:20px;margin-top:30px}
-.footer a{color:#1885b0}
-[data-testid="stMetric"]{background:#fff;border:1px solid #e0ebf1;border-radius:12px;padding:17px}
-[data-testid="stButton"] button{border-radius:8px;min-height:42px;font-weight:650}
-[data-testid="stVerticalBlockBorderWrapper"]{border-radius:14px!important}
+/* Dreamy adaptation by Bingo, based on Ginger Ninja! by Donny Burnside.
+   Distributed under the accompanying Attribution-ShareAlike license.
+   See assets/DREAMY-LICENSE.txt. Original theme artwork is retained. */
+:root{--bingo-blue:#759421;--bingo-ink:#303b3c;--dreamy-sky:#6cc7dc;--dreamy-leaf:#9eb529}
+html,body,[data-testid="stApp"]{font-family:"Trebuchet MS",Arial,Helvetica,sans-serif;color:#303b3c}
+[data-testid="stAppViewContainer"]{background:#e8f7f9 url('__bg-body.png__') repeat-x top center}
+[data-testid="stMain"]{background:linear-gradient(90deg,transparent 0,transparent calc(50% - 560px),#fff calc(50% - 560px),#fff calc(50% + 560px),transparent calc(50% + 560px),transparent 100%)}
+[data-testid="stHeader"]{background:transparent;pointer-events:none}
+[data-testid="stHeader"] button{pointer-events:auto}
+.block-container{max-width:1120px;padding:4.5rem 2rem 1.5rem;background:#fff;min-height:100vh;box-shadow:0 0 24px #407d8310}
+.dreamy-header{height:185px;background:#70cadb url('__bg-header.jpg__') center center/cover no-repeat;margin:0 -2rem;position:relative;border-top:1px solid #b6dfe5}
+.dreamy-brand{position:absolute;top:55px;left:40px;font:italic 44px "Trebuchet MS",Arial,sans-serif;color:#6f7878;letter-spacing:2px;text-shadow:0 1px 0 #fff}
+.dreamy-tagline{position:absolute;top:111px;left:42px;font-size:12px;color:#677e7e;letter-spacing:.6px}
+.st-key-dreamy-nav{background:#9fb72e url('__bg-menu.png__') repeat-x center/auto 100%;margin:-16px -2rem 0!important;padding:7px 20px 3px!important;min-width:calc(100% + 4rem)!important;box-sizing:border-box}
+.st-key-dreamy-nav [data-testid="stRadio"] p{color:white;font-size:14px;font-weight:600}
+.st-key-dreamy-nav [data-testid="stRadio"] [role="radiogroup"]{gap:24px}
+.st-key-dreamy-nav [data-testid="stRadio"] label>div:first-child{display:none}
+.st-key-dreamy-nav [data-testid="stRadio"] label:has(input:checked){border-bottom:2px solid white;padding-bottom:6px}
+.st-key-dreamy-nav [data-testid="stButton"] button{background:transparent;border:1px solid #ffffff70;color:#fff;min-height:32px;font-size:12px}
+h1,h2,h3{font-family:"Trebuchet MS",Arial,sans-serif!important;font-weight:400!important;letter-spacing:-.5px;color:#687f28}
+h1{font-size:32px!important}h2{font-size:26px!important}h3{font-size:22px!important}
+.hero{padding:26px 0 15px;border-bottom:1px solid #e1e7da;margin-bottom:16px}
+.hero h1{margin:8px 0 10px;font-size:36px!important}
+.hero p{font-size:15px;color:#657979;line-height:1.8;max-width:720px;margin:0}
+.eyebrow{font-size:10px;letter-spacing:1.5px;color:#94a1a0;font-weight:600}
+.login-intro{padding:36px 0 12px}.login-intro p{font-size:15px;line-height:1.8;color:#687d7d}
+[data-testid="stMetric"]{background:#f7faf1;border:1px solid #e6edd5;padding:12px 18px;border-radius:0;border-top:3px solid #b4c835}
+[data-testid="stMetricValue"]{color:#6f8530;font-size:30px}
+[data-testid="stMetricLabel"]{color:#7c8b7d;font-size:12px}
+[data-testid="stVerticalBlockBorderWrapper"]{border-radius:0!important}
+.bingo-card-title{font-size:24px;font-weight:400;color:#81982e;letter-spacing:-.7px;margin:10px 0 6px}
+.tag{font-size:10px;letter-spacing:1.3px;color:#6b9ca3;border-bottom:1px solid #c9e3e6;padding-bottom:4px;display:inline-block}
+.tag.reading{color:#8b9b40;border-color:#dbe3b9}
+[data-testid="stButton"] button{border-radius:2px;min-height:38px;font-weight:400}
+[data-testid="stButton"] button[kind="primary"]{background:#a6bb36;border-color:#a6bb36;color:#fff}
+[data-testid="stButton"] button:hover{border-color:#87bdc7;color:#3c8b99}
 [data-testid="stTextInput"] input{font-size:15px}
-@media(max-width:700px){.hero{padding:24px}.hero h1{font-size:32px}.block-container{padding:4.5rem 1rem 1rem}.bingo-logo{font-size:30px}}
+[data-testid="stCaptionContainer"]{color:#82908b}
+[data-testid="stProgress"]>div>div>div{background:#a8be38}
+.timer{font-size:30px;letter-spacing:1px;color:#7c952d;font-variant-numeric:tabular-nums}
+.footer{height:108px;background:#64bfd6 url('__bg-footer.jpg__') center/cover no-repeat;margin:36px -2rem -1.5rem;padding:48px 24px 10px;color:#fff;font-size:11px;line-height:1.7}
+.footer a{color:#fff;text-decoration:underline}
+a{color:#859c2c}
+::selection{background:#e4ef9e;color:#263333}
+@media(max-width:700px){.block-container{padding:4rem 1rem 1rem}.dreamy-header{height:145px;margin:0 -1rem;background-position:center}.dreamy-brand{left:20px;top:39px;font-size:34px}.dreamy-tagline{left:22px;top:85px;font-size:10px}.st-key-dreamy-nav{margin:-16px -1rem 0!important;padding:6px 10px!important;min-width:calc(100% + 2rem)!important}.st-key-dreamy-nav [data-testid="stRadio"] [role="radiogroup"]{gap:14px}.st-key-dreamy-nav [data-testid="stRadio"] p{font-size:12px}.hero h1{font-size:27px!important}.footer{margin-left:-1rem;margin-right:-1rem;margin-bottom:-1rem}.hero{padding-top:20px}}

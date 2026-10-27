@@ -1,5 +1,6 @@
 """Bingo: personal IELTS Listening and Reading, deployable on Streamlit Cloud."""
 import hashlib
+import base64
 import hmac
 import io
 import json
@@ -15,7 +16,11 @@ from core import ROOT, audio_files, audio_part, missing_audio_parts, band, docx_
 st.set_page_config(page_title='Bingo · IELTS Practice', page_icon='🎯', layout='wide')
 css_path = ROOT/'assets/bingo.css' if (ROOT/'assets/bingo.css').exists() else ROOT/'bingo.css'
 css = css_path.read_text(encoding='utf-8')
+for asset,mime in [('bg-header.jpg','image/jpeg'),('bg-body.png','image/png'),('bg-footer.jpg','image/jpeg'),('bg-menu.png','image/png')]:
+    path=ROOT/'assets/dreamy'/asset
+    css=css.replace('__'+asset+'__','data:'+mime+';base64,'+base64.b64encode(path.read_bytes()).decode())
 st.html('<style>'+'\n'.join(line for line in css.splitlines() if not line.startswith('@import'))+'</style>')
+st.html('<header class="dreamy-header"><div class="dreamy-brand">Bingo</div><div class="dreamy-tagline">A little practice. A brighter day.</div></header>')
 
 
 def setting(name, default=''):
@@ -25,8 +30,11 @@ def setting(name, default=''):
         return os.getenv(name, default)
 
 
-def settings():
-    return {key:setting(key) for key in ['DATA_REPOSITORY','DATA_RELEASE','GITHUB_TOKEN','DATA_KEY']}
+def settings(tid=None):
+    config={key:setting(key) for key in ['DATA_REPOSITORY','DATA_RELEASE','GITHUB_TOKEN','DATA_KEY']}
+    if tid:
+        config['PACK_NAME']=by_id[tid].get('pack','')
+    return config
 
 
 def gate():
@@ -41,7 +49,7 @@ def gate():
         return
     _, center, _ = st.columns([1,1.2,1])
     with center:
-        st.html('<div class="hero"><div class="eyebrow">YOUR PERSONAL IELTS SPACE</div><h1>Bin<span style="color:#2FADDE">go.</span></h1><p>Mỗi bài luyện, một bước tiến.</p></div>')
+        st.html('<div class="login-intro"><h2>Chào bạn,</h2><p>Một chút luyện tập cho ngày mới. Nhập mật khẩu để vào không gian IELTS của riêng bạn.</p></div>')
         with st.form('login'):
             value = st.text_input('Mật khẩu của bạn', type='password')
             submit = st.form_submit_button('Vào Bingo →', type='primary', width='stretch')
@@ -91,18 +99,18 @@ def load_resource(rid, tid, config):
     return resource_bytes(resources[rid], tid, config)
 
 
+@st.fragment
 def viewer(rid, tid):
     r = resources[rid]
     try:
         with st.spinner('Đang mở tài liệu…'):
-            data = load_resource(rid,tid,settings())
+            data = load_resource(rid,tid,settings(tid))
         if r['ext']=='.pdf':
-            try:
-                st.pdf(data,height=760,key='pdf-'+rid)
-            except (ImportError,ModuleNotFoundError):
-                st.warning('Cần cài streamlit[pdf] để xem PDF trực tiếp. Bạn vẫn có thể tải tài liệu bên dưới.')
+            from reader import highlight_reader
+            highlight_reader(data,'.pdf',rid,progress,save)
         elif r['ext']=='.docx':
-            st.iframe(docx_html(data),height=760)
+            from reader import highlight_reader
+            highlight_reader(data,'.docx',rid,progress,save,word_html=docx_html(data))
         elif r['ext'] in {'.jpg','.png'}:
             st.image(data)
         elif r['ext']=='.xlsx':
@@ -124,21 +132,16 @@ def open_test(tid):
     st.session_state.pop('result_id',None)
 
 
-with st.sidebar:
-    st.html('<div class="bingo-logo">Bin<span>go.</span></div><p class="muted">Không gian IELTS của riêng bạn</p>')
-    page = st.radio('Điều hướng',['Kho đề','Lịch sử','Sao lưu & hướng dẫn'],label_visibility='collapsed')
-    st.divider()
-    st.caption('TẬP TRUNG HÔM NAY')
-    st.write('🎧 Listening  ·  📖 Reading')
-    st.caption('Luyện theo nhịp của bạn. Tiến bộ từng ngày.')
-    st.divider()
-    if st.button('Đăng xuất',width='stretch'):
+with st.container(key='dreamy-nav'):
+    nav,logout=st.columns([6,1])
+    page = nav.radio('Điều hướng',['Kho đề','Lịch sử','Sao lưu & hướng dẫn'],label_visibility='collapsed',horizontal=True)
+    if logout.button('Đăng xuất',width='stretch'):
         st.session_state.clear()
         st.rerun()
 
 
 def library():
-    st.html('<section class="hero"><div class="eyebrow">BINGO / PRACTICE LIBRARY</div><h1>Đặt mục tiêu.<br>Luyện tập. Bứt phá.</h1><p>Kho Listening và Reading của bạn, trong một không gian gọn gàng. Chọn bài, tập trung làm và nhìn lại điều mình đã học.</p></section>')
+    st.html('<section class="hero"><div class="eyebrow">LISTENING & READING / YOUR STUDY JOURNAL</div><h1>Mỗi ngày, một bước tiến.</h1><p>Chọn một bộ đề, dành thời gian cho mình và bắt đầu. Tất cả VOL 1–8 đều ở đây.</p></section>')
     a,b,c = st.columns(3)
     a.metric('Bài Reading',sum(t['skill']=='reading' for t in tests))
     b.metric('Bài Listening',sum(t['skill']=='listening' for t in tests))
@@ -147,13 +150,15 @@ def library():
     a,b,c,d = st.columns([1.2,1,2,1])
     skill = a.selectbox('Kỹ năng',['Tất cả','Reading','Listening'])
     volumes = sorted({t['volume'] for t in tests})
-    vol = b.selectbox('Bộ đề',['Tất cả']+[f'VOL {n}' for n in volumes])
+    vol = b.selectbox('Bộ đề · VOL 1–8',['Tất cả']+[f'VOL {n}' for n in volumes])
     search = c.text_input('Tìm bài',placeholder='Ví dụ: Test 3')
     favorite_only = d.checkbox('Đã lưu',value=False)
     shown = [t for t in tests if (skill=='Tất cả' or t['skill']==skill.lower()) and (vol=='Tất cả' or t['volume']==int(vol.split()[1])) and (not search or search.lower() in t['title'].lower()) and (not favorite_only or t['id'] in progress['favorites'])]
     st.caption(f'{len(shown)} bài phù hợp · Đề gốc và đáp án được giữ nguyên để đối chiếu.')
     page_count = max(1,(len(shown)+11)//12)
-    number = st.number_input('Trang',min_value=1,max_value=page_count,value=1,step=1)
+    st.caption(f'Trang 1–{page_count} · Mỗi trang có tối đa 12 bài. Chọn VOL ở trên để đến thẳng bộ đề bạn cần.')
+    number = st.number_input(f'Chọn trang (1–{page_count})',min_value=1,max_value=page_count,value=1,step=1)
+    st.caption(f'Đang xem trang {number}/{page_count} · Bài {(number-1)*12+1 if shown else 0}–{min(number*12,len(shown))} trên {len(shown)} bài')
     for offset in range(0,len(shown[(number-1)*12:number*12]),3):
         for column,t in zip(st.columns(3),shown[(number-1)*12+offset:(number-1)*12+offset+3]):
             with column,st.container(border=True):
@@ -207,7 +212,7 @@ def audio_panel(test):
         st.warning('ZIP này chưa có audio phần '+', '.join(map(str,missing))+'. Bạn có thể luyện các phần đang có.')
     rid = st.selectbox('Bản ghi',audio,format_func=lambda r:(f'Phần {audio_part(resources[r])} · ' if audio_part(resources[r]) else '')+resources[r]['name'],key='audio-'+test['id'])
     try:
-        data = load_resource(rid,test['id'],settings())
+        data = load_resource(rid,test['id'],settings(test['id']))
         ext = resources[rid]['ext']
         if ext == '.mp4':
             st.video(data)
@@ -293,7 +298,7 @@ def practice(test):
             audio_panel(test)
         papers=[r for r in test['resources'] if resources[r]['role']=='paper']
         rid=st.selectbox('Đề gốc',papers,format_func=lambda r:resources[r]['name'])
-        st.caption('Đọc và làm theo số câu trong đề gốc. Một số PDF chứa cả Listening và Reading; chuyển đến phần tương ứng. Có thể chọn văn bản trong bản Word để đánh dấu tạm thời.')
+        st.caption('Đọc và làm theo số câu trong đề gốc. Một số PDF chứa cả Listening và Reading; chuyển đến phần tương ứng. Dùng công cụ highlight bên dưới để tô bài đọc và câu hỏi.')
         viewer(rid,test['id'])
     with side:
         clock_panel(test)
@@ -337,6 +342,17 @@ def backup():
                 if any(k not in {str(i) for i in range(1,41)} or not isinstance(v,str) or len(v)>120 for k,v in d['answers'].items()):
                     raise ValueError()
                 d['deadline']=None
+            if not isinstance(restored.get('highlights',{}),dict):
+                raise ValueError()
+            from reader import validate_annotations
+            import re
+            for rid,sections in restored.get('highlights',{}).items():
+                if rid not in resources or not isinstance(sections,dict):
+                    raise ValueError()
+                for section,value in sections.items():
+                    if not re.fullmatch(r'word-text|pdf-(?:region|text)-[1-9]\d*',section):
+                        raise ValueError()
+                    validate_annotations(value,'image' if section.startswith('pdf-region-') else 'text')
             st.session_state.progress=restored
             write_json(STATE,restored)
             for key in list(st.session_state):
@@ -350,7 +366,7 @@ def backup():
     st.subheader('Dữ liệu đề thi')
     st.write(f"Đã lập danh mục {len(tests)} bài. {sum(t['key_count']==40 for t in tests)} bài có khóa chấm đủ 40 câu. Các bài thiếu audio hoặc khóa chấm được ghi rõ trong kho đề.")
     st.write('Ở máy này, Bingo đọc trực tiếp hai ZIP gốc. Trên cloud, ứng dụng tải gói mã hóa của bài bạn đang chọn từ GitHub Releases. Cần cấu hình BINGO_PASSWORD, DATA_REPOSITORY, DATA_RELEASE và DATA_KEY trong Streamlit Secrets.')
-    st.caption('Giao diện dựa trên Basic của WebThemez (CC BY 3.0), được điều chỉnh cho học IELTS. Đề thi và audio là tài liệu do chủ ứng dụng cung cấp.')
+    st.caption('Giao diện thích nghi từ Dreamy / Ginger Ninja của Donny Burnside theo giấy phép Attribution–ShareAlike kèm mẫu. Đề thi và audio là tài liệu do chủ ứng dụng cung cấp.')
 
 
 if page=='Sao lưu & hướng dẫn':
@@ -364,4 +380,4 @@ elif st.session_state.get('active') in by_id:
 else:
     library()
 
-st.html('<div class="footer">Bingo · Your personal IELTS practice &nbsp; / &nbsp; Basic theme adapted from <a href="https://webthemez.com/" target="_blank" rel="noopener">WebThemez</a> · CC BY 3.0</div>')
+st.html('<footer class="footer">Bingo · Your personal IELTS journal<br>Dreamy adapted from <a href="http://www.ginger-ninja.net/" target="_blank" rel="noopener">Ginger Ninja! / Donny Burnside</a> · Attribution–ShareAlike</footer>')

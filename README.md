@@ -29,15 +29,15 @@ DATA_KEY = "key-generated-by-pack-data"
 4. Đưa toàn bộ file `.bingo` đã mã hóa từ `data/packs/` lên **GitHub Releases**, tag `bingo-data-v1`. Chúng là file đính kèm release, không phải file trong nhánh Git. Nếu repo public, không cần GitHub token. Nếu repo private, thêm `GITHUB_TOKEN` chỉ có quyền đọc Contents của repo này.
 5. Deploy. Mở web, đăng nhập rồi chọn bài. Ứng dụng chỉ tải gói dữ liệu của bài đang xem và lưu cache trên ổ đĩa máy chủ.
 
-Repo triển khai có thể để cấu trúc phẳng: `app.py`, `core.py`, `catalog.json`, `bingo.css`, `requirements.txt`, `BASIC-LICENSE.txt`, `README.md`. Cấu trúc thư mục đầy đủ với `data/catalog.json` và `assets/bingo.css` cũng được hỗ trợ.
+Giữ nguyên cấu trúc thư mục của repo khi triển khai. Giao diện dùng `assets/dreamy/`, catalog ở `data/catalog.json`, và trình highlight dùng `reader.py` cùng `components/reader/index.html`. Không chỉ tải riêng app.py.
 
 ## Dữ liệu
 
 Đã lập danh mục từ hai ZIP do chủ ứng dụng cung cấp:
 
-- 88 bài Reading, 51 bài Listening.
-- 51 bài có khóa chấm tự động đủ 40 câu; các bài khác hiển thị rõ số câu có thể chấm, không tính band toàn bài nếu thiếu khóa.
-- 40 bài Listening có audio; bài chưa có audio được gắn cảnh báo.
+- 88 bài Reading, 58 bài Listening.
+- 56 bài có khóa chấm tự động đủ 40 câu; các bài khác hiển thị rõ số câu có thể chấm, không tính band toàn bài nếu thiếu khóa.
+- 57 bài Listening có audio; bài chưa có audio được gắn cảnh báo.
 - Nhiều bài chỉ có audio một số phần. Bingo hiển thị các phần còn thiếu theo tên file và sắp xếp bản ghi theo số phần.
 - Một số PDF chứa cả Listening và Reading: chọn đúng trang/phần theo kỹ năng.
 - Giữ nguyên file đề, đáp án và lời giải. Chưa chuyển mọi câu hỏi thành dạng tương tác trực tiếp trong văn bản; trả lời bằng phiếu bên cạnh.
@@ -67,4 +67,20 @@ Câu trả lời tự lưu sau khi rời ô nhập. Đồng hồ cần bấm B�
 
 ## Giao diện và ghi công
 
-Giao diện thích nghi từ **Basic** của [WebThemez](https://webthemez.com/), giấy phép CC BY 3.0; backlink được giữ ở chân trang. Xem `assets/BASIC-LICENSE.txt` (hoặc `BASIC-LICENSE.txt` ở bản triển khai). Không sử dụng ảnh demo của template. Không tải Bootstrap/jQuery cũ vào ứng dụng Streamlit.
+Giao diện hiện tại thích nghi từ **Dreamy / Ginger Ninja!** của [Donny Burnside](http://www.ginger-ninja.net/). Banner bầu trời, nền xanh và thanh menu xanh lá lấy từ mẫu Dreamy, được điều chỉnh để dùng trên Streamlit và màn hình nhỏ. Phần giao diện phái sinh được phân phối theo giấy phép Attribution–ShareAlike kèm mẫu; xem `assets/DREAMY-LICENSE.txt` và bản CSS gốc trong `assets/dreamy/original.css`. Ghi công được giữ ở chân trang. Tài nguyên Basic trước đây được lưu lại kèm giấy phép gốc, nhưng không còn được tải vào giao diện.
+
+## Bổ sung audio ngày 28/10/2026
+
+- VOL 7: Test 1–11 có bản ghi đầy đủ của bài.
+- VOL 8: Test 1–8 có bản ghi đầy đủ của bài.
+- VOL 5 Test 2: đủ phần 1–4; WMA phần 3 được chuyển thành MP3 để phát trên trình duyệt.
+- Gói bổ sung dùng tên có mã nội dung; cache và các gói cũ không bị ghi đè. App tải đúng tên gói trong thuộc tính `pack` của catalog. Khóa giải mã giữ nguyên.
+- `scripts/supplement_materials.py` thực hiện ghép theo VOL/Test; `scripts/convert_wma.py` dùng gói phát triển imageio-ffmpeg để chuyển audio; `scripts/pack_data.py --test <id> --refresh` tạo bản gói mới. ZIP nguồn không bị thay đổi.
+
+## Highlight bài đọc và câu hỏi
+
+- Word: bôi chọn bất kỳ đoạn chữ nào trong bài hoặc câu hỏi, chọn màu, bấm **Tô đoạn đã chọn**.
+- PDF: chọn trang rồi kéo vùng highlight trên trang gốc, kể cả bản scan và hình/sơ đồ. Với PDF có chữ, có thể đổi sang **Văn bản · bôi chọn chữ**.
+- Có bốn màu, xóa từng nét, hoàn tác và xóa hết highlight trên trang/tài liệu đang xem.
+- Dấu tô được lưu theo tài liệu và trang trong tiến độ và file sao lưu JSON. Trình duyệt giữ thêm bản localStorage và tự khôi phục bản mới hơn nếu cloud reboot. Chuyển trình duyệt hoặc xóa dữ liệu trình duyệt cần dùng bản sao lưu để khôi phục.
+- Khi đổi kiểu xem PDF, dấu tô vùng và dấu tô chữ được lưu riêng để tọa độ không bị sai lệch.

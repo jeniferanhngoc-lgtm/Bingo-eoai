@@ -53,7 +53,8 @@ def main():
         if len(batch)<100:
             break
     present={a['name']:a['size'] for a in assets}
-    files=sorted((ROOT/'data/packs').glob('*.bingo'))
+    catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8'))
+    files=sorted(ROOT/'data/packs'/(t.get('pack') or t['id']+'.bingo') for t in catalog['tests'])
     pending=[p for p in files if present.get(p.name)!=p.stat().st_size]
     print(f'{len(files)} bundles; {len(pending)} uploads needed.',flush=True)
 

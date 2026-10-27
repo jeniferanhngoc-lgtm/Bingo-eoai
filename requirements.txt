@@ -1,5 +1,6 @@
-streamlit[pdf]==1.64.0
+streamlit==1.64.0
 python-docx>=1.1,<2
 pypdf>=5,<7
 openpyxl>=3.1,<4
 cryptography>=44,<48
+pypdfium2>=4.30,<6

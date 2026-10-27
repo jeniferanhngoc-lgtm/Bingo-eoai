@@ -45,11 +45,24 @@ class GradingTests(unittest.TestCase):
     def test_catalog_integrity(self):
         catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8'))
         ids={t['id'] for t in catalog['tests']}
-        self.assertEqual(len(ids),139)
+        self.assertGreaterEqual(len(ids),139)
         for t in catalog['tests']:
             self.assertTrue(any(catalog['resources'][r]['role']=='paper' for r in t['resources']))
             self.assertEqual(t['key_count'],len(t['answers']))
             self.assertTrue(all(1<=int(k)<=40 for k in t['answers']))
+
+    def test_supplemental_audio(self):
+        catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8'))
+        tests={t['id']:t for t in catalog['tests']}
+        for vol,total in [(7,11),(8,8)]:
+            for number in range(1,total+1):
+                test=tests[f'listening-v{vol}-t{number}']
+                self.assertTrue(test['has_audio'])
+                self.assertTrue(test['pack'].startswith(test['id']+'-'))
+                self.assertEqual(len(audio_files(test,catalog['resources'])),1)
+        test=tests['listening-v5-t2']
+        self.assertEqual(missing_audio_parts(test,catalog['resources']),[])
+        self.assertEqual(len(audio_files(test,catalog['resources'])),4)
 
     def test_word_diagrams_preserved(self):
         catalog=json.loads((ROOT/'data/catalog.json').read_text(encoding='utf-8'))

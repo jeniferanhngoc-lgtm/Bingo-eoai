@@ -113,10 +113,12 @@ def remote_pack(test_id, settings):
     digest = hashlib.sha256((repo+release+key).encode()).hexdigest()[:12]
     folder = ROOT/'.bingo'/'cache'/digest
     folder.mkdir(parents=True, exist_ok=True)
-    cached = folder/f'{test_id}.zip'
+    asset_name = settings.get('PACK_NAME') or f'{test_id}.bingo'
+    if not re.fullmatch(r'[a-z0-9-]+\.bingo',asset_name):
+        raise ValueError('Tên gói dữ liệu không hợp lệ.')
+    cached = folder/(asset_name.removesuffix('.bingo')+'.zip')
     if cached.exists():
         return cached
-    asset_name = f'{test_id}.bingo'
     token = settings.get('GITHUB_TOKEN', '')
     headers = {'User-Agent':'Bingo-IELTS', 'Accept':'application/vnd.github+json'}
     if token:
@@ -148,7 +150,7 @@ def resource_bytes(resource, test_id, settings):
     if local and Path(local).is_file():
         with zipfile.ZipFile(local) as z:
             return z.read(resource['entry'])
-    local_pack = ROOT/'data/packs'/f'{test_id}.bingo'
+    local_pack = ROOT/'data/packs'/(settings.get('PACK_NAME') or f'{test_id}.bingo')
     if local_pack.is_file() and settings.get('DATA_KEY'):
         with zipfile.ZipFile(io.BytesIO(decrypt_pack(local_pack.read_bytes(), settings['DATA_KEY']))) as z:
             return z.read(resource['id'] + resource['ext'])
