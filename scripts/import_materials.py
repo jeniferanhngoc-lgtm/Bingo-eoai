@@ -125,6 +125,9 @@ def build(paths):
                     role = 'key'
                 elif 'transcript' in p or 'transcrip' in p:
                     role = 'transcript'
+                if kind == 'listening' and '/explain reading/' in p:
+                    role = 'reference'
+                    num = None
                 if '/bao song ngu/' in p:
                     role = 'reference'
                     num = None
@@ -136,7 +139,7 @@ def build(paths):
                     if role == 'key' and ext in {'.docx', '.pdf'}:
                         try:
                             a, g = parse_key(text_of(z, name))
-                            if a:
+                            if len(a) >= 10:
                                 key_candidates[tid].append((a, g, rid))
                         except Exception as e:
                             issues.append({'resource': rid, 'issue': type(e).__name__})

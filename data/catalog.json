@@ -29,27 +29,13 @@
         "4ab3b258438d5f83",
         "aea28205fb1d2baa",
         "ea245c38ecbd2d64",
-        "dca02f326e886902",
         "c0ea09ad91fc4bc7",
         "e6b744f834ba1849"
       ],
-      "answers": {
-        "14": [
-          "visual"
-        ],
-        "15": [
-          "migration"
-        ],
-        "16": [
-          "destination"
-        ],
-        "17": [
-          "landmarks"
-        ]
-      },
+      "answers": {},
       "groups": [],
-      "key_source": "dca02f326e886902",
-      "key_count": 4,
+      "key_source": null,
+      "key_count": 0,
       "has_audio": true
     },
     {
@@ -79,33 +65,13 @@
       "resources": [
         "1217ff6df06467b0",
         "5da8b332c9dfbbd6",
-        "99a51e18b724abff",
         "9803bffdeabafff8",
         "b2c2f4436309dc55"
       ],
-      "answers": {
-        "9": [
-          "NOT"
-        ],
-        "13": [
-          "NOT"
-        ],
-        "19": [
-          "NOT"
-        ],
-        "23": [
-          "sea"
-        ],
-        "24": [
-          "cactus"
-        ],
-        "25": [
-          "Australia"
-        ]
-      },
+      "answers": {},
       "groups": [],
-      "key_source": "99a51e18b724abff",
-      "key_count": 6,
+      "key_source": null,
+      "key_count": 0,
       "has_audio": true
     },
     {
@@ -3244,23 +3210,10 @@
         "53855ec4130f9897",
         "3ebf57e190305132"
       ],
-      "answers": {
-        "14": [
-          "visual"
-        ],
-        "15": [
-          "migration"
-        ],
-        "16": [
-          "destination"
-        ],
-        "17": [
-          "landmarks"
-        ]
-      },
+      "answers": {},
       "groups": [],
-      "key_source": "53855ec4130f9897",
-      "key_count": 4,
+      "key_source": null,
+      "key_count": 0,
       "has_audio": false
     },
     {
@@ -3273,17 +3226,10 @@
         "f439b5215208e4cd",
         "5bf847304194a30d"
       ],
-      "answers": {
-        "5": [
-          "NOT"
-        ],
-        "25": [
-          "host-"
-        ]
-      },
+      "answers": {},
       "groups": [],
-      "key_source": "f439b5215208e4cd",
-      "key_count": 2,
+      "key_source": null,
+      "key_count": 0,
       "has_audio": false
     },
     {
@@ -3296,26 +3242,10 @@
         "b04cd1463bbab7a4",
         "71179ee324829ca4"
       ],
-      "answers": {
-        "3": [
-          "NOT"
-        ],
-        "4": [
-          "NOT"
-        ],
-        "11": [
-          "focus"
-        ],
-        "28": [
-          "NOT"
-        ],
-        "31": [
-          "B"
-        ]
-      },
+      "answers": {},
       "groups": [],
-      "key_source": "b04cd1463bbab7a4",
-      "key_count": 5,
+      "key_source": null,
+      "key_count": 0,
       "has_audio": false
     },
     {
@@ -3328,26 +3258,10 @@
         "7e0039b8a5a109b8",
         "298c6285469f3dc3"
       ],
-      "answers": {
-        "12": [
-          "trade"
-        ],
-        "13": [
-          "seabirds"
-        ],
-        "24": [
-          "email"
-        ],
-        "25": [
-          "prefrontal"
-        ],
-        "26": [
-          "group"
-        ]
-      },
+      "answers": {},
       "groups": [],
-      "key_source": "7e0039b8a5a109b8",
-      "key_count": 5,
+      "key_source": null,
+      "key_count": 0,
       "has_audio": false
     },
     {
@@ -3360,29 +3274,10 @@
         "174cd047d72603b5",
         "6af36097debcf057"
       ],
-      "answers": {
-        "9": [
-          "NOT"
-        ],
-        "13": [
-          "NOT"
-        ],
-        "19": [
-          "NOT"
-        ],
-        "23": [
-          "sea"
-        ],
-        "24": [
-          "cactus"
-        ],
-        "25": [
-          "Australia"
-        ]
-      },
+      "answers": {},
       "groups": [],
-      "key_source": "174cd047d72603b5",
-      "key_count": 6,
+      "key_source": null,
+      "key_count": 0,
       "has_audio": false
     },
     {
@@ -3510,29 +3405,10 @@
         "9bf87499947da605",
         "f334b89ebe3ca56c"
       ],
-      "answers": {
-        "15": [
-          "Australia"
-        ],
-        "16": [
-          "12"
-        ],
-        "27": [
-          "--- ---"
-        ],
-        "28": [
-          "vii"
-        ],
-        "29": [
-          "ix"
-        ],
-        "32": [
-          "x"
-        ]
-      },
+      "answers": {},
       "groups": [],
-      "key_source": "9bf87499947da605",
-      "key_count": 6,
+      "key_source": null,
+      "key_count": 0,
       "has_audio": false
     },
     {
@@ -6848,26 +6724,10 @@
         "9898eca0cb3a936b",
         "796809a2d7f7119a"
       ],
-      "answers": {
-        "31": [
-          "H"
-        ],
-        "32": [
-          "J"
-        ],
-        "33": [
-          "B"
-        ],
-        "34": [
-          "E"
-        ],
-        "35": [
-          "C"
-        ]
-      },
+      "answers": {},
       "groups": [],
-      "key_source": "9898eca0cb3a936b",
-      "key_count": 5,
+      "key_source": null,
+      "key_count": 0,
       "has_audio": false
     },
     {
@@ -6880,14 +6740,10 @@
         "a4e35cd3aa99f909",
         "28ca65c723c55593"
       ],
-      "answers": {
-        "28": [
-          "Ostia is mentioned as"
-        ]
-      },
+      "answers": {},
       "groups": [],
-      "key_source": "a4e35cd3aa99f909",
-      "key_count": 1,
+      "key_source": null,
+      "key_count": 0,
       "has_audio": false
     },
     {
@@ -9768,14 +9624,10 @@
         "33146f61d581d1e1",
         "ef1c53cea6225523"
       ],
-      "answers": {
-        "7": [
-          "years"
-        ]
-      },
+      "answers": {},
       "groups": [],
-      "key_source": "33146f61d581d1e1",
-      "key_count": 1,
+      "key_source": null,
+      "key_count": 0,
       "has_audio": false
     },
     {
@@ -12512,7 +12364,7 @@
       "name": "02.pdf",
       "ext": ".pdf",
       "size": 315908,
-      "role": "key",
+      "role": "reference",
       "volume": 1
     },
     "bac93516a0d68031": {
@@ -12572,7 +12424,7 @@
       "name": "04.pdf",
       "ext": ".pdf",
       "size": 657406,
-      "role": "key",
+      "role": "reference",
       "volume": 1
     },
     "e6b744f834ba1849": {
@@ -12682,7 +12534,7 @@
       "name": "06.pdf",
       "ext": ".pdf",
       "size": 555014,
-      "role": "key",
+      "role": "reference",
       "volume": 1
     },
     "c0ea09ad91fc4bc7": {
