@@ -49,7 +49,7 @@ Màn hình này là một component riêng, mã HTML nằm trong `reader.py` (`E
 Đã lập danh mục từ hai ZIP do chủ ứng dụng cung cấp:
 
 - 88 bài Reading, 58 bài Listening.
-- 56 bài có khóa chấm tự động đủ 40 câu; các bài khác hiển thị rõ số câu có thể chấm, không tính band toàn bài nếu thiếu khóa.
+- 70 bài có khóa chấm tự động đủ 40 câu; các bài khác hiển thị rõ số câu có thể chấm, không tính band toàn bài nếu thiếu khóa.
 - 57 bài Listening có audio; bài chưa có audio được gắn cảnh báo.
 - Nhiều bài chỉ có audio một số phần. Bingo hiển thị các phần còn thiếu theo tên file và sắp xếp bản ghi theo số phần.
 - Một số PDF chứa cả Listening và Reading: chọn đúng trang/phần theo kỹ năng.
