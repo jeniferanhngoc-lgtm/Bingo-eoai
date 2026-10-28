@@ -54,6 +54,20 @@ class ReaderTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             store_highlight(progress,'rid',section,'image',{'marks':[{'id':'a','x':.9,'y':.1,'w':.5,'h':.1,'color':'blue'}]})
 
+    def test_continuous_pages_roundtrip_and_split(self):
+        from reader import store_highlight
+        value={'marks':[{'id':'a','x':.1,'y':.2,'w':.3,'h':.1,'color':'blue','p':3}],'updated':7}
+        self.assertEqual(validate_annotations(value,'pages'),value)
+        progress={'highlights':{'r':{'pdf-region-2':{'marks':[{'id':'z','x':.1,'y':.1,'w':.1,'h':.1,'color':'pink'}],'updated':1}}}}
+        store_highlight(progress,'r','pdf-all','pages',value)
+        saved=progress['highlights']['r']
+        self.assertEqual(saved['pdf-region-3']['marks'],[{'id':'a','color':'blue','x':.1,'y':.2,'w':.3,'h':.1}])
+        self.assertEqual(saved['pdf-region-2']['marks'],[])
+
+    def test_continuous_pages_needs_page_number(self):
+        with self.assertRaises(ValueError):
+            validate_annotations({'marks':[{'id':'a','x':.1,'y':.2,'w':.3,'h':.1,'color':'blue'}]},'pages')
+
 
 if __name__=='__main__':
     unittest.main()

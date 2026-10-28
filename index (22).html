@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+*{box-sizing:border-box}body{margin:0;color:#303b3c;font:13px Arial,sans-serif;background:white}.toolbar{display:flex;gap:7px;align-items:center;flex-wrap:wrap;padding:10px;background:#f3f7e9;border:1px solid #dce6c4;position:sticky;top:0;z-index:20}button{font:12px Arial,sans-serif;padding:7px 9px;border:1px solid #c9d3be;background:#fff;color:#3c4c38;cursor:pointer;border-radius:3px}button:disabled{opacity:.45;cursor:default}button[aria-pressed=true]{outline:2px solid #80992c;outline-offset:1px}.swatch{min-width:26px;padding:7px}.yellow{background:#ffe56b}.green{background:#bce89c}.blue{background:#a6ddff}.pink{background:#ffbfda}.status{color:#667c56;font-size:11px;margin-left:auto}.hint{font-size:12px;color:#71816f;margin:9px 8px}.scroller{height:680px;overflow:auto;border:1px solid #e0e7dc;background:#fbfcf8;padding:0}#document{position:relative;margin:0 auto;background:white;max-width:100%;min-height:160px}#document.text{padding:24px 28px;font:17px/1.85 Georgia,serif;overflow-wrap:anywhere}#document p{margin:0 0 14px;white-space:pre-wrap}#document table{border-collapse:collapse;max-width:100%;margin:18px 0}#document td{border:1px solid #cfd9c8;padding:8px;vertical-align:top}#document img{max-width:100%;height:auto}#document.image{touch-action:pan-y;user-select:none;cursor:default;line-height:0}#document.image.drawing{touch-action:none;cursor:crosshair}#document.image>img{display:block;width:100%;pointer-events:none}.region{position:absolute;opacity:.43;mix-blend-mode:multiply;border:1px solid #8b8b5922;cursor:crosshair}.preview{pointer-events:none;border:1px dashed #7d8f30;z-index:5}body.erasing .region,body.erasing [data-mark-id]{cursor:eraser;cursor:pointer}mark{color:inherit;border-radius:2px;padding:1px 0}::selection{background:#d6e5f4}.count{font-size:11px;color:#829073}@media(max-width:500px){#document.text{padding:15px;font-size:16px}.toolbar{gap:5px;padding:8px}.status{width:100%;margin:0}.scroller{height:640px}}
+</style></head><body>
+<div class="toolbar" role="toolbar" aria-label="Công cụ highlight">
+<button class="swatch yellow" data-color="yellow" aria-label="Màu vàng" title="Màu vàng" aria-pressed="true">Vàng</button>
+<button class="swatch green" data-color="green" aria-label="Màu xanh lá" title="Màu xanh lá" aria-pressed="false">Xanh</button>
+<button class="swatch blue" data-color="blue" aria-label="Màu xanh dương" title="Màu xanh dương" aria-pressed="false">Lam</button>
+<button class="swatch pink" data-color="pink" aria-label="Màu hồng" title="Màu hồng" aria-pressed="false">Hồng</button>
+<button id="draw" aria-pressed="true">Tô vùng</button><button id="apply" disabled>Tô đoạn đã chọn</button><button id="erase" aria-pressed="false">Xóa từng nét</button><button id="undo">Hoàn tác</button><button id="clear">Xóa hết</button>
+<span id="status" class="status" role="status">Highlight được tự lưu</span>
+</div>
+<p id="hint" class="hint"></p><div class="scroller"><article id="document" aria-label="Bài đọc và câu hỏi"></article></div>
+<p class="hint"><span id="count" class="count">0 highlight</span> · Đổi trang hoặc đổi tài liệu để xem các phần khác.</p>
+<script>
+(()=>{'use strict';
+const doc=document.getElementById('document'),apply=document.getElementById('apply'),erase=document.getElementById('erase'),status=document.getElementById('status'),draw=document.getElementById('draw');
+const colors={yellow:'#ffe56b',green:'#bce89c',blue:'#a6ddff',pink:'#ffbfda'};
+let args=null,state={marks:[],updated:0},color='yellow',erasing=false,drawing=!window.matchMedia('(pointer:coarse)').matches,pending=null,anchor=null,preview=null,undoStack=[],restored=false;
+function send(type,rest={}){window.parent.postMessage({isStreamlitMessage:true,type,...rest},'*')}
+function key(){return 'bingo-highlights-v1:'+args.document_key}
+function readLocal(){try{return JSON.parse(localStorage.getItem(key()))}catch{return null}}
+function saveLocal(){try{localStorage.setItem(key(),JSON.stringify(state));return true}catch{return false}}
+function emit(){const local=saveLocal();send('streamlit:setComponentValue',{dataType:'json',value:{document_key:args.document_key,annotations:state,nonce:Date.now().toString(36)+Math.random().toString(36).slice(2)}});status.textContent=local?'Đã lưu · trình duyệt + tiến độ':'Đã lưu vào tiến độ';}
+function commit(marks){undoStack.push(JSON.parse(JSON.stringify(state.marks)));state={marks,updated:Date.now()};renderMarks();emit()}
+function id(){return Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,9)}
+function renderMarks(){
+ const scroll=doc.parentElement.scrollTop;
+ doc.className=args.kind+(drawing&&args.kind==='image'?' drawing':'');draw.hidden=args.kind!=='image';draw.setAttribute('aria-pressed',String(drawing));document.getElementById('hint').textContent=args.kind==='image'?'Bật “Tô vùng”, rồi kéo trên bài đọc hoặc câu hỏi. Trên điện thoại, tắt “Tô vùng” để cuộn trang.':'Bôi chọn chữ trong bài đọc hoặc câu hỏi, rồi bấm “Tô đoạn đã chọn”.';
+ apply.hidden=args.kind==='image';
+ if(args.kind==='image'){
+  doc.replaceChildren();const img=document.createElement('img');img.src=args.content;img.alt='Trang đề gốc để highlight';doc.append(img);
+  for(const mark of state.marks){const box=document.createElement('div');box.className='region';box.dataset.markId=mark.id;Object.assign(box.style,{left:mark.x*100+'%',top:mark.y*100+'%',width:mark.w*100+'%',height:mark.h*100+'%',background:colors[mark.color]||colors.yellow});doc.append(box)}
+ }else{
+  doc.innerHTML=args.content;
+  const walker=document.createTreeWalker(doc,NodeFilter.SHOW_TEXT);const nodes=[];let n,offset=0;
+  while(n=walker.nextNode()){nodes.push({node:n,start:offset,end:offset+n.textContent.length});offset+=n.textContent.length}
+  for(const item of nodes){
+   const hits=state.marks.filter(m=>m.end>item.start&&m.start<item.end);if(!hits.length)continue;
+   const bounds=new Set([0,item.end-item.start]);for(const m of hits){bounds.add(Math.max(0,m.start-item.start));bounds.add(Math.min(item.end-item.start,m.end-item.start))}
+   const cuts=[...bounds].sort((a,b)=>a-b),frag=document.createDocumentFragment(),text=item.node.textContent;
+   for(let i=0;i<cuts.length-1;i++){const a=cuts[i],b=cuts[i+1],hit=[...hits].reverse().find(m=>m.start<item.start+b&&m.end>item.start+a);if(hit){const span=document.createElement('mark');span.dataset.markId=hit.id;span.style.background=colors[hit.color]||colors.yellow;span.textContent=text.slice(a,b);frag.append(span)}else frag.append(document.createTextNode(text.slice(a,b)))}
+   item.node.replaceWith(frag);
+  }
+ }
+ doc.parentElement.scrollTop=scroll;document.getElementById('count').textContent=state.marks.length+' highlight';pending=null;apply.disabled=true;
+}
+document.querySelectorAll('[data-color]').forEach(button=>button.addEventListener('click',()=>{color=button.dataset.color;document.querySelectorAll('[data-color]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));erasing=false;drawing=true;draw.setAttribute('aria-pressed','true');doc.classList.toggle('drawing',args?.kind==='image');erase.setAttribute('aria-pressed','false');document.body.classList.remove('erasing')}));
+draw.addEventListener('click',()=>{drawing=!drawing;draw.setAttribute('aria-pressed',String(drawing));doc.classList.toggle('drawing',drawing);if(drawing){erasing=false;erase.setAttribute('aria-pressed','false');document.body.classList.remove('erasing')}});
+erase.addEventListener('click',()=>{erasing=!erasing;erase.setAttribute('aria-pressed',String(erasing));document.body.classList.toggle('erasing',erasing)});
+doc.addEventListener('click',event=>{if(!erasing)return;const hit=event.target.closest('[data-mark-id]');if(hit)commit(state.marks.filter(m=>m.id!==hit.dataset.markId))});
+function captureSelection(){if(!args||args.kind!=='text'||erasing)return;const selection=window.getSelection();if(!selection||selection.isCollapsed||!selection.rangeCount)return;const range=selection.getRangeAt(0);if(!doc.contains(range.startContainer)||!doc.contains(range.endContainer))return;const before=document.createRange();before.selectNodeContents(doc);before.setEnd(range.startContainer,range.startOffset);const start=before.toString().length;before.setEnd(range.endContainer,range.endOffset);const end=before.toString().length;if(end>start){pending={start,end};apply.disabled=false;status.textContent='Đã chọn chữ · bấm Tô đoạn đã chọn'}}
+doc.addEventListener('mouseup',captureSelection);document.addEventListener('selectionchange',captureSelection);
+apply.addEventListener('mousedown',event=>event.preventDefault());apply.addEventListener('click',()=>{if(!pending)return;const mark={id:id(),color,...pending};window.getSelection()?.removeAllRanges();commit([...state.marks,mark])});
+document.getElementById('undo').addEventListener('click',()=>{if(!undoStack.length)return;state={marks:undoStack.pop(),updated:Date.now()};renderMarks();emit()});
+document.getElementById('clear').addEventListener('click',()=>{if(state.marks.length)commit([])});
+function point(event){const r=doc.getBoundingClientRect();return {x:Math.max(0,Math.min(1,(event.clientX-r.left)/r.width)),y:Math.max(0,Math.min(1,(event.clientY-r.top)/r.height))}}
+doc.addEventListener('pointerdown',event=>{if(!args||args.kind!=='image'||!drawing||erasing||event.button!==0)return;event.preventDefault();anchor=point(event);doc.setPointerCapture(event.pointerId);preview=document.createElement('div');preview.className='region preview';preview.style.background=colors[color];doc.append(preview)});
+doc.addEventListener('pointermove',event=>{if(!anchor)return;const p=point(event);Object.assign(preview.style,{left:Math.min(anchor.x,p.x)*100+'%',top:Math.min(anchor.y,p.y)*100+'%',width:Math.abs(p.x-anchor.x)*100+'%',height:Math.abs(p.y-anchor.y)*100+'%'})});
+doc.addEventListener('pointerup',event=>{if(!anchor)return;const p=point(event),mark={id:id(),color,x:Math.min(anchor.x,p.x),y:Math.min(anchor.y,p.y),w:Math.abs(p.x-anchor.x),h:Math.abs(p.y-anchor.y)};anchor=null;preview?.remove();preview=null;if(doc.hasPointerCapture(event.pointerId))doc.releasePointerCapture(event.pointerId);if(mark.w>.003&&mark.h>.003)commit([...state.marks,mark])});
+doc.addEventListener('pointercancel',()=>{anchor=null;preview?.remove();preview=null});
+window.addEventListener('message',event=>{
+ if(event.source!==window.parent||event.data?.type!=='streamlit:render')return;
+ const next=event.data.args,changed=!args||args.document_key!==next.document_key;args=next;
+ if(changed){undoStack=[];state=args.annotations||{marks:[],updated:0};const local=readLocal();restored=Boolean(local&&Array.isArray(local.marks)&&local.updated>state.updated);if(restored)state=local;renderMarks();if(restored)emit()}
+ else if((args.annotations?.updated||0)>state.updated){state=args.annotations;renderMarks();saveLocal()}
+ send('streamlit:setFrameHeight',{height:args.height||800});
+});
+send('streamlit:componentReady',{apiVersion:1});send('streamlit:setFrameHeight',{height:800});
+})();
+</script></body></html>

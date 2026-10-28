@@ -274,7 +274,7 @@ def apply_exam_event(test,event,rid,doc):
     kind=event.get('type')
     if kind=='highlight':
         from reader import store_highlight
-        if event.get('document_key')==doc['document_key'] and doc['kind'] in {'image','text'}:
+        if event.get('document_key')==doc['document_key'] and doc['kind'] in {'image','text','pages'}:
             section=doc['document_key'].split(':',1)[1]
             try:
                 store_highlight(progress,rid,section,doc['kind'],(event.get('annotations') or {}))

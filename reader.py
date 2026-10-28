@@ -59,6 +59,10 @@ button:disabled{opacity:.45;cursor:default}
 #document.image{width:calc(100%*var(--zoom,1));line-height:0;user-select:none;touch-action:pan-y;background:#fff;box-shadow:0 0 0 1px #e0e0c8}
 #document.image.drawing{touch-action:none;cursor:crosshair}
 #document.image>img{display:block;width:100%;pointer-events:none}
+#document.pages{width:calc(100%*var(--zoom,1));max-width:none;user-select:none;touch-action:pan-y}
+#document.pages.drawing{touch-action:none;cursor:crosshair}
+#document.pages .pg{position:relative;width:100%;line-height:0;background:#fff;box-shadow:0 0 0 1px #e0e0c8,0 2px 8px #0002;margin:0 0 16px}
+#document.pages .pg>img{display:block;width:100%;height:100%;pointer-events:none}
 #document.loading{opacity:.45;transition:opacity .15s}
 .region{position:absolute;opacity:.43;mix-blend-mode:multiply}
 .preview{pointer-events:none;border:1px dashed #6b7d20;z-index:5}
@@ -86,28 +90,29 @@ mark{color:inherit;border-radius:2px;padding:1px 0}
 .chips .gap{width:8px}
 
 /* ---------- bottom palette ---------- */
-#bottom{flex:none;display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding:10px 18px 12px;background:#fcebd2;border-top:1px solid #f0c98d}
-#pal{display:flex;flex-direction:column;gap:6px;min-width:0;flex:1 1 560px}
-#palTop{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+#bottom{flex:none;display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:6px 14px 7px;background:#fcebd2;border-top:1px solid #f0c98d}
+#pal{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1 1 520px}
+#palTop{display:flex;align-items:center;flex-wrap:wrap;gap:6px 8px}
 #parts{display:flex;gap:6px;flex-wrap:wrap}
-#palTop .label{font:700 24px Arial,sans-serif;color:#333;margin-right:6px;white-space:nowrap}
-.part{padding:4px 12px;border:1px solid #d9b27a;border-radius:16px;background:#fff;font-size:13px;color:#555}
+#palTop .label{font:700 15px Arial,sans-serif;color:#333;margin-right:2px;white-space:nowrap}
+.part{padding:2px 10px;border:1px solid #d9b27a;border-radius:14px;background:#fff;font-size:12px;color:#555}
 .part.active{background:#333;border-color:#333;color:#fff}
-#circles{display:flex;flex-wrap:wrap;gap:8px}
-.c{width:42px;height:42px;border-radius:50%;border:1px solid #b9b9b9;background:#fff;font:700 17px Arial,sans-serif;color:#222;padding:0}
+#circles{display:flex;flex-wrap:nowrap;gap:5px;padding:3px 4px;overflow-x:auto;scrollbar-width:none}
+#circles::-webkit-scrollbar{display:none}
+.c{flex:none;width:30px;height:30px;border-radius:50%;border:1px solid #b9b9b9;background:#fff;font:700 13px Arial,sans-serif;color:#222;padding:0}
 .c.done{background:#2f93ee;border-color:#2f93ee;color:#fff}
-.c.cur{box-shadow:0 0 0 3px #f5a623}
-#legend{display:flex;gap:16px;font-size:13px;color:#555;align-items:center}
-#legend i{display:inline-block;width:14px;height:14px;border-radius:50%;border:1px solid #aaa;background:#fff;vertical-align:-2px;margin-right:5px}
+.c.cur{box-shadow:0 0 0 2px #f5a623}
+#legend{display:flex;gap:12px;font-size:12px;color:#555;align-items:center;margin-left:auto;white-space:nowrap}
+#legend i{display:inline-block;width:11px;height:11px;border-radius:50%;border:1px solid #aaa;background:#fff;vertical-align:-2px;margin-right:5px}
 #legend i.d{background:#2f93ee;border-color:#2f93ee}
 #clockBox{display:flex;align-items:center;gap:8px}
-#timer{background:#000;color:#fff;font:700 30px/1 "Courier New",monospace;padding:9px 14px;border-radius:6px;min-width:112px;text-align:center;letter-spacing:1px}
+#timer{background:#000;color:#fff;font:700 22px/1 "Courier New",monospace;padding:6px 10px;border-radius:6px;min-width:84px;text-align:center;letter-spacing:1px}
 #timer.low{color:#ff8b8b}
 #timer.paused{color:#9a9a9a}
-#pp{width:38px;height:38px;border-radius:50%;border:1px solid #c9a56a;background:#fff;font-size:15px}
-#acts{display:flex;gap:10px;margin-left:auto}
-.act{display:flex;align-items:center;gap:8px;border:0;border-radius:5px;color:#fff;font-size:17px;padding:10px 18px}
-.act svg{width:20px;height:20px;fill:currentColor}
+#pp{width:30px;height:30px;border-radius:50%;border:1px solid #c9a56a;background:#fff;font-size:15px}
+#acts{display:flex;gap:8px;margin-left:auto}
+.act{display:flex;align-items:center;gap:6px;border:0;border-radius:5px;color:#fff;font-size:15px;padding:7px 14px}
+.act svg{width:16px;height:16px;fill:currentColor}
 #submit{background:#3fbf4a}#review{background:#2e74be}#solution{background:#f4ae44}
 .act:hover:not(:disabled){filter:brightness(1.07)}
 #status{font-size:12px;color:#888;margin-right:8px;white-space:nowrap}
@@ -122,17 +127,18 @@ mark{color:inherit;border-radius:2px;padding:1px 0}
 .box .btns button{padding:9px 18px;border-radius:5px;border:1px solid #bbb;background:#fff}
 .box .btns .go{background:#3fbf4a;border-color:#3fbf4a;color:#fff}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(46px,1fr));gap:8px;margin:10px 0}
-.grid .c{width:46px;height:46px}
+.grid .c{width:46px;height:46px;font-size:16px}
 .sum{display:flex;gap:18px;font-size:14px;color:#444}
 
 /* ---------- small screens ---------- */
+@media(max-width:1100px){#legend{display:none}}
 @media(max-width:820px){
  #divider{display:none}
  #left,#right{width:100%!important;flex:1}
  #main[data-pane=left] #right,#main[data-pane=right] #left{display:none}
  #mobileTabs{display:flex}
  #top .tab,#top .title,#top .hide-m{display:none}
- .c{width:36px;height:36px;font-size:15px}
+ .c{width:30px;height:30px;font-size:13px}
  #bottom{padding:6px 10px 8px;gap:8px}
  #pal{flex:1 1 100%;gap:4px}
  #palTop .label,#legend{display:none}
@@ -142,8 +148,8 @@ mark{color:inherit;border-radius:2px;padding:1px 0}
  #clockBox{flex:none}
  #acts{flex:1;justify-content:flex-end;gap:6px}
  .act svg{display:none}
- #timer{font-size:22px;min-width:90px;padding:7px 10px}
- .act{padding:9px 12px;font-size:15px}
+ #timer{font-size:18px;min-width:76px;padding:5px 8px}
+ .act{padding:7px 10px;font-size:14px}
  #acts{margin-left:0}
  #sheet{padding:8px 12px 40px}
  .group h2{font-size:24px}
@@ -198,9 +204,8 @@ mark{color:inherit;border-radius:2px;padding:1px 0}
 
 <div id="bottom">
  <div id="pal">
-  <div id="palTop"><span class="label">Question Palette</span><span id="parts"></span></div>
+  <div id="palTop"><span class="label">Question Palette</span><span id="parts"></span><div id="legend"><span><i class="d"></i>answered</span><span><i></i>unanswered</span></div></div>
   <div id="circles" role="group" aria-label="Danh sách câu hỏi"></div>
-  <div id="legend"><span><i class="d"></i>answered</span><span><i></i>unanswered</span></div>
  </div>
  <div id="clockBox"><div id="timer" role="timer" aria-live="off">00:00</div><button id="pp" title="Tạm dừng / Tiếp tục" aria-label="Tạm dừng hoặc tiếp tục">❚❚</button></div>
  <div id="acts">
@@ -224,6 +229,8 @@ let args=null,session=null;
 let answers={},answersUpdated=0,groups=[],activeGroup=0,currentQ=0;
 let state={marks:[],updated:0},undoStack=[],docKey=null;
 let color='yellow',erasing=false,drawing=!matchMedia('(pointer:coarse)').matches,pending=null,anchor=null,preview=null;
+let pgNow=1,anchorPg=null,pgRaf=0;
+const isImg=d=>!!d&&(d.kind==='image'||d.kind==='pages');
 let zoomLevel=0;const ZOOMS=[1,1.2,1.45,1.75];
 let deadline=0,remaining=0,running=false,timedOut=false,tickHandle=0,sendTimer=0,lastHeight=0,booted=false;
 
@@ -346,6 +353,7 @@ function paintCircles(){
  const box=$('circles');box.replaceChildren();
  const g=groups[activeGroup];
  for(let q=g[0];q<=g[1];q++){const b=document.createElement('button');b.className='c'+(has(q)?' done':'')+(q===currentQ?' cur':'');b.textContent=q;b.setAttribute('aria-label',`Câu ${q}${has(q)?' đã trả lời':' chưa trả lời'}`);b.addEventListener('click',()=>goTo(q));box.append(b)}
+ const cur=box.querySelector('.cur');if(cur){const a=cur.getBoundingClientRect(),r=box.getBoundingClientRect();if(a.left<r.left)box.scrollLeft-=r.left-a.left+8;else if(a.right>r.right)box.scrollLeft+=a.right-r.right+8}
 }
 rightScroll.addEventListener('scroll',()=>{
  let g=0;const top=rightScroll.scrollTop+80;
@@ -406,23 +414,49 @@ function renderHeader(){
  sel.hidden=args.papers.length<2;
  const isPdf=d.pages>0;
  $('pageNav').hidden=!isPdf||d.pages<2;
- $('pageLabel').textContent=`Trang ${d.page}/${d.pages}`;
- $('prev').disabled=d.page<=1;$('next').disabled=d.page>=d.pages;
+ paintPageNav();
  $('view').hidden=!(isPdf&&d.can_text);
  $('view').value=d.view;
  $('draw').setAttribute('aria-pressed',String(drawing));
 }
+function paintPageNav(){
+ const d=args.doc,paged=d.kind==='pages',n=paged?pgNow:d.page;
+ $('pageLabel').textContent=`Trang ${n}/${d.pages}`;
+ $('prev').disabled=n<=1;$('next').disabled=n>=d.pages;
+}
+function pageAtScroll(){
+ const lr=leftScroll.getBoundingClientRect();let cur=1;
+ doc.querySelectorAll('.pg').forEach((pg,i)=>{if(pg.getBoundingClientRect().top-lr.top<=lr.height*.35)cur=i+1});
+ return cur;
+}
+function scrollToPage(n){
+ const pg=doc.querySelector(`.pg[data-p="${n}"]`);if(!pg)return;
+ const lr=leftScroll.getBoundingClientRect();
+ leftScroll.scrollBy({top:pg.getBoundingClientRect().top-lr.top-8,behavior:'smooth'});
+}
+leftScroll.addEventListener('scroll',()=>{
+ if(!args||args.doc.kind!=='pages'||pgRaf)return;
+ pgRaf=requestAnimationFrame(()=>{pgRaf=0;const n=pageAtScroll();if(n!==pgNow){pgNow=n;paintPageNav()}});
+},{passive:true});
 function renderDoc(){
  const d=args.doc;
- doc.className=d.kind+(drawing&&d.kind==='image'?' drawing':'');
+ doc.className=d.kind+(drawing&&isImg(d)?' drawing':'');
  if(d.kind==='empty'){doc.className='';doc.innerHTML='<div class="empty"></div>';doc.firstChild.textContent=d.message||'Chưa mở được tài liệu.';return}
  renderMarks();
 }
 function renderMarks(){
  const d=args.doc,top=leftScroll.scrollTop;
- doc.className=d.kind+(drawing&&d.kind==='image'?' drawing':'');
+ doc.className=d.kind+(drawing&&isImg(d)?' drawing':'');
  $('draw').hidden=false;
- if(d.kind==='image'){
+ if(d.kind!=='pages')delete doc.dataset.key;
+ if(d.kind==='pages'){
+  if(doc.dataset.key!==d.document_key||!doc.querySelector('.pg')){
+   doc.replaceChildren();doc.dataset.key=d.document_key;
+   d.content.forEach((pg,i)=>{const box=document.createElement('div');box.className='pg';box.dataset.p=i+1;box.style.aspectRatio=pg.w+' / '+pg.h;const img=document.createElement('img');img.src=pg.src;img.alt='Trang đề gốc '+(i+1);box.append(img);doc.append(box)});
+  }
+  doc.querySelectorAll('.region').forEach(r=>r.remove());
+  for(const m of state.marks){const box=doc.querySelector(`.pg[data-p="${m.p}"]`);if(!box)continue;const b=document.createElement('div');b.className='region';b.dataset.markId=m.id;Object.assign(b.style,{left:m.x*100+'%',top:m.y*100+'%',width:m.w*100+'%',height:m.h*100+'%',background:colors[m.color]||colors.yellow});box.append(b)}
+ }else if(d.kind==='image'){
   doc.replaceChildren();const img=document.createElement('img');img.src=d.content;img.alt='Trang đề gốc';doc.append(img);
   for(const m of state.marks){const b=document.createElement('div');b.className='region';b.dataset.markId=m.id;Object.assign(b.style,{left:m.x*100+'%',top:m.y*100+'%',width:m.w*100+'%',height:m.h*100+'%',background:colors[m.color]||colors.yellow});doc.append(b)}
  }else{
@@ -442,8 +476,8 @@ function renderMarks(){
 function commit(marks){undoStack.push(JSON.parse(JSON.stringify(state.marks)));state={marks:marks,updated:Date.now()};renderMarks();saveHL();emit('highlight',{document_key:args.doc.document_key,annotations:state})}
 const mid=()=>Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,9);
 
-document.querySelectorAll('[data-color]').forEach(b=>b.addEventListener('click',()=>{color=b.dataset.color;document.querySelectorAll('[data-color]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));erasing=false;drawing=true;$('erase').setAttribute('aria-pressed','false');$('draw').setAttribute('aria-pressed','true');document.body.classList.remove('erasing');doc.classList.toggle('drawing',args?.doc.kind==='image')}));
-$('draw').addEventListener('click',()=>{drawing=!drawing;$('draw').setAttribute('aria-pressed',String(drawing));doc.classList.toggle('drawing',drawing&&args.doc.kind==='image');if(drawing){erasing=false;$('erase').setAttribute('aria-pressed','false');document.body.classList.remove('erasing')}});
+document.querySelectorAll('[data-color]').forEach(b=>b.addEventListener('click',()=>{color=b.dataset.color;document.querySelectorAll('[data-color]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));erasing=false;drawing=true;$('erase').setAttribute('aria-pressed','false');$('draw').setAttribute('aria-pressed','true');document.body.classList.remove('erasing');doc.classList.toggle('drawing',isImg(args?.doc))}));
+$('draw').addEventListener('click',()=>{drawing=!drawing;$('draw').setAttribute('aria-pressed',String(drawing));doc.classList.toggle('drawing',drawing&&isImg(args.doc));if(drawing){erasing=false;$('erase').setAttribute('aria-pressed','false');document.body.classList.remove('erasing')}});
 $('erase').addEventListener('click',()=>{erasing=!erasing;$('erase').setAttribute('aria-pressed',String(erasing));document.body.classList.toggle('erasing',erasing)});
 doc.addEventListener('click',e=>{if(!erasing)return;const hit=e.target.closest('[data-mark-id]');if(hit)commit(state.marks.filter(m=>m.id!==hit.dataset.markId))});
 function captureSelection(){
@@ -459,16 +493,21 @@ $('apply').addEventListener('mousedown',e=>e.preventDefault());
 $('apply').addEventListener('click',()=>{if(!pending)return;const m={id:mid(),color,...pending};getSelection()?.removeAllRanges();commit([...state.marks,m])});
 $('undo').addEventListener('click',()=>{if(!undoStack.length)return;state={marks:undoStack.pop(),updated:Date.now()};renderMarks();saveHL();emit('highlight',{document_key:args.doc.document_key,annotations:state})});
 $('clear').addEventListener('click',()=>{if(state.marks.length)commit([])});
-function pt(e){const r=doc.getBoundingClientRect();return{x:Math.max(0,Math.min(1,(e.clientX-r.left)/r.width)),y:Math.max(0,Math.min(1,(e.clientY-r.top)/r.height))}}
-doc.addEventListener('pointerdown',e=>{if(!args||args.doc.kind!=='image'||!drawing||erasing||e.button!==0)return;e.preventDefault();anchor=pt(e);doc.setPointerCapture(e.pointerId);preview=document.createElement('div');preview.className='region preview';preview.style.background=colors[color];doc.append(preview)});
-doc.addEventListener('pointermove',e=>{if(!anchor)return;const p=pt(e);Object.assign(preview.style,{left:Math.min(anchor.x,p.x)*100+'%',top:Math.min(anchor.y,p.y)*100+'%',width:Math.abs(p.x-anchor.x)*100+'%',height:Math.abs(p.y-anchor.y)*100+'%'})});
-doc.addEventListener('pointerup',e=>{if(!anchor)return;const p=pt(e),m={id:mid(),color,x:Math.min(anchor.x,p.x),y:Math.min(anchor.y,p.y),w:Math.abs(p.x-anchor.x),h:Math.abs(p.y-anchor.y)};anchor=null;preview?.remove();preview=null;try{doc.releasePointerCapture(e.pointerId)}catch(_){}if(m.w>.003&&m.h>.003)commit([...state.marks,m])});
-doc.addEventListener('pointercancel',()=>{anchor=null;preview?.remove();preview=null});
+function pt(e,el){const r=(el||doc).getBoundingClientRect();return{x:Math.max(0,Math.min(1,(e.clientX-r.left)/r.width)),y:Math.max(0,Math.min(1,(e.clientY-r.top)/r.height))}}
+doc.addEventListener('pointerdown',e=>{if(!args||!isImg(args.doc)||!drawing||erasing||e.button!==0)return;let host=doc;if(args.doc.kind==='pages'){host=e.target.closest('.pg');if(!host)return}e.preventDefault();anchorPg=host;anchor=pt(e,host);doc.setPointerCapture(e.pointerId);preview=document.createElement('div');preview.className='region preview';preview.style.background=colors[color];host.append(preview)});
+doc.addEventListener('pointermove',e=>{if(!anchor)return;const p=pt(e,anchorPg);Object.assign(preview.style,{left:Math.min(anchor.x,p.x)*100+'%',top:Math.min(anchor.y,p.y)*100+'%',width:Math.abs(p.x-anchor.x)*100+'%',height:Math.abs(p.y-anchor.y)*100+'%'})});
+doc.addEventListener('pointerup',e=>{if(!anchor)return;const p=pt(e,anchorPg),m={id:mid(),color,x:Math.min(anchor.x,p.x),y:Math.min(anchor.y,p.y),w:Math.abs(p.x-anchor.x),h:Math.abs(p.y-anchor.y)};if(args.doc.kind==='pages')m.p=+anchorPg.dataset.p;anchor=null;anchorPg=null;preview?.remove();preview=null;try{doc.releasePointerCapture(e.pointerId)}catch(_){}if(m.w>.003&&m.h>.003)commit([...state.marks,m])});
+doc.addEventListener('pointercancel',()=>{anchor=null;anchorPg=null;preview?.remove();preview=null});
 
 /* ---------- navigation requests to Python ---------- */
 function busy(){doc.classList.add('loading')}
-$('prev').addEventListener('click',()=>{busy();emit('page',{page:args.doc.page-1})});
-$('next').addEventListener('click',()=>{busy();emit('page',{page:args.doc.page+1})});
+$('prev').addEventListener('click',()=>{
+ if(args.doc.kind!=='pages'){busy();emit('page',{page:args.doc.page-1});return}
+ const n=pageAtScroll(),box=doc.querySelector(`.pg[data-p="${n}"]`);
+ const atTop=box&&Math.abs(box.getBoundingClientRect().top-leftScroll.getBoundingClientRect().top)<24;
+ scrollToPage(atTop?Math.max(1,n-1):n);
+});
+$('next').addEventListener('click',()=>{if(args.doc.kind==='pages'){scrollToPage(Math.min(args.doc.pages,pageAtScroll()+1))}else{busy();emit('page',{page:args.doc.page+1})}});
 $('paper').addEventListener('change',e=>{busy();emit('paper',{paper:e.target.value})});
 $('view').addEventListener('change',e=>{busy();emit('view',{view:e.target.value})});
 
@@ -502,7 +541,7 @@ function onRender(next){
   docKey=args.doc.document_key;undoStack=[];
   state=args.annotations||{marks:[],updated:0};
   const loc=readHL();if(loc&&Array.isArray(loc.marks)&&loc.updated>(state.updated||0)){state=loc;setTimeout(()=>emit('highlight',{document_key:args.doc.document_key,annotations:state}),0)}
-  const keepScroll=false;leftScroll.scrollTop=keepScroll?leftScroll.scrollTop:0;
+  const keepScroll=false;leftScroll.scrollTop=keepScroll?leftScroll.scrollTop:0;pgNow=1;
   doc.classList.remove('loading');renderDoc();
  }else if((args.annotations?.updated||0)>(state.updated||0)){state=args.annotations;renderMarks()}
  doc.classList.remove('loading');
@@ -561,6 +600,32 @@ def pdf_page(data,index):
     return {'count':count,'image':'data:image/jpeg;base64,'+base64.b64encode(buf.getvalue()).decode(),'text':text}
 
 
+@st.cache_data(max_entries=3,show_spinner=False)
+def pdf_all_pages(data):
+    """Render every page once so the exam screen can show the whole paper as one scrolling column."""
+    import pypdfium2 as pdfium
+    document=pdfium.PdfDocument(data)
+    pages=[]
+    chars=0
+    try:
+        for index in range(len(document)):
+            page=document[index]
+            textpage=page.get_textpage()
+            chars+=len(textpage.get_text_range().strip())
+            textpage.close()
+            bitmap=page.render(scale=min(1.5,1100/max(page.get_width(),1)))
+            image=bitmap.to_pil()
+            buf=io.BytesIO()
+            image.save(buf,format='JPEG',quality=82)
+            pages.append({'src':'data:image/jpeg;base64,'+base64.b64encode(buf.getvalue()).decode(),'w':image.width,'h':image.height})
+            image.close()
+            bitmap.close()
+            page.close()
+    finally:
+        document.close()
+    return {'count':len(pages),'pages':pages,'can_text':chars>30}
+
+
 def validate_annotations(value,kind):
     if not isinstance(value,dict) or not isinstance(value.get('marks'),list) or len(value['marks'])>2000:
         raise ValueError('Invalid highlight state')
@@ -569,19 +634,24 @@ def validate_annotations(value,kind):
         if not isinstance(raw,dict) or raw.get('color') not in COLORS or not isinstance(raw.get('id'),str) or len(raw['id'])>80:
             raise ValueError('Invalid highlight')
         mark={'id':raw['id'],'color':raw['color']}
-        fields=['x','y','w','h'] if kind=='image' else ['start','end']
+        fields=['x','y','w','h'] if kind in ('image','pages') else ['start','end']
         for key in fields:
             v=raw.get(key)
             if not isinstance(v,(int,float)) or isinstance(v,bool) or not math.isfinite(v):
                 raise ValueError('Invalid highlight coordinate')
-            if kind=='image' and not 0<=v<=1:
+            if kind in ('image','pages') and not 0<=v<=1:
                 raise ValueError('Highlight outside page')
             if kind=='text' and (int(v)!=v or not 0<=v<=5_000_000):
                 raise ValueError('Invalid text offset')
             mark[key]=v
         if kind=='text' and mark['end']<=mark['start']:
             raise ValueError('Empty highlight')
-        if kind=='image' and (mark['w']<=0 or mark['h']<=0 or mark['x']+mark['w']>1.001 or mark['y']+mark['h']>1.001):
+        if kind=='pages':
+            page_no=raw.get('p')
+            if not isinstance(page_no,int) or isinstance(page_no,bool) or not 1<=page_no<=10000:
+                raise ValueError('Invalid page number')
+            mark['p']=page_no
+        if kind in ('image','pages') and (mark['w']<=0 or mark['h']<=0 or mark['x']+mark['w']>1.001 or mark['y']+mark['h']>1.001):
             raise ValueError('Invalid rectangle')
         marks.append(mark)
     updated=value.get('updated',0)
@@ -638,20 +708,34 @@ def highlight_reader(data,extension,rid,progress,save_callback,word_html=None):
 def prepare_document(data,extension,rid,progress,page=1,view='image',word_html=None):
     """Return what the exam screen needs to show one document, plus its stored highlights."""
     doc={'kind':'text','content':'','page':1,'pages':0,'can_text':False,'view':'text'}
+    if extension=='.pdf' and view=='image':
+        # Whole paper as one scrolling column; highlights stay stored per page for compatibility.
+        allp=pdf_all_pages(data)
+        doc.update(kind='pages',content=allp['pages'],pages=allp['count'],page=1,can_text=allp['can_text'],view='image')
+        section='pdf-all'
+        marks=[]
+        updated=0
+        saved=progress.setdefault('highlights',{}).setdefault(rid,{})
+        for number in range(1,allp['count']+1):
+            try:
+                one=validate_annotations(saved.get(f'pdf-region-{number}',{'marks':[],'updated':0}),'image')
+            except ValueError:
+                continue
+            updated=max(updated,one['updated'])
+            marks.extend({**m,'p':number} for m in one['marks'])
+        doc['document_key']=rid+':'+section
+        return doc,{'marks':marks,'updated':updated},section
     if extension=='.pdf':
         info=pdf_page(data,max(0,int(page)-1))
         count=info['count']
         page=max(1,min(int(page),count))
-        can_text=len(info['text'].strip())>30
-        if view=='text' and not can_text:
-            view='image'
-        doc.update(pages=count,page=page,can_text=can_text,view=view)
-        if view=='image':
-            doc.update(kind='image',content=info['image'])
-            section=f'pdf-region-{page}'
-        else:
-            doc.update(kind='text',content='<p>'+html.escape(info['text']).replace('\n','<br>')+'</p>')
-            section=f'pdf-text-{page}'
+        can_text=pdf_all_pages(data)['can_text']
+        if not can_text:
+            return prepare_document(data,extension,rid,progress,page,'image',word_html)
+        doc.update(pages=count,page=page,can_text=can_text,view='text')
+        text=info['text'].strip()
+        doc.update(kind='text',content='<p>'+html.escape(info['text']).replace('\n','<br>')+'</p>' if text else '<p><i>Trang này không có lớp văn bản. Chuyển sang “Trang gốc” để xem.</i></p>')
+        section=f'pdf-text-{page}'
     elif extension=='.docx':
         doc['content']=re.search(r'<body>(.*)</body>',word_html,flags=re.S)[1]
         section='word-text'
@@ -669,4 +753,16 @@ def prepare_document(data,extension,rid,progress,page=1,view='image',word_html=N
 def store_highlight(progress,rid,section,kind,annotations):
     """Validate and store one highlight state; raises ValueError when invalid."""
     clean=validate_annotations(annotations,kind)
-    progress.setdefault('highlights',{}).setdefault(rid,{})[section]=clean
+    store=progress.setdefault('highlights',{}).setdefault(rid,{})
+    if kind=='pages':
+        # The continuous view keeps one list; split it back into the per-page sections.
+        per_page={}
+        for mark in clean['marks']:
+            per_page.setdefault(mark['p'],[]).append({k:v for k,v in mark.items() if k!='p'})
+        for key in [k for k in store if k.startswith('pdf-region-')]:
+            if int(key.rsplit('-',1)[1]) not in per_page:
+                store[key]={'marks':[],'updated':clean['updated']}
+        for number,marks in per_page.items():
+            store[f'pdf-region-{number}']={'marks':marks,'updated':clean['updated']}
+        return
+    store[section]=clean
