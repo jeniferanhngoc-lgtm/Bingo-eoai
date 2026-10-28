@@ -42,7 +42,7 @@ Khi bấm **Luyện ngay**, Bingo mở màn hình làm bài toàn cửa sổ, b�
 - Công cụ highlight nằm trên đầu khung trái. Chế độ "Bút tô" bật thì bôi chọn chữ (Word/văn bản) hoặc kéo vùng (trang gốc PDF) là tô ngay.
 - Câu trả lời, highlight, đồng hồ và vị trí cuộn còn được trình duyệt giữ bản lưu phòng khi trang tải lại.
 
-Màn hình này là một component riêng ở `components/exam/index.html`, CSS cho phần Streamlit bao quanh ở `assets/exam.css`. Các tham số truyền vào component được giữ cố định giữa các lần rerun, vì Streamlit dùng chúng để định danh component và sẽ tải lại iframe (mất vị trí cuộn, mất con trỏ) nếu chúng đổi.
+Màn hình này là một component riêng ở `components/exam/index.html`, CSS cho phần Streamlit bao quanh nằm trong `app.py` (`EXAM_CSS`). Các tham số truyền vào component được giữ cố định giữa các lần rerun, vì Streamlit dùng chúng để định danh component và sẽ tải lại iframe (mất vị trí cuộn, mất con trỏ) nếu chúng đổi.
 
 ## Dữ liệu
 

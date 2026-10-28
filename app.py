@@ -362,8 +362,28 @@ def result_view(item,test):
         st.rerun()
 
 
+EXAM_CSS = """/* Exam mode: the window is the exam room. Only the two panes inside the exam component scroll. */
+html,body,.stApp,[data-testid="stApp"],[data-testid="stAppViewContainer"],[data-testid="stMain"],section.main,.stMain{overflow:hidden!important;height:100vh!important;max-height:100vh!important;background:#fff!important}
+[data-testid="stHeader"],[data-testid="stToolbar"],[data-testid="stDecoration"],[data-testid="stStatusWidget"],.dreamy-header,.st-key-dreamy-nav,.footer{display:none!important}
+.block-container,[data-testid="stMainBlockContainer"]{max-width:100%!important;width:100%!important;padding:0!important;margin:0!important;min-height:0!important;box-shadow:none!important;background:#fff!important}
+[data-testid="stMain"]{background:#fff!important}
+[data-testid="stMainBlockContainer"] [data-testid="stVerticalBlock"],.block-container [data-testid="stVerticalBlock"]{gap:0!important}
+/* never fade the exam while Streamlit is working */
+[data-stale="true"],[data-testid="stElementContainer"][data-stale="true"]{opacity:1!important;transition:none!important}
+[data-testid="stElementContainer"]:has(iframe){margin:0!important;line-height:0}
+iframe{border:0!important;display:block}
+/* Listening: compact audio strip above the exam */
+.st-key-exam-audio{background:#f1f1f1;border-bottom:1px solid #ddd;padding:6px 14px 4px}
+.st-key-exam-audio [data-testid="stHorizontalBlock"]{gap:12px!important;align-items:center}
+.st-key-exam-audio [data-testid="stSelectbox"] label{display:none}
+.st-key-exam-audio audio{width:100%;height:40px}
+.st-key-exam-audio [data-testid="stAudio"],.st-key-exam-audio [data-testid="stAudio"] audio{margin:0}
+.st-key-exam-audio [data-testid="stCaptionContainer"]{margin:0}
+"""
+
+
 def exam_css():
-    return '<style>'+(ROOT/'assets/exam.css').read_text(encoding='utf-8')+'</style>'
+    return '<style>'+EXAM_CSS+'</style>'
 
 
 def practice(test):
