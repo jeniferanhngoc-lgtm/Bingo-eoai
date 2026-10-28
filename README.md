@@ -48,8 +48,8 @@ Màn hình này là một component riêng, mã HTML nằm trong `reader.py` (`E
 
 Đã lập danh mục từ hai ZIP do chủ ứng dụng cung cấp:
 
-- 88 bài Reading, 58 bài Listening.
-- 70 bài có khóa chấm tự động đủ 40 câu; các bài khác hiển thị rõ số câu có thể chấm, không tính band toàn bài nếu thiếu khóa.
+- 112 bài Reading, 58 bài Listening.
+- 94 bài có khóa chấm tự động đủ 40 câu; các bài khác hiển thị rõ số câu có thể chấm, không tính band toàn bài nếu thiếu khóa.
 - 57 bài Listening có audio; bài chưa có audio được gắn cảnh báo.
 - Nhiều bài chỉ có audio một số phần. Bingo hiển thị các phần còn thiếu theo tên file và sắp xếp bản ghi theo số phần.
 - Một số PDF chứa cả Listening và Reading: chọn đúng trang/phần theo kỹ năng.
@@ -108,3 +108,7 @@ Khi đề là file `.docx`, `questions.py` tự tách câu hỏi (câu "N nội 
 ## Reading Word: VOL 3–5
 
 Đã bổ sung 30 đề Word (Test 1–10 của VOL 3, 4, 5). Mỗi bài ưu tiên mở Word để dùng giao diện câu hỏi và highlight chữ, đồng thời giữ PDF gốc trong danh sách tài liệu. Đáp án Excel được nhập theo số câu trong từng sheet; ô có số câu trùng/lệch hoặc thiếu được bỏ qua, không suy đoán. Chi tiết kỹ thuật nằm trong `key_import_notes` của catalog. Hai catalog triển khai (`data/catalog.json` và `catalog.json`) được đồng bộ. Các highlight cũ vẫn gắn với tài liệu gốc của chúng.
+
+## Cambridge Reading
+
+Bổ sung CAM 14, 15, 16, 17, 18 và 20, mỗi bộ 4 test Reading Word với 40 đáp án. Chọn tên CAM trong bộ lọc Bộ đề; highlight bài đọc và câu hỏi như các đề Word khác. Sáu ZIP này không chứa Listening/audio. Tài liệu gốc và khóa đáp án nằm trong 24 gói AES-256-GCM trên Releases; khóa giải mã giữ trong Streamlit Secrets.

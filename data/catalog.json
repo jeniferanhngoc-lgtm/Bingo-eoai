@@ -13535,6 +13535,3503 @@
       "key_source": "06618527b19f5d85",
       "key_count": 29,
       "has_audio": false
+    },
+    {
+      "id": "reading-cam14-t1",
+      "skill": "reading",
+      "collection": "cambridge",
+      "volume": 14,
+      "number": 1,
+      "title": "CAM 14 · Test 1",
+      "resources": [
+        "f069925f1ffb6243",
+        "e6a07a5575fd6faa"
+      ],
+      "answers": {
+        "1": [
+          "creativity"
+        ],
+        "2": [
+          "rules"
+        ],
+        "3": [
+          "cities"
+        ],
+        "4": [
+          "traffic"
+        ],
+        "5": [
+          "crime"
+        ],
+        "6": [
+          "competition"
+        ],
+        "7": [
+          "evidence"
+        ],
+        "8": [
+          "life"
+        ],
+        "9": [
+          "TRUE"
+        ],
+        "10": [
+          "TRUE"
+        ],
+        "11": [
+          "NOT GIVEN"
+        ],
+        "12": [
+          "FALSE"
+        ],
+        "13": [
+          "TRUE"
+        ],
+        "14": [
+          "E"
+        ],
+        "15": [
+          "C"
+        ],
+        "16": [
+          "FALSE"
+        ],
+        "17": [
+          "C"
+        ],
+        "18": [
+          "A"
+        ],
+        "19": [
+          "B"
+        ],
+        "20": [
+          "D"
+        ],
+        "21": [
+          "D"
+        ],
+        "22": [
+          "E"
+        ],
+        "23": [
+          "activists"
+        ],
+        "24": [
+          "consumerism"
+        ],
+        "25": [
+          "leaflets"
+        ],
+        "26": [
+          "police"
+        ],
+        "27": [
+          "E"
+        ],
+        "28": [
+          "D"
+        ],
+        "29": [
+          "B"
+        ],
+        "30": [
+          "D"
+        ],
+        "31": [
+          "C"
+        ],
+        "32": [
+          "YES"
+        ],
+        "33": [
+          "NO"
+        ],
+        "34": [
+          "NO"
+        ],
+        "35": [
+          "NOT GIVEN"
+        ],
+        "36": [
+          "restaurants"
+        ],
+        "37": [
+          "performance"
+        ],
+        "38": [
+          "turnover"
+        ],
+        "39": [
+          "goals"
+        ],
+        "40": [
+          "characteristics"
+        ]
+      },
+      "groups": [],
+      "has_audio": false,
+      "preferred_paper": "f069925f1ffb6243",
+      "key_source": "e6a07a5575fd6faa",
+      "key_count": 40,
+      "pack": "reading-cam14-t1-ced41cb70f66.bingo"
+    },
+    {
+      "id": "reading-cam14-t2",
+      "skill": "reading",
+      "collection": "cambridge",
+      "volume": 14,
+      "number": 2,
+      "title": "CAM 14 · Test 2",
+      "resources": [
+        "c16dcf3b61040f76",
+        "9695360022fbbdd7"
+      ],
+      "answers": {
+        "1": [
+          "FALSE"
+        ],
+        "2": [
+          "TRUE"
+        ],
+        "3": [
+          "NOT GIVEN"
+        ],
+        "4": [
+          "FALSE"
+        ],
+        "5": [
+          "NOT GIVEN"
+        ],
+        "6": [
+          "TRUE"
+        ],
+        "7": [
+          "FALSE"
+        ],
+        "8": [
+          "TRUE"
+        ],
+        "9": [
+          "merchant"
+        ],
+        "10": [
+          "equipment"
+        ],
+        "11": [
+          "gifts"
+        ],
+        "12": [
+          "canoe"
+        ],
+        "13": [
+          "mountains"
+        ],
+        "14": [
+          "FALSE"
+        ],
+        "15": [
+          "C"
+        ],
+        "16": [
+          "E"
+        ],
+        "17": [
+          "D"
+        ],
+        "18": [
+          "B"
+        ],
+        "19": [
+          "design(s)"
+        ],
+        "20": [
+          "pathogens"
+        ],
+        "21": [
+          "tuberculosis"
+        ],
+        "22": [
+          "wards"
+        ],
+        "23": [
+          "communal"
+        ],
+        "24": [
+          "public"
+        ],
+        "25": [
+          "miasmas"
+        ],
+        "26": [
+          "cholera"
+        ],
+        "27": [
+          "vi"
+        ],
+        "28": [
+          "i"
+        ],
+        "29": [
+          "iii"
+        ],
+        "30": [
+          "ii"
+        ],
+        "31": [
+          "ix"
+        ],
+        "32": [
+          "vii"
+        ],
+        "33": [
+          "iv"
+        ],
+        "34": [
+          "viii"
+        ],
+        "35": [
+          "productive"
+        ],
+        "36": [
+          "perfectionists"
+        ],
+        "37": [
+          "dissatisfied"
+        ],
+        "38": [
+          "TRUE"
+        ],
+        "39": [
+          "FALSE"
+        ],
+        "40": [
+          "NOT GIVEN"
+        ]
+      },
+      "groups": [],
+      "has_audio": false,
+      "preferred_paper": "c16dcf3b61040f76",
+      "key_source": "9695360022fbbdd7",
+      "key_count": 40,
+      "pack": "reading-cam14-t2-be26a15bbcd6.bingo"
+    },
+    {
+      "id": "reading-cam14-t3",
+      "skill": "reading",
+      "collection": "cambridge",
+      "volume": 14,
+      "number": 3,
+      "title": "CAM 14 · Test 3",
+      "resources": [
+        "eb0e94d66dd0eff1",
+        "a8d77e0876986d48"
+      ],
+      "answers": {
+        "1": [
+          "B"
+        ],
+        "2": [
+          "A"
+        ],
+        "3": [
+          "D"
+        ],
+        "4": [
+          "NOT GIVEN"
+        ],
+        "5": [
+          "NO"
+        ],
+        "6": [
+          "YES"
+        ],
+        "7": [
+          "B"
+        ],
+        "8": [
+          "C"
+        ],
+        "9": [
+          "B"
+        ],
+        "10": [
+          "A"
+        ],
+        "11": [
+          "A"
+        ],
+        "12": [
+          "C"
+        ],
+        "13": [
+          "A"
+        ],
+        "14": [
+          "C"
+        ],
+        "15": [
+          "H"
+        ],
+        "16": [
+          "A"
+        ],
+        "17": [
+          "FALSE"
+        ],
+        "18": [
+          "I"
+        ],
+        "19": [
+          "B"
+        ],
+        "20": [
+          "E"
+        ],
+        "21": [
+          "B"
+        ],
+        "22": [
+          "C"
+        ],
+        "23": [
+          "ecology"
+        ],
+        "24": [
+          "prey"
+        ],
+        "25": [
+          "habitats"
+        ],
+        "26": [
+          "antibiotics"
+        ],
+        "27": [
+          "B"
+        ],
+        "28": [
+          "G"
+        ],
+        "29": [
+          "FALSE"
+        ],
+        "30": [
+          "E"
+        ],
+        "31": [
+          "C"
+        ],
+        "32": [
+          "NO"
+        ],
+        "33": [
+          "YES"
+        ],
+        "34": [
+          "NOT GIVEN"
+        ],
+        "35": [
+          "NO"
+        ],
+        "36": [
+          "YES"
+        ],
+        "37": [
+          "encouraging"
+        ],
+        "38": [
+          "desire"
+        ],
+        "39": [
+          "autonomy"
+        ],
+        "40": [
+          "targeted"
+        ]
+      },
+      "groups": [],
+      "has_audio": false,
+      "preferred_paper": "eb0e94d66dd0eff1",
+      "key_source": "a8d77e0876986d48",
+      "key_count": 40,
+      "pack": "reading-cam14-t3-9acfe5a8315e.bingo"
+    },
+    {
+      "id": "reading-cam14-t4",
+      "skill": "reading",
+      "collection": "cambridge",
+      "volume": 14,
+      "number": 4,
+      "title": "CAM 14 · Test 4",
+      "resources": [
+        "58281d3dc7d3c1a4",
+        "90eb88b01d90145b"
+      ],
+      "answers": {
+        "1": [
+          "four",
+          "4"
+        ],
+        "2": [
+          "young"
+        ],
+        "3": [
+          "food"
+        ],
+        "4": [
+          "light"
+        ],
+        "5": [
+          "aggressively"
+        ],
+        "6": [
+          "location"
+        ],
+        "7": [
+          "neurons"
+        ],
+        "8": [
+          "chemicals"
+        ],
+        "9": [
+          "FALSE"
+        ],
+        "10": [
+          "TRUE"
+        ],
+        "11": [
+          "FALSE"
+        ],
+        "12": [
+          "NOT GIVEN"
+        ],
+        "13": [
+          "TRUE"
+        ],
+        "14": [
+          "B"
+        ],
+        "15": [
+          "E"
+        ],
+        "16": [
+          "C"
+        ],
+        "17": [
+          "A"
+        ],
+        "18": [
+          "TRUE"
+        ],
+        "19": [
+          "TRUE"
+        ],
+        "20": [
+          "NOT GIVEN"
+        ],
+        "21": [
+          "FALSE"
+        ],
+        "22": [
+          "NOT GIVEN"
+        ],
+        "23": [
+          "B"
+        ],
+        "24": [
+          "D"
+        ],
+        "25": [
+          "B"
+        ],
+        "26": [
+          "E"
+        ],
+        "27": [
+          "FALSE"
+        ],
+        "28": [
+          "NOT GIVEN"
+        ],
+        "29": [
+          "FALSE"
+        ],
+        "30": [
+          "TRUE"
+        ],
+        "31": [
+          "FALSE"
+        ],
+        "32": [
+          "TRUE"
+        ],
+        "33": [
+          "NOT GIVEN"
+        ],
+        "34": [
+          "large"
+        ],
+        "35": [
+          "microplastic"
+        ],
+        "36": [
+          "populations"
+        ],
+        "37": [
+          "concentrations"
+        ],
+        "38": [
+          "predators"
+        ],
+        "39": [
+          "disasters"
+        ],
+        "40": [
+          "A"
+        ]
+      },
+      "groups": [],
+      "has_audio": false,
+      "preferred_paper": "58281d3dc7d3c1a4",
+      "key_source": "90eb88b01d90145b",
+      "key_count": 40,
+      "pack": "reading-cam14-t4-9aa5295c8f8e.bingo"
+    },
+    {
+      "id": "reading-cam15-t1",
+      "skill": "reading",
+      "collection": "cambridge",
+      "volume": 15,
+      "number": 1,
+      "title": "CAM 15 · Test 1",
+      "resources": [
+        "21cf97c271c1afa2",
+        "0d2d3d324fd6f4a9"
+      ],
+      "answers": {
+        "1": [
+          "oval"
+        ],
+        "2": [
+          "husk"
+        ],
+        "3": [
+          "seed"
+        ],
+        "4": [
+          "mace"
+        ],
+        "5": [
+          "FALSE"
+        ],
+        "6": [
+          "NOT GIVEN"
+        ],
+        "7": [
+          "TRUE"
+        ],
+        "8": [
+          "Arabs"
+        ],
+        "9": [
+          "plague"
+        ],
+        "10": [
+          "lime"
+        ],
+        "11": [
+          "Run"
+        ],
+        "12": [
+          "Mauritius"
+        ],
+        "13": [
+          "tsunami"
+        ],
+        "14": [
+          "C"
+        ],
+        "15": [
+          "B"
+        ],
+        "16": [
+          "E"
+        ],
+        "17": [
+          "G"
+        ],
+        "18": [
+          "D"
+        ],
+        "19": [
+          "human error"
+        ],
+        "20": [
+          "car (-) sharing"
+        ],
+        "21": [
+          "ownership"
+        ],
+        "22": [
+          "mileage"
+        ],
+        "23": [
+          "C"
+        ],
+        "24": [
+          "D"
+        ],
+        "25": [
+          "A"
+        ],
+        "26": [
+          "E"
+        ],
+        "27": [
+          "A"
+        ],
+        "28": [
+          "C"
+        ],
+        "29": [
+          "C"
+        ],
+        "30": [
+          "D"
+        ],
+        "31": [
+          "A"
+        ],
+        "32": [
+          "B"
+        ],
+        "33": [
+          "E"
+        ],
+        "34": [
+          "A"
+        ],
+        "35": [
+          "D"
+        ],
+        "36": [
+          "E"
+        ],
+        "37": [
+          "B"
+        ],
+        "38": [
+          "(unique) expeditions"
+        ],
+        "39": [
+          "uncontacted",
+          "isolated"
+        ],
+        "40": [
+          "(land) surface"
+        ]
+      },
+      "groups": [],
+      "has_audio": false,
+      "preferred_paper": "21cf97c271c1afa2",
+      "key_source": "0d2d3d324fd6f4a9",
+      "key_count": 40,
+      "pack": "reading-cam15-t1-063d1029f87a.bingo"
+    },
+    {
+      "id": "reading-cam15-t2",
+      "skill": "reading",
+      "collection": "cambridge",
+      "volume": 15,
+      "number": 2,
+      "title": "CAM 15 · Test 2",
+      "resources": [
+        "2afa3a6d77febb58",
+        "e0c8f60be7763616"
+      ],
+      "answers": {
+        "1": [
+          "B"
+        ],
+        "2": [
+          "C"
+        ],
+        "3": [
+          "FALSE"
+        ],
+        "4": [
+          "D"
+        ],
+        "5": [
+          "E"
+        ],
+        "6": [
+          "A"
+        ],
+        "7": [
+          "safety"
+        ],
+        "8": [
+          "traffic"
+        ],
+        "9": [
+          "carriageway"
+        ],
+        "10": [
+          "mobile"
+        ],
+        "11": [
+          "dangerous"
+        ],
+        "12": [
+          "communities"
+        ],
+        "13": [
+          "healthy"
+        ],
+        "14": [
+          "FALSE"
+        ],
+        "15": [
+          "A"
+        ],
+        "16": [
+          "D"
+        ],
+        "17": [
+          "A"
+        ],
+        "18": [
+          "genetic traits"
+        ],
+        "19": [
+          "heat loss"
+        ],
+        "20": [
+          "ears"
+        ],
+        "21": [
+          "(insulating) fat"
+        ],
+        "22": [
+          "(carbon) emissions"
+        ],
+        "23": [
+          "B"
+        ],
+        "24": [
+          "C"
+        ],
+        "25": [
+          "A"
+        ],
+        "26": [
+          "C"
+        ],
+        "27": [
+          "C"
+        ],
+        "28": [
+          "A"
+        ],
+        "29": [
+          "B"
+        ],
+        "30": [
+          "B"
+        ],
+        "31": [
+          "D"
+        ],
+        "32": [
+          "FALSE"
+        ],
+        "33": [
+          "H"
+        ],
+        "34": [
+          "C"
+        ],
+        "35": [
+          "D"
+        ],
+        "36": [
+          "E"
+        ],
+        "37": [
+          "NOT GIVEN"
+        ],
+        "38": [
+          "TRUE"
+        ],
+        "39": [
+          "FALSE"
+        ],
+        "40": [
+          "FALSE"
+        ]
+      },
+      "groups": [],
+      "has_audio": false,
+      "preferred_paper": "2afa3a6d77febb58",
+      "key_source": "e0c8f60be7763616",
+      "key_count": 40,
+      "pack": "reading-cam15-t2-f60f4cba8ed0.bingo"
+    },
+    {
+      "id": "reading-cam15-t3",
+      "skill": "reading",
+      "collection": "cambridge",
+      "volume": 15,
+      "number": 3,
+      "title": "CAM 15 · Test 3",
+      "resources": [
+        "e8864b6b1d616efc",
+        "8527b676fd69b336"
+      ],
+      "answers": {
+        "1": [
+          "TRUE"
+        ],
+        "2": [
+          "FALSE"
+        ],
+        "3": [
+          "NOT GIVEN"
+        ],
+        "4": [
+          "TRUE"
+        ],
+        "5": [
+          "NOT GIVEN"
+        ],
+        "6": [
+          "FALSE"
+        ],
+        "7": [
+          "TRUE"
+        ],
+        "8": [
+          "resignation"
+        ],
+        "9": [
+          "materials"
+        ],
+        "10": [
+          "miners"
+        ],
+        "11": [
+          "family"
+        ],
+        "12": [
+          "collectors"
+        ],
+        "13": [
+          "income"
+        ],
+        "14": [
+          "iii"
+        ],
+        "15": [
+          "vi"
+        ],
+        "16": [
+          "v"
+        ],
+        "17": [
+          "x"
+        ],
+        "18": [
+          "iv"
+        ],
+        "19": [
+          "viii"
+        ],
+        "20": [
+          "i"
+        ],
+        "21": [
+          "wheels"
+        ],
+        "22": [
+          "film"
+        ],
+        "23": [
+          "filter"
+        ],
+        "24": [
+          "waste"
+        ],
+        "25": [
+          "performance"
+        ],
+        "26": [
+          "servicing"
+        ],
+        "27": [
+          "C"
+        ],
+        "28": [
+          "B"
+        ],
+        "29": [
+          "FALSE"
+        ],
+        "30": [
+          "A"
+        ],
+        "31": [
+          "E"
+        ],
+        "32": [
+          "D"
+        ],
+        "33": [
+          "FALSE"
+        ],
+        "34": [
+          "B"
+        ],
+        "35": [
+          "C"
+        ],
+        "36": [
+          "G"
+        ],
+        "37": [
+          "B"
+        ],
+        "38": [
+          "D"
+        ],
+        "39": [
+          "A"
+        ],
+        "40": [
+          "A"
+        ]
+      },
+      "groups": [],
+      "has_audio": false,
+      "preferred_paper": "e8864b6b1d616efc",
+      "key_source": "8527b676fd69b336",
+      "key_count": 40,
+      "pack": "reading-cam15-t3-ff3aab1778b3.bingo"
+    },
+    {
+      "id": "reading-cam15-t4",
+      "skill": "reading",
+      "collection": "cambridge",
+      "volume": 15,
+      "number": 4,
+      "title": "CAM 15 · Test 4",
+      "resources": [
+        "4c1e0973e9cde5fc",
+        "3f2840a73ac6c884"
+      ],
+      "answers": {
+        "1": [
+          "water"
+        ],
+        "2": [
+          "diet"
+        ],
+        "3": [
+          "drought"
+        ],
+        "4": [
+          "erosion"
+        ],
+        "5": [
+          "desert"
+        ],
+        "6": [
+          "its branches",
+          "huarango branches",
+          "the branches"
+        ],
+        "7": [
+          "leaves and bark",
+          "leaves bark",
+          "bark and leaves",
+          "bark leaves"
+        ],
+        "8": [
+          "its trunk",
+          "huarango trunk",
+          "the trunk"
+        ],
+        "9": [
+          "NOT GIVEN"
+        ],
+        "10": [
+          "FALSE"
+        ],
+        "11": [
+          "TRUE"
+        ],
+        "12": [
+          "FALSE"
+        ],
+        "13": [
+          "NOT GIVEN"
+        ],
+        "14": [
+          "NOT GIVEN"
+        ],
+        "15": [
+          "FALSE"
+        ],
+        "16": [
+          "TRUE"
+        ],
+        "17": [
+          "FALSE"
+        ],
+        "18": [
+          "FALSE"
+        ],
+        "19": [
+          "TRUE"
+        ],
+        "20": [
+          "words"
+        ],
+        "21": [
+          "finger"
+        ],
+        "22": [
+          "direction"
+        ],
+        "23": [
+          "commands"
+        ],
+        "24": [
+          "fires"
+        ],
+        "25": [
+          "technology"
+        ],
+        "26": [
+          "award"
+        ],
+        "27": [
+          "D"
+        ],
+        "28": [
+          "E"
+        ],
+        "29": [
+          "FALSE"
+        ],
+        "30": [
+          "H"
+        ],
+        "31": [
+          "B"
+        ],
+        "32": [
+          "C"
+        ],
+        "33": [
+          "D"
+        ],
+        "34": [
+          "B"
+        ],
+        "35": [
+          "YES"
+        ],
+        "36": [
+          "NOT GIVEN"
+        ],
+        "37": [
+          "NO"
+        ],
+        "38": [
+          "YES"
+        ],
+        "39": [
+          "NOT GIVEN"
+        ],
+        "40": [
+          "D"
+        ]
+      },
+      "groups": [],
+      "has_audio": false,
+      "preferred_paper": "4c1e0973e9cde5fc",
+      "key_source": "3f2840a73ac6c884",
+      "key_count": 40,
+      "pack": "reading-cam15-t4-f679c8a80412.bingo"
+    },
+    {
+      "id": "reading-cam16-t1",
+      "skill": "reading",
+      "collection": "cambridge",
+      "volume": 16,
+      "number": 1,
+      "title": "CAM 16 · Test 1",
+      "resources": [
+        "b82b82fed0be83d9",
+        "15842e46905661e6"
+      ],
+      "answers": {
+        "1": [
+          "FALSE"
+        ],
+        "11": [
+          "Photographer"
+        ],
+        "21": [
+          "city"
+        ],
+        "31": [
+          "G"
+        ],
+        "2": [
+          "FALSE"
+        ],
+        "12": [
+          "game"
+        ],
+        "22": [
+          "priests"
+        ],
+        "32": [
+          "E"
+        ],
+        "3": [
+          "Not given"
+        ],
+        "13": [
+          "frustration"
+        ],
+        "23": [
+          "trench"
+        ],
+        "33": [
+          "C"
+        ],
+        "4": [
+          "TRUE"
+        ],
+        "14": [
+          "IV"
+        ],
+        "24": [
+          "location"
+        ],
+        "34": [
+          "FALSE"
+        ],
+        "5": [
+          "TRUE"
+        ],
+        "15": [
+          "VII"
+        ],
+        "25": [
+          "B"
+        ],
+        "35": [
+          "B"
+        ],
+        "6": [
+          "FALSE"
+        ],
+        "16": [
+          "II"
+        ],
+        "26": [
+          "D"
+        ],
+        "36": [
+          "A"
+        ],
+        "7": [
+          "TRUE"
+        ],
+        "17": [
+          "V"
+        ],
+        "27": [
+          "B"
+        ],
+        "37": [
+          "C"
+        ],
+        "8": [
+          "violent"
+        ],
+        "18": [
+          "I"
+        ],
+        "28": [
+          "D"
+        ],
+        "38": [
+          "A"
+        ],
+        "9": [
+          "tool"
+        ],
+        "19": [
+          "VIII"
+        ],
+        "29": [
+          "C"
+        ],
+        "39": [
+          "B"
+        ],
+        "10": [
+          "meat"
+        ],
+        "20": [
+          "VI"
+        ],
+        "30": [
+          "D"
+        ],
+        "40": [
+          "C"
+        ]
+      },
+      "groups": [],
+      "has_audio": false,
+      "preferred_paper": "b82b82fed0be83d9",
+      "key_source": "15842e46905661e6",
+      "key_count": 40,
+      "pack": "reading-cam16-t1-0f8e023e0765.bingo"
+    },
+    {
+      "id": "reading-cam16-t2",
+      "skill": "reading",
+      "collection": "cambridge",
+      "volume": 16,
+      "number": 2,
+      "title": "CAM 16 · Test 2",
+      "resources": [
+        "2c141e9926234848",
+        "c1a172a4b41b5a22"
+      ],
+      "answers": {
+        "1": [
+          "TRUE"
+        ],
+        "11": [
+          "soil"
+        ],
+        "21": [
+          "Yes"
+        ],
+        "31": [
+          "creativity"
+        ],
+        "2": [
+          "Not given"
+        ],
+        "12": [
+          "fertility"
+        ],
+        "22": [
+          "No"
+        ],
+        "32": [
+          "therapy"
+        ],
+        "3": [
+          "TRUE"
+        ],
+        "13": [
+          "Rhiannon"
+        ],
+        "23": [
+          "Not given"
+        ],
+        "33": [
+          "fitness"
+        ],
+        "4": [
+          "FALSE"
+        ],
+        "14": [
+          "D"
+        ],
+        "24": [
+          "Yes"
+        ],
+        "34": [
+          "balance"
+        ],
+        "5": [
+          "FALSE"
+        ],
+        "15": [
+          "C"
+        ],
+        "25": [
+          "Not given"
+        ],
+        "35": [
+          "stone"
+        ],
+        "6": [
+          "TRUE"
+        ],
+        "16": [
+          "A"
+        ],
+        "26": [
+          "No"
+        ],
+        "36": [
+          "motivation"
+        ],
+        "7": [
+          "TRUE"
+        ],
+        "17": [
+          "G"
+        ],
+        "27": [
+          "humans",
+          "people"
+        ],
+        "37": [
+          "isolation"
+        ],
+        "8": [
+          "Not given"
+        ],
+        "18": [
+          "B"
+        ],
+        "28": [
+          "stress"
+        ],
+        "38": [
+          "calories"
+        ],
+        "9": [
+          "Ridgeway"
+        ],
+        "19": [
+          "H"
+        ],
+        "29": [
+          "graph"
+        ],
+        "39": [
+          "obesity"
+        ],
+        "10": [
+          "documents"
+        ],
+        "20": [
+          "E"
+        ],
+        "30": [
+          "evaluate"
+        ],
+        "40": [
+          "habit"
+        ]
+      },
+      "groups": [],
+      "has_audio": false,
+      "preferred_paper": "2c141e9926234848",
+      "key_source": "c1a172a4b41b5a22",
+      "key_count": 40,
+      "pack": "reading-cam16-t2-4da829f1b89d.bingo"
+    },
+    {
+      "id": "reading-cam16-t3",
+      "skill": "reading",
+      "collection": "cambridge",
+      "volume": 16,
+      "number": 3,
+      "title": "CAM 16 · Test 3",
+      "resources": [
+        "55c121665d38ce2c",
+        "e2998ad8105dfbc5"
+      ],
+      "answers": {
+        "1": [
+          "FALSE"
+        ],
+        "2": [
+          "NOT GIVEN"
+        ],
+        "3": [
+          "FALSE"
+        ],
+        "4": [
+          "TRUE"
+        ],
+        "5": [
+          "TRUE"
+        ],
+        "6": [
+          "lightweight"
+        ],
+        "7": [
+          "bronze"
+        ],
+        "8": [
+          "levels"
+        ],
+        "9": [
+          "hull"
+        ],
+        "10": [
+          "triangular"
+        ],
+        "11": [
+          "music"
+        ],
+        "12": [
+          "grain"
+        ],
+        "13": [
+          "towboats"
+        ],
+        "14": [
+          "D"
+        ],
+        "15": [
+          "C"
+        ],
+        "16": [
+          "FALSE"
+        ],
+        "17": [
+          "H"
+        ],
+        "18": [
+          "G"
+        ],
+        "19": [
+          "B"
+        ],
+        "20": [
+          "microorganisms",
+          "micro-organisms"
+        ],
+        "21": [
+          "reindeer"
+        ],
+        "22": [
+          "insects"
+        ],
+        "23": [
+          "B"
+        ],
+        "24": [
+          "C"
+        ],
+        "25": [
+          "A"
+        ],
+        "26": [
+          "C"
+        ],
+        "27": [
+          "NOT GIVEN"
+        ],
+        "28": [
+          "TRUE"
+        ],
+        "29": [
+          "TRUE"
+        ],
+        "30": [
+          "NOT GIVEN"
+        ],
+        "31": [
+          "FALSE"
+        ],
+        "32": [
+          "FALSE"
+        ],
+        "33": [
+          "H"
+        ],
+        "34": [
+          "D"
+        ],
+        "35": [
+          "G"
+        ],
+        "36": [
+          "C"
+        ],
+        "37": [
+          "A"
+        ],
+        "38": [
+          "warm (winter)"
+        ],
+        "39": [
+          "summer"
+        ],
+        "40": [
+          "mustard plant(s)",
+          "mustard"
+        ]
+      },
+      "groups": [
+        {
+          "numbers": [
+            23,
+            24
+          ],
+          "answers": [
+            "B",
+            "C"
+          ]
+        },
+        {
+          "numbers": [
+            25,
+            26
+          ],
+          "answers": [
+            "A",
+            "C"
+          ]
+        }
+      ],
+      "has_audio": false,
+      "preferred_paper": "55c121665d38ce2c",
+      "key_source": "e2998ad8105dfbc5",
+      "key_count": 40,
+      "pack": "reading-cam16-t3-20a93689a263.bingo"
+    },
+    {
+      "id": "reading-cam16-t4",
+      "skill": "reading",
+      "collection": "cambridge",
+      "volume": 16,
+      "number": 4,
+      "title": "CAM 16 · Test 4",
+      "resources": [
+        "40c4a380f67e5a4b",
+        "9fc73af0ccfa0cd0"
+      ],
+      "answers": {
+        "1": [
+          "posts"
+        ],
+        "2": [
+          "canal"
+        ],
+        "3": [
+          "ventilation"
+        ],
+        "4": [
+          "lid"
+        ],
+        "5": [
+          "weight"
+        ],
+        "6": [
+          "climbing"
+        ],
+        "7": [
+          "FALSE"
+        ],
+        "8": [
+          "NOT GIVEN"
+        ],
+        "9": [
+          "FALSE"
+        ],
+        "10": [
+          "TRUE"
+        ],
+        "11": [
+          "gold"
+        ],
+        "12": [
+          "(the) architect(‘s) (name)"
+        ],
+        "13": [
+          "(the) harbour",
+          "harbor"
+        ],
+        "14": [
+          "A"
+        ],
+        "15": [
+          "B"
+        ],
+        "16": [
+          "D"
+        ],
+        "17": [
+          "B"
+        ],
+        "18": [
+          "D"
+        ],
+        "19": [
+          "H"
+        ],
+        "20": [
+          "FALSE"
+        ],
+        "21": [
+          "B"
+        ],
+        "22": [
+          "C"
+        ],
+        "23": [
+          "YES"
+        ],
+        "24": [
+          "NO"
+        ],
+        "25": [
+          "NOT GIVEN"
+        ],
+        "26": [
+          "YES"
+        ],
+        "27": [
+          "iii"
+        ],
+        "28": [
+          "vi"
+        ],
+        "29": [
+          "ii"
+        ],
+        "30": [
+          "i"
+        ],
+        "31": [
+          "vii"
+        ],
+        "32": [
+          "v"
+        ],
+        "33": [
+          "C"
+        ],
+        "34": [
+          "B"
+        ],
+        "35": [
+          "A"
+        ],
+        "36": [
+          "NO"
+        ],
+        "37": [
+          "NOT GIVEN"
+        ],
+        "38": [
+          "YES"
+        ],
+        "39": [
+          "NO"
+        ],
+        "40": [
+          "YES"
+        ]
+      },
+      "groups": [],
+      "has_audio": false,
+      "preferred_paper": "40c4a380f67e5a4b",
+      "key_source": "9fc73af0ccfa0cd0",
+      "key_count": 40,
+      "pack": "reading-cam16-t4-1f1141dd1e17.bingo"
+    },
+    {
+      "id": "reading-cam17-t1",
+      "skill": "reading",
+      "collection": "cambridge",
+      "volume": 17,
+      "number": 1,
+      "title": "CAM 17 · Test 1",
+      "resources": [
+        "3f5410c7d9e060ca",
+        "4c40e0bcdb6aba59"
+      ],
+      "answers": {
+        "1": [
+          "population"
+        ],
+        "2": [
+          "suburbs"
+        ],
+        "3": [
+          "businessmen"
+        ],
+        "4": [
+          "funding"
+        ],
+        "5": [
+          "press"
+        ],
+        "6": [
+          "soil"
+        ],
+        "7": [
+          "FALSE"
+        ],
+        "8": [
+          "NOT GIVEN"
+        ],
+        "9": [
+          "TRUE"
+        ],
+        "10": [
+          "TRUE"
+        ],
+        "11": [
+          "FALSE"
+        ],
+        "12": [
+          "FALSE"
+        ],
+        "13": [
+          "NOT GIVEN"
+        ],
+        "14": [
+          "A"
+        ],
+        "15": [
+          "FALSE"
+        ],
+        "16": [
+          "E"
+        ],
+        "17": [
+          "D"
+        ],
+        "18": [
+          "fortress"
+        ],
+        "19": [
+          "bullfights"
+        ],
+        "20": [
+          "opera"
+        ],
+        "21": [
+          "salt"
+        ],
+        "22": [
+          "shops"
+        ],
+        "23": [
+          "C"
+        ],
+        "24": [
+          "D"
+        ],
+        "25": [
+          "B"
+        ],
+        "26": [
+          "E"
+        ],
+        "27": [
+          "H"
+        ],
+        "28": [
+          "J"
+        ],
+        "29": [
+          "FALSE"
+        ],
+        "30": [
+          "B"
+        ],
+        "31": [
+          "D"
+        ],
+        "32": [
+          "NOT GIVEN"
+        ],
+        "33": [
+          "NO"
+        ],
+        "34": [
+          "NO"
+        ],
+        "35": [
+          "YES"
+        ],
+        "36": [
+          "B"
+        ],
+        "37": [
+          "C"
+        ],
+        "38": [
+          "A"
+        ],
+        "39": [
+          "B"
+        ],
+        "40": [
+          "D"
+        ]
+      },
+      "groups": [
+        {
+          "numbers": [
+            23,
+            24
+          ],
+          "answers": [
+            "C",
+            "D"
+          ]
+        },
+        {
+          "numbers": [
+            25,
+            26
+          ],
+          "answers": [
+            "B",
+            "E"
+          ]
+        }
+      ],
+      "has_audio": false,
+      "preferred_paper": "3f5410c7d9e060ca",
+      "key_source": "4c40e0bcdb6aba59",
+      "key_count": 40,
+      "pack": "reading-cam17-t1-18134af135f7.bingo"
+    },
+    {
+      "id": "reading-cam17-t2",
+      "skill": "reading",
+      "collection": "cambridge",
+      "volume": 17,
+      "number": 2,
+      "title": "CAM 17 · Test 2",
+      "resources": [
+        "c5ebe04d7c313924",
+        "552b3eec84a41cd1"
+      ],
+      "answers": {
+        "1": [
+          "rock"
+        ],
+        "2": [
+          "cave"
+        ],
+        "3": [
+          "clay"
+        ],
+        "4": [
+          "Essenes"
+        ],
+        "5": [
+          "Hebrew"
+        ],
+        "6": [
+          "NOT GIVEN"
+        ],
+        "7": [
+          "FALSE"
+        ],
+        "8": [
+          "TRUE"
+        ],
+        "9": [
+          "TRUE"
+        ],
+        "10": [
+          "FALSE"
+        ],
+        "11": [
+          "FALSE"
+        ],
+        "12": [
+          "TRUE"
+        ],
+        "13": [
+          "NOT GIVEN"
+        ],
+        "14": [
+          "C"
+        ],
+        "15": [
+          "B"
+        ],
+        "16": [
+          "E"
+        ],
+        "17": [
+          "A"
+        ],
+        "18": [
+          "C"
+        ],
+        "19": [
+          "B"
+        ],
+        "20": [
+          "D"
+        ],
+        "21": [
+          "A"
+        ],
+        "22": [
+          "C"
+        ],
+        "23": [
+          "A"
+        ],
+        "24": [
+          "flavour"
+        ],
+        "25": [
+          "size"
+        ],
+        "26": [
+          "salt"
+        ],
+        "27": [
+          "D"
+        ],
+        "28": [
+          "A"
+        ],
+        "29": [
+          "A"
+        ],
+        "30": [
+          "C"
+        ],
+        "31": [
+          "A"
+        ],
+        "32": [
+          "NO"
+        ],
+        "33": [
+          "NOT GIVEN"
+        ],
+        "34": [
+          "YES"
+        ],
+        "35": [
+          "NO"
+        ],
+        "36": [
+          "NOT GIVEN"
+        ],
+        "37": [
+          "FALSE"
+        ],
+        "38": [
+          "D"
+        ],
+        "39": [
+          "E"
+        ],
+        "40": [
+          "B"
+        ]
+      },
+      "groups": [],
+      "has_audio": false,
+      "preferred_paper": "c5ebe04d7c313924",
+      "key_source": "552b3eec84a41cd1",
+      "key_count": 40,
+      "pack": "reading-cam17-t2-664a299db2c7.bingo"
+    },
+    {
+      "id": "reading-cam17-t3",
+      "skill": "reading",
+      "collection": "cambridge",
+      "volume": 17,
+      "number": 3,
+      "title": "CAM 17 · Test 3",
+      "resources": [
+        "4aeae7b7aeb983eb",
+        "7aae7e2e593c9d48"
+      ],
+      "answers": {
+        "1": [
+          "carnivorous"
+        ],
+        "2": [
+          "scent"
+        ],
+        "3": [
+          "pouch"
+        ],
+        "4": [
+          "fossil"
+        ],
+        "5": [
+          "habitat"
+        ],
+        "6": [
+          "TRUE"
+        ],
+        "7": [
+          "FALSE"
+        ],
+        "8": [
+          "NOT GIVEN"
+        ],
+        "9": [
+          "FALSE"
+        ],
+        "10": [
+          "NOT GIVEN"
+        ],
+        "11": [
+          "FALSE"
+        ],
+        "12": [
+          "TRUE"
+        ],
+        "13": [
+          "NOT GIVEN"
+        ],
+        "14": [
+          "FALSE"
+        ],
+        "15": [
+          "G"
+        ],
+        "16": [
+          "A"
+        ],
+        "17": [
+          "H"
+        ],
+        "18": [
+          "B"
+        ],
+        "19": [
+          "E"
+        ],
+        "20": [
+          "C"
+        ],
+        "21": [
+          "B",
+          "C"
+        ],
+        "22": [
+          "B",
+          "C"
+        ],
+        "23": [
+          "solid"
+        ],
+        "24": [
+          "orangutan"
+        ],
+        "25": [
+          "carbon stocks"
+        ],
+        "26": [
+          "biodiversity"
+        ],
+        "27": [
+          "D"
+        ],
+        "28": [
+          "B"
+        ],
+        "29": [
+          "C"
+        ],
+        "30": [
+          "D"
+        ],
+        "31": [
+          "C"
+        ],
+        "32": [
+          "NO"
+        ],
+        "33": [
+          "YES"
+        ],
+        "34": [
+          "NOT GIVEN"
+        ],
+        "35": [
+          "NO"
+        ],
+        "36": [
+          "H"
+        ],
+        "37": [
+          "D"
+        ],
+        "38": [
+          "I"
+        ],
+        "39": [
+          "B"
+        ],
+        "40": [
+          "FALSE"
+        ]
+      },
+      "groups": [
+        {
+          "numbers": [
+            21,
+            22
+          ],
+          "answers": [
+            "B",
+            "C"
+          ]
+        }
+      ],
+      "has_audio": false,
+      "preferred_paper": "4aeae7b7aeb983eb",
+      "key_source": "7aae7e2e593c9d48",
+      "key_count": 40,
+      "pack": "reading-cam17-t3-44cd0f0de3bd.bingo"
+    },
+    {
+      "id": "reading-cam17-t4",
+      "skill": "reading",
+      "collection": "cambridge",
+      "volume": 17,
+      "number": 4,
+      "title": "CAM 17 · Test 4",
+      "resources": [
+        "519f2dc3a3d9b102",
+        "72e80b30d012220f"
+      ],
+      "answers": {
+        "1": [
+          "FALSE"
+        ],
+        "2": [
+          "FALSE"
+        ],
+        "3": [
+          "NOT GIVEN"
+        ],
+        "4": [
+          "TRUE"
+        ],
+        "5": [
+          "NOT GIVEN"
+        ],
+        "6": [
+          "TRUE"
+        ],
+        "7": [
+          "droppings"
+        ],
+        "8": [
+          "coffee"
+        ],
+        "9": [
+          "mosquitoes"
+        ],
+        "10": [
+          "protein"
+        ],
+        "11": [
+          "unclean"
+        ],
+        "12": [
+          "culture"
+        ],
+        "13": [
+          "houses"
+        ],
+        "14": [
+          "E"
+        ],
+        "15": [
+          "A"
+        ],
+        "16": [
+          "D"
+        ],
+        "17": [
+          "FALSE"
+        ],
+        "18": [
+          "C"
+        ],
+        "19": [
+          "descendants"
+        ],
+        "20": [
+          "sermon"
+        ],
+        "21": [
+          "fine"
+        ],
+        "22": [
+          "innovation"
+        ],
+        "23": [
+          "B"
+        ],
+        "24": [
+          "E"
+        ],
+        "25": [
+          "B"
+        ],
+        "26": [
+          "D"
+        ],
+        "27": [
+          "D"
+        ],
+        "28": [
+          "E"
+        ],
+        "29": [
+          "FALSE"
+        ],
+        "30": [
+          "B"
+        ],
+        "31": [
+          "H"
+        ],
+        "32": [
+          "E"
+        ],
+        "33": [
+          "FALSE"
+        ],
+        "34": [
+          "NOT GIVEN"
+        ],
+        "35": [
+          "NOT GIVEN"
+        ],
+        "36": [
+          "TRUE"
+        ],
+        "37": [
+          "memory"
+        ],
+        "38": [
+          "numbers"
+        ],
+        "39": [
+          "communication"
+        ],
+        "40": [
+          "visual"
+        ]
+      },
+      "groups": [
+        {
+          "numbers": [
+            23,
+            24
+          ],
+          "answers": [
+            "B",
+            "E"
+          ]
+        },
+        {
+          "numbers": [
+            25,
+            26
+          ],
+          "answers": [
+            "B",
+            "D"
+          ]
+        }
+      ],
+      "has_audio": false,
+      "preferred_paper": "519f2dc3a3d9b102",
+      "key_source": "72e80b30d012220f",
+      "key_count": 40,
+      "pack": "reading-cam17-t4-2a2294f6fbc5.bingo"
+    },
+    {
+      "id": "reading-cam18-t1",
+      "skill": "reading",
+      "collection": "cambridge",
+      "volume": 18,
+      "number": 1,
+      "title": "CAM 18 · Test 1",
+      "resources": [
+        "5b10e15c9ad27eaf",
+        "1f55d5c59c8bbd99"
+      ],
+      "answers": {
+        "1": [
+          "Lettuces"
+        ],
+        "2": [
+          "1000 kg"
+        ],
+        "3": [
+          "(food) consumption"
+        ],
+        "4": [
+          "pesticides"
+        ],
+        "5": [
+          "journeys"
+        ],
+        "6": [
+          "producers"
+        ],
+        "7": [
+          "flavour",
+          "flavor"
+        ],
+        "8": [
+          "TRUE"
+        ],
+        "9": [
+          "NOT GIVEN"
+        ],
+        "10": [
+          "FALSE"
+        ],
+        "11": [
+          "TRUE"
+        ],
+        "12": [
+          "FALSE"
+        ],
+        "13": [
+          "NOT GIVEN"
+        ],
+        "14": [
+          "B"
+        ],
+        "15": [
+          "A"
+        ],
+        "16": [
+          "C"
+        ],
+        "17": [
+          "E"
+        ],
+        "18": [
+          "B"
+        ],
+        "19": [
+          "B"
+        ],
+        "20": [
+          "C"
+        ],
+        "21": [
+          "C"
+        ],
+        "22": [
+          "fire"
+        ],
+        "23": [
+          "nutrients"
+        ],
+        "24": [
+          "cavities"
+        ],
+        "25": [
+          "hawthorn"
+        ],
+        "26": [
+          "rare"
+        ],
+        "27": [
+          "C"
+        ],
+        "28": [
+          "FALSE"
+        ],
+        "29": [
+          "A"
+        ],
+        "30": [
+          "E"
+        ],
+        "31": [
+          "B"
+        ],
+        "32": [
+          "sustainability"
+        ],
+        "33": [
+          "fuel"
+        ],
+        "34": [
+          "explosions"
+        ],
+        "35": [
+          "bankrupt"
+        ],
+        "36": [
+          "C"
+        ],
+        "37": [
+          "D"
+        ],
+        "38": [
+          "B"
+        ],
+        "39": [
+          "D"
+        ],
+        "40": [
+          "A"
+        ]
+      },
+      "groups": [],
+      "has_audio": false,
+      "preferred_paper": "5b10e15c9ad27eaf",
+      "key_source": "1f55d5c59c8bbd99",
+      "key_count": 40,
+      "pack": "reading-cam18-t1-4edbaafd807c.bingo"
+    },
+    {
+      "id": "reading-cam18-t2",
+      "skill": "reading",
+      "collection": "cambridge",
+      "volume": 18,
+      "number": 2,
+      "title": "CAM 18 · Test 2",
+      "resources": [
+        "80fba028784052d7",
+        "c2d229e5961b17b4"
+      ],
+      "answers": {
+        "1": [
+          "(deer) antlers"
+        ],
+        "2": [
+          "(timber) posts"
+        ],
+        "3": [
+          "tree trunks"
+        ],
+        "4": [
+          "oxen"
+        ],
+        "5": [
+          "glaciers"
+        ],
+        "6": [
+          "druids"
+        ],
+        "7": [
+          "burial"
+        ],
+        "8": [
+          "calendar"
+        ],
+        "9": [
+          "TRUE"
+        ],
+        "10": [
+          "FALSE"
+        ],
+        "11": [
+          "FALSE"
+        ],
+        "12": [
+          "TRUE"
+        ],
+        "13": [
+          "NOT GIVEN"
+        ],
+        "14": [
+          "C"
+        ],
+        "15": [
+          "A"
+        ],
+        "16": [
+          "B"
+        ],
+        "17": [
+          "D"
+        ],
+        "18": [
+          "C"
+        ],
+        "19": [
+          "D"
+        ],
+        "20": [
+          "YES"
+        ],
+        "21": [
+          "NOT GIVEN"
+        ],
+        "22": [
+          "NO"
+        ],
+        "23": [
+          "YES"
+        ],
+        "24": [
+          "C"
+        ],
+        "25": [
+          "A"
+        ],
+        "26": [
+          "E"
+        ],
+        "27": [
+          "NOT GIVEN"
+        ],
+        "28": [
+          "NOT GIVEN"
+        ],
+        "29": [
+          "TRUE"
+        ],
+        "30": [
+          "FALSE"
+        ],
+        "31": [
+          "TRUE"
+        ],
+        "32": [
+          "NOT GIVEN"
+        ],
+        "33": [
+          "FALSE"
+        ],
+        "34": [
+          "transport"
+        ],
+        "35": [
+          "staircases"
+        ],
+        "36": [
+          "engineering"
+        ],
+        "37": [
+          "rule"
+        ],
+        "38": [
+          "Roman"
+        ],
+        "39": [
+          "Paris"
+        ],
+        "40": [
+          "outwards"
+        ]
+      },
+      "groups": [],
+      "has_audio": false,
+      "preferred_paper": "80fba028784052d7",
+      "key_source": "c2d229e5961b17b4",
+      "key_count": 40,
+      "pack": "reading-cam18-t2-cc76161df8ca.bingo"
+    },
+    {
+      "id": "reading-cam18-t3",
+      "skill": "reading",
+      "collection": "cambridge",
+      "volume": 18,
+      "number": 3,
+      "title": "CAM 18 · Test 3",
+      "resources": [
+        "b9fce44915dbc98c",
+        "386c862ae673da31"
+      ],
+      "answers": {
+        "1": [
+          "G"
+        ],
+        "2": [
+          "D"
+        ],
+        "3": [
+          "C"
+        ],
+        "4": [
+          "FALSE"
+        ],
+        "5": [
+          "Architects"
+        ],
+        "6": [
+          "Moisture"
+        ],
+        "7": [
+          "Layers"
+        ],
+        "8": [
+          "Speed"
+        ],
+        "9": [
+          "C"
+        ],
+        "10": [
+          "A"
+        ],
+        "11": [
+          "B"
+        ],
+        "12": [
+          "D"
+        ],
+        "13": [
+          "A"
+        ],
+        "14": [
+          "iii"
+        ],
+        "15": [
+          "viii"
+        ],
+        "16": [
+          "vi"
+        ],
+        "17": [
+          "v"
+        ],
+        "18": [
+          "vii"
+        ],
+        "19": [
+          "i"
+        ],
+        "20": [
+          "iv"
+        ],
+        "21": [
+          "A"
+        ],
+        "22": [
+          "C"
+        ],
+        "23": [
+          "B"
+        ],
+        "24": [
+          "Speed"
+        ],
+        "25": [
+          "Fifty",
+          "50"
+        ],
+        "26": [
+          "Strict"
+        ],
+        "27": [
+          "B"
+        ],
+        "28": [
+          "A"
+        ],
+        "29": [
+          "C"
+        ],
+        "30": [
+          "C"
+        ],
+        "31": [
+          "H"
+        ],
+        "32": [
+          "D"
+        ],
+        "33": [
+          "FALSE"
+        ],
+        "34": [
+          "E"
+        ],
+        "35": [
+          "B"
+        ],
+        "36": [
+          "NO"
+        ],
+        "37": [
+          "NOT GIVEN"
+        ],
+        "38": [
+          "YES"
+        ],
+        "39": [
+          "NO"
+        ],
+        "40": [
+          "NOT GIVEN"
+        ]
+      },
+      "groups": [],
+      "has_audio": false,
+      "preferred_paper": "b9fce44915dbc98c",
+      "key_source": "386c862ae673da31",
+      "key_count": 40,
+      "pack": "reading-cam18-t3-0a4c132d0b89.bingo"
+    },
+    {
+      "id": "reading-cam18-t4",
+      "skill": "reading",
+      "collection": "cambridge",
+      "volume": 18,
+      "number": 4,
+      "title": "CAM 18 · Test 4",
+      "resources": [
+        "dc48c33564d71284",
+        "1ab8a43b4a29dca4"
+      ],
+      "answers": {
+        "1": [
+          "D"
+        ],
+        "2": [
+          "C"
+        ],
+        "3": [
+          "E"
+        ],
+        "4": [
+          "B"
+        ],
+        "5": [
+          "D"
+        ],
+        "6": [
+          "energy"
+        ],
+        "7": [
+          "food"
+        ],
+        "8": [
+          "gardening"
+        ],
+        "9": [
+          "obesity"
+        ],
+        "10": [
+          "C"
+        ],
+        "11": [
+          "D"
+        ],
+        "12": [
+          "A"
+        ],
+        "13": [
+          "D"
+        ],
+        "14": [
+          "B"
+        ],
+        "15": [
+          "C"
+        ],
+        "16": [
+          "D"
+        ],
+        "17": [
+          "C"
+        ],
+        "18": [
+          "B"
+        ],
+        "19": [
+          "A"
+        ],
+        "20": [
+          "E"
+        ],
+        "21": [
+          "B"
+        ],
+        "22": [
+          "D"
+        ],
+        "23": [
+          "YES"
+        ],
+        "24": [
+          "NO"
+        ],
+        "25": [
+          "NOT GIVEN"
+        ],
+        "26": [
+          "YES"
+        ],
+        "27": [
+          "YES"
+        ],
+        "28": [
+          "NOT GIVEN"
+        ],
+        "29": [
+          "NO"
+        ],
+        "30": [
+          "NO"
+        ],
+        "31": [
+          "I"
+        ],
+        "32": [
+          "FALSE"
+        ],
+        "33": [
+          "A"
+        ],
+        "34": [
+          "C"
+        ],
+        "35": [
+          "H"
+        ],
+        "36": [
+          "E"
+        ],
+        "37": [
+          "B"
+        ],
+        "38": [
+          "A"
+        ],
+        "39": [
+          "D"
+        ],
+        "40": [
+          "C"
+        ]
+      },
+      "groups": [
+        {
+          "numbers": [
+            10,
+            11
+          ],
+          "answers": [
+            "C",
+            "D"
+          ]
+        },
+        {
+          "numbers": [
+            12,
+            13
+          ],
+          "answers": [
+            "A",
+            "D"
+          ]
+        }
+      ],
+      "has_audio": false,
+      "preferred_paper": "dc48c33564d71284",
+      "key_source": "1ab8a43b4a29dca4",
+      "key_count": 40,
+      "pack": "reading-cam18-t4-db2f7ed715e9.bingo"
+    },
+    {
+      "id": "reading-cam20-t1",
+      "skill": "reading",
+      "collection": "cambridge",
+      "volume": 20,
+      "number": 1,
+      "title": "CAM 20 · Test 1",
+      "resources": [
+        "9a16478d7062a3d5",
+        "ff8380f6fd1e6a63"
+      ],
+      "answers": {
+        "1": [
+          "FALSE"
+        ],
+        "14": [
+          "C"
+        ],
+        "27": [
+          "C"
+        ],
+        "2": [
+          "FALSE"
+        ],
+        "15": [
+          "G"
+        ],
+        "28": [
+          "A"
+        ],
+        "3": [
+          "FALSE"
+        ],
+        "16": [
+          "B"
+        ],
+        "29": [
+          "D"
+        ],
+        "4": [
+          "NOT GIVEN"
+        ],
+        "17": [
+          "E"
+        ],
+        "30": [
+          "C"
+        ],
+        "5": [
+          "TRUE"
+        ],
+        "18": [
+          "C"
+        ],
+        "31": [
+          "B"
+        ],
+        "6": [
+          "TRUE"
+        ],
+        "19": [
+          "B"
+        ],
+        "32": [
+          "G"
+        ],
+        "7": [
+          "bulbs"
+        ],
+        "20": [
+          "A"
+        ],
+        "33": [
+          "FALSE"
+        ],
+        "8": [
+          "soil"
+        ],
+        "21": [
+          "B"
+        ],
+        "34": [
+          "E"
+        ],
+        "9": [
+          "feathers"
+        ],
+        "22": [
+          "C"
+        ],
+        "35": [
+          "D"
+        ],
+        "10": [
+          "deer"
+        ],
+        "23": [
+          "A"
+        ],
+        "36": [
+          "YES"
+        ],
+        "11": [
+          "1980"
+        ],
+        "24": [
+          "oak"
+        ],
+        "37": [
+          "NOT GIVEN"
+        ],
+        "12": [
+          "funding"
+        ],
+        "25": [
+          "flooring"
+        ],
+        "38": [
+          "NO"
+        ],
+        "13": [
+          "stakeholders"
+        ],
+        "26": [
+          "keel"
+        ],
+        "39": [
+          "YES"
+        ],
+        "40": [
+          "YES"
+        ]
+      },
+      "groups": [],
+      "has_audio": false,
+      "preferred_paper": "9a16478d7062a3d5",
+      "key_source": "ff8380f6fd1e6a63",
+      "key_count": 40,
+      "pack": "reading-cam20-t1-607ed7fde7f7.bingo"
+    },
+    {
+      "id": "reading-cam20-t2",
+      "skill": "reading",
+      "collection": "cambridge",
+      "volume": 20,
+      "number": 2,
+      "title": "CAM 20 · Test 2",
+      "resources": [
+        "39b4671d68fdca41",
+        "7ebb1fcc7e745497"
+      ],
+      "answers": {
+        "1": [
+          "tail"
+        ],
+        "14": [
+          "B"
+        ],
+        "27": [
+          "NO"
+        ],
+        "2": [
+          "flippers"
+        ],
+        "15": [
+          "FALSE"
+        ],
+        "28": [
+          "YES"
+        ],
+        "3": [
+          "hair"
+        ],
+        "16": [
+          "B"
+        ],
+        "29": [
+          "NOT GIVEN"
+        ],
+        "4": [
+          "seagrasses"
+        ],
+        "17": [
+          "laziness"
+        ],
+        "30": [
+          "NO"
+        ],
+        "5": [
+          "lips"
+        ],
+        "18": [
+          "anxious"
+        ],
+        "31": [
+          "NOT GIVEN"
+        ],
+        "6": [
+          "buoyancy"
+        ],
+        "19": [
+          "threats"
+        ],
+        "32": [
+          "YES"
+        ],
+        "7": [
+          "TRUE"
+        ],
+        "20": [
+          "exams"
+        ],
+        "33": [
+          "FALSE"
+        ],
+        "8": [
+          "NOT GIVEN"
+        ],
+        "21": [
+          "perfectionists"
+        ],
+        "34": [
+          "D"
+        ],
+        "9": [
+          "FALSE"
+        ],
+        "22": [
+          "guilt"
+        ],
+        "35": [
+          "H"
+        ],
+        "10": [
+          "NOT GIVEN"
+        ],
+        "23": [
+          "A"
+        ],
+        "36": [
+          "B"
+        ],
+        "11": [
+          "TRUE"
+        ],
+        "24": [
+          "C"
+        ],
+        "37": [
+          "G"
+        ],
+        "12": [
+          "NOT GIVEN"
+        ],
+        "25": [
+          "A"
+        ],
+        "38": [
+          "B"
+        ],
+        "13": [
+          "TRUE"
+        ],
+        "26": [
+          "E"
+        ],
+        "39": [
+          "D"
+        ],
+        "40": [
+          "C"
+        ]
+      },
+      "groups": [],
+      "has_audio": false,
+      "preferred_paper": "39b4671d68fdca41",
+      "key_source": "7ebb1fcc7e745497",
+      "key_count": 40,
+      "pack": "reading-cam20-t2-fdbf2625dd5d.bingo"
+    },
+    {
+      "id": "reading-cam20-t3",
+      "skill": "reading",
+      "collection": "cambridge",
+      "volume": 20,
+      "number": 3,
+      "title": "CAM 20 · Test 3",
+      "resources": [
+        "7449c2af94d2e65c",
+        "fc80971c6eba89d2"
+      ],
+      "answers": {
+        "1": [
+          "potatoes"
+        ],
+        "14": [
+          "v"
+        ],
+        "27": [
+          "A"
+        ],
+        "2": [
+          "butter"
+        ],
+        "15": [
+          "ii"
+        ],
+        "28": [
+          "C"
+        ],
+        "3": [
+          "meat"
+        ],
+        "16": [
+          "iv"
+        ],
+        "29": [
+          "B"
+        ],
+        "4": [
+          "crystals"
+        ],
+        "17": [
+          "vii"
+        ],
+        "30": [
+          "A"
+        ],
+        "5": [
+          "cellophane"
+        ],
+        "18": [
+          "iii"
+        ],
+        "31": [
+          "B"
+        ],
+        "6": [
+          "tin"
+        ],
+        "19": [
+          "vi"
+        ],
+        "32": [
+          "A"
+        ],
+        "7": [
+          "refrigerator"
+        ],
+        "20": [
+          "C",
+          "E"
+        ],
+        "33": [
+          "C"
+        ],
+        "8": [
+          "NOT GIVEN"
+        ],
+        "21": [
+          "C",
+          "E"
+        ],
+        "34": [
+          "C"
+        ],
+        "9": [
+          "TRUE"
+        ],
+        "22": [
+          "B",
+          "D"
+        ],
+        "35": [
+          "B"
+        ],
+        "10": [
+          "FALSE"
+        ],
+        "23": [
+          "B",
+          "D"
+        ],
+        "36": [
+          "D"
+        ],
+        "11": [
+          "TRUE"
+        ],
+        "24": [
+          "tentacles"
+        ],
+        "37": [
+          "B"
+        ],
+        "12": [
+          "FALSE"
+        ],
+        "25": [
+          "protection"
+        ],
+        "38": [
+          "C"
+        ],
+        "13": [
+          "NOT GIVEN"
+        ],
+        "26": [
+          "colour"
+        ],
+        "39": [
+          "B"
+        ],
+        "40": [
+          "C"
+        ]
+      },
+      "groups": [
+        {
+          "numbers": [
+            20,
+            21
+          ],
+          "answers": [
+            "C",
+            "E"
+          ]
+        },
+        {
+          "numbers": [
+            22,
+            23
+          ],
+          "answers": [
+            "B",
+            "D"
+          ]
+        }
+      ],
+      "has_audio": false,
+      "preferred_paper": "7449c2af94d2e65c",
+      "key_source": "fc80971c6eba89d2",
+      "key_count": 40,
+      "pack": "reading-cam20-t3-4c00b3098239.bingo"
+    },
+    {
+      "id": "reading-cam20-t4",
+      "skill": "reading",
+      "collection": "cambridge",
+      "volume": 20,
+      "number": 4,
+      "title": "CAM 20 · Test 4",
+      "resources": [
+        "d0f264fedd1ec08b",
+        "45747f05ff1f462f"
+      ],
+      "answers": {
+        "1": [
+          "teacher"
+        ],
+        "14": [
+          "C"
+        ],
+        "27": [
+          "D"
+        ],
+        "2": [
+          "charcoal"
+        ],
+        "15": [
+          "A"
+        ],
+        "28": [
+          "G"
+        ],
+        "3": [
+          "skyscrapers"
+        ],
+        "16": [
+          "D"
+        ],
+        "29": [
+          "B"
+        ],
+        "4": [
+          "flowers"
+        ],
+        "17": [
+          "FALSE"
+        ],
+        "30": [
+          "C"
+        ],
+        "5": [
+          "bones"
+        ],
+        "18": [
+          "pumps"
+        ],
+        "31": [
+          "B"
+        ],
+        "6": [
+          "landscape"
+        ],
+        "19": [
+          "dams"
+        ],
+        "32": [
+          "D"
+        ],
+        "7": [
+          "rivers"
+        ],
+        "20": [
+          "float"
+        ],
+        "33": [
+          "E"
+        ],
+        "8": [
+          "FALSE"
+        ],
+        "21": [
+          "crops"
+        ],
+        "34": [
+          "B"
+        ],
+        "9": [
+          "TRUE"
+        ],
+        "22": [
+          "trees"
+        ],
+        "35": [
+          "C"
+        ],
+        "10": [
+          "FALSE"
+        ],
+        "23": [
+          "B"
+        ],
+        "36": [
+          "A"
+        ],
+        "11": [
+          "TRUE"
+        ],
+        "24": [
+          "E"
+        ],
+        "37": [
+          "jackals"
+        ],
+        "12": [
+          "NOT GIVEN"
+        ],
+        "25": [
+          "A"
+        ],
+        "38": [
+          "diseases"
+        ],
+        "13": [
+          "NOT GIVEN"
+        ],
+        "26": [
+          "C"
+        ],
+        "39": [
+          "food"
+        ],
+        "40": [
+          "foxes"
+        ]
+      },
+      "groups": [],
+      "has_audio": false,
+      "preferred_paper": "d0f264fedd1ec08b",
+      "key_source": "45747f05ff1f462f",
+      "key_count": 40,
+      "pack": "reading-cam20-t4-bc4ee3e9e706.bingo"
     }
   ],
   "resources": {
@@ -18967,6 +22464,486 @@
       "size": 132311,
       "role": "paper",
       "volume": 5
+    },
+    "f069925f1ffb6243": {
+      "id": "f069925f1ffb6243",
+      "source": "cambridge-14",
+      "entry": "READING/TEST 1/Test 1 Reading Cam 14  .docx",
+      "name": "Test 1 Reading Cam 14  .docx",
+      "ext": ".docx",
+      "size": 26078,
+      "role": "paper",
+      "volume": 14
+    },
+    "e6a07a5575fd6faa": {
+      "id": "e6a07a5575fd6faa",
+      "source": "cambridge-14",
+      "entry": "READING/TEST 1/KEY - TEST 1.docx",
+      "name": "KEY - TEST 1.docx",
+      "ext": ".docx",
+      "size": 11493,
+      "role": "key",
+      "volume": 14
+    },
+    "c16dcf3b61040f76": {
+      "id": "c16dcf3b61040f76",
+      "source": "cambridge-14",
+      "entry": "READING/TEST 2/Test 2 Reading Cam 14  .docx",
+      "name": "Test 2 Reading Cam 14  .docx",
+      "ext": ".docx",
+      "size": 24996,
+      "role": "paper",
+      "volume": 14
+    },
+    "9695360022fbbdd7": {
+      "id": "9695360022fbbdd7",
+      "source": "cambridge-14",
+      "entry": "READING/TEST 2/KEY-TEST 2.docx",
+      "name": "KEY-TEST 2.docx",
+      "ext": ".docx",
+      "size": 10942,
+      "role": "key",
+      "volume": 14
+    },
+    "eb0e94d66dd0eff1": {
+      "id": "eb0e94d66dd0eff1",
+      "source": "cambridge-14",
+      "entry": "READING/TEST 3/Test 3 Reading Cam 14 .docx",
+      "name": "Test 3 Reading Cam 14 .docx",
+      "ext": ".docx",
+      "size": 25325,
+      "role": "paper",
+      "volume": 14
+    },
+    "a8d77e0876986d48": {
+      "id": "a8d77e0876986d48",
+      "source": "cambridge-14",
+      "entry": "READING/TEST 3/KEY-TEST 3.docx",
+      "name": "KEY-TEST 3.docx",
+      "ext": ".docx",
+      "size": 11374,
+      "role": "key",
+      "volume": 14
+    },
+    "58281d3dc7d3c1a4": {
+      "id": "58281d3dc7d3c1a4",
+      "source": "cambridge-14",
+      "entry": "READING/TEST 4/Test 4 Reading Cam 14 .docx",
+      "name": "Test 4 Reading Cam 14 .docx",
+      "ext": ".docx",
+      "size": 24471,
+      "role": "paper",
+      "volume": 14
+    },
+    "90eb88b01d90145b": {
+      "id": "90eb88b01d90145b",
+      "source": "cambridge-14",
+      "entry": "READING/TEST 4/KEY-TEST 4.docx",
+      "name": "KEY-TEST 4.docx",
+      "ext": ".docx",
+      "size": 10172,
+      "role": "key",
+      "volume": 14
+    },
+    "21cf97c271c1afa2": {
+      "id": "21cf97c271c1afa2",
+      "source": "cambridge-15",
+      "entry": "READING/TEST 1/CAM 15 - READING TEST 1 - QUESTIONS.docx",
+      "name": "CAM 15 - READING TEST 1 - QUESTIONS.docx",
+      "ext": ".docx",
+      "size": 24216,
+      "role": "paper",
+      "volume": 15
+    },
+    "0d2d3d324fd6f4a9": {
+      "id": "0d2d3d324fd6f4a9",
+      "source": "cambridge-15",
+      "entry": "READING/TEST 1/CAM 15 - READING TEST 1 - ANSWERS.docx",
+      "name": "CAM 15 - READING TEST 1 - ANSWERS.docx",
+      "ext": ".docx",
+      "size": 231992,
+      "role": "key",
+      "volume": 15
+    },
+    "2afa3a6d77febb58": {
+      "id": "2afa3a6d77febb58",
+      "source": "cambridge-15",
+      "entry": "READING/TEST 2/CAM 15 - READING TEST 2  - QUESTIONS.docx",
+      "name": "CAM 15 - READING TEST 2  - QUESTIONS.docx",
+      "ext": ".docx",
+      "size": 24480,
+      "role": "paper",
+      "volume": 15
+    },
+    "e0c8f60be7763616": {
+      "id": "e0c8f60be7763616",
+      "source": "cambridge-15",
+      "entry": "READING/TEST 2/CAM 15 - READING TEST 2  - ANSWERS.docx",
+      "name": "CAM 15 - READING TEST 2  - ANSWERS.docx",
+      "ext": ".docx",
+      "size": 49355,
+      "role": "key",
+      "volume": 15
+    },
+    "e8864b6b1d616efc": {
+      "id": "e8864b6b1d616efc",
+      "source": "cambridge-15",
+      "entry": "READING/TEST 3/CAM 15 - READING TEST 3.docx",
+      "name": "CAM 15 - READING TEST 3.docx",
+      "ext": ".docx",
+      "size": 24437,
+      "role": "paper",
+      "volume": 15
+    },
+    "8527b676fd69b336": {
+      "id": "8527b676fd69b336",
+      "source": "cambridge-15",
+      "entry": "READING/TEST 3/CAM 15 - READING TEST 3- ANSWER.docx",
+      "name": "CAM 15 - READING TEST 3- ANSWER.docx",
+      "ext": ".docx",
+      "size": 224760,
+      "role": "key",
+      "volume": 15
+    },
+    "4c1e0973e9cde5fc": {
+      "id": "4c1e0973e9cde5fc",
+      "source": "cambridge-15",
+      "entry": "READING/TEST 4/CAM 15 - READING TEST 4.docx",
+      "name": "CAM 15 - READING TEST 4.docx",
+      "ext": ".docx",
+      "size": 23147,
+      "role": "paper",
+      "volume": 15
+    },
+    "3f2840a73ac6c884": {
+      "id": "3f2840a73ac6c884",
+      "source": "cambridge-15",
+      "entry": "READING/TEST 4/CAM 15 Test 4-ANSWER KEY.docx",
+      "name": "CAM 15 Test 4-ANSWER KEY.docx",
+      "ext": ".docx",
+      "size": 231549,
+      "role": "key",
+      "volume": 15
+    },
+    "b82b82fed0be83d9": {
+      "id": "b82b82fed0be83d9",
+      "source": "cambridge-16",
+      "entry": "READING/TEST 1/Cam16-Reading Test 1-QUESTION.docx",
+      "name": "Cam16-Reading Test 1-QUESTION.docx",
+      "ext": ".docx",
+      "size": 22048,
+      "role": "paper",
+      "volume": 16
+    },
+    "15842e46905661e6": {
+      "id": "15842e46905661e6",
+      "source": "cambridge-16",
+      "entry": "READING/TEST 1/ANSWER KEY.docx",
+      "name": "ANSWER KEY.docx",
+      "ext": ".docx",
+      "size": 7612,
+      "role": "key",
+      "volume": 16
+    },
+    "2c141e9926234848": {
+      "id": "2c141e9926234848",
+      "source": "cambridge-16",
+      "entry": "READING/TEST 2/Cam16- Reading Test 2-QUESTION.docx",
+      "name": "Cam16- Reading Test 2-QUESTION.docx",
+      "ext": ".docx",
+      "size": 21192,
+      "role": "paper",
+      "volume": 16
+    },
+    "c1a172a4b41b5a22": {
+      "id": "c1a172a4b41b5a22",
+      "source": "cambridge-16",
+      "entry": "READING/TEST 2/ANSWER KEY.docx",
+      "name": "ANSWER KEY.docx",
+      "ext": ".docx",
+      "size": 7674,
+      "role": "key",
+      "volume": 16
+    },
+    "55c121665d38ce2c": {
+      "id": "55c121665d38ce2c",
+      "source": "cambridge-16",
+      "entry": "READING/TEST 3/Cam16-Reading Test 3.docx",
+      "name": "Cam16-Reading Test 3.docx",
+      "ext": ".docx",
+      "size": 20911,
+      "role": "paper",
+      "volume": 16
+    },
+    "e2998ad8105dfbc5": {
+      "id": "e2998ad8105dfbc5",
+      "source": "cambridge-16",
+      "entry": "READING/TEST 3/ANSWER KEY.docx",
+      "name": "ANSWER KEY.docx",
+      "ext": ".docx",
+      "size": 7801,
+      "role": "key",
+      "volume": 16
+    },
+    "40c4a380f67e5a4b": {
+      "id": "40c4a380f67e5a4b",
+      "source": "cambridge-16",
+      "entry": "READING/TEST 4/Cam16- Reading Test 4.docx",
+      "name": "Cam16- Reading Test 4.docx",
+      "ext": ".docx",
+      "size": 124937,
+      "role": "paper",
+      "volume": 16
+    },
+    "9fc73af0ccfa0cd0": {
+      "id": "9fc73af0ccfa0cd0",
+      "source": "cambridge-16",
+      "entry": "READING/TEST 4/ANSWER KEY.docx",
+      "name": "ANSWER KEY.docx",
+      "ext": ".docx",
+      "size": 7811,
+      "role": "key",
+      "volume": 16
+    },
+    "3f5410c7d9e060ca": {
+      "id": "3f5410c7d9e060ca",
+      "source": "cambridge-17",
+      "entry": "READING/CAM 17 Test 1/Test 1.docx",
+      "name": "Test 1.docx",
+      "ext": ".docx",
+      "size": 25944,
+      "role": "paper",
+      "volume": 17
+    },
+    "4c40e0bcdb6aba59": {
+      "id": "4c40e0bcdb6aba59",
+      "source": "cambridge-17",
+      "entry": "READING/CAM 17 Test 1/ANSWER KEY-TEST 1.docx",
+      "name": "ANSWER KEY-TEST 1.docx",
+      "ext": ".docx",
+      "size": 350913,
+      "role": "key",
+      "volume": 17
+    },
+    "c5ebe04d7c313924": {
+      "id": "c5ebe04d7c313924",
+      "source": "cambridge-17",
+      "entry": "READING/CAM 17 Test 2/Test 2.docx",
+      "name": "Test 2.docx",
+      "ext": ".docx",
+      "size": 22951,
+      "role": "paper",
+      "volume": 17
+    },
+    "552b3eec84a41cd1": {
+      "id": "552b3eec84a41cd1",
+      "source": "cambridge-17",
+      "entry": "READING/CAM 17 Test 2/ANSWER KEY-TEST 2.docx",
+      "name": "ANSWER KEY-TEST 2.docx",
+      "ext": ".docx",
+      "size": 346227,
+      "role": "key",
+      "volume": 17
+    },
+    "4aeae7b7aeb983eb": {
+      "id": "4aeae7b7aeb983eb",
+      "source": "cambridge-17",
+      "entry": "READING/CAM 17 Test 3/Test 3.docx",
+      "name": "Test 3.docx",
+      "ext": ".docx",
+      "size": 339995,
+      "role": "paper",
+      "volume": 17
+    },
+    "7aae7e2e593c9d48": {
+      "id": "7aae7e2e593c9d48",
+      "source": "cambridge-17",
+      "entry": "READING/CAM 17 Test 3/ANSWER KEY-TEST 3.docx",
+      "name": "ANSWER KEY-TEST 3.docx",
+      "ext": ".docx",
+      "size": 348278,
+      "role": "key",
+      "volume": 17
+    },
+    "519f2dc3a3d9b102": {
+      "id": "519f2dc3a3d9b102",
+      "source": "cambridge-17",
+      "entry": "READING/CAM 17 Test 4/Test 4.docx",
+      "name": "Test 4.docx",
+      "ext": ".docx",
+      "size": 23024,
+      "role": "paper",
+      "volume": 17
+    },
+    "72e80b30d012220f": {
+      "id": "72e80b30d012220f",
+      "source": "cambridge-17",
+      "entry": "READING/CAM 17 Test 4/ANSWER KEY-TEST 4.docx",
+      "name": "ANSWER KEY-TEST 4.docx",
+      "ext": ".docx",
+      "size": 533806,
+      "role": "key",
+      "volume": 17
+    },
+    "5b10e15c9ad27eaf": {
+      "id": "5b10e15c9ad27eaf",
+      "source": "cambridge-18",
+      "entry": "Reading/TEST 1/CAM 18_READING TEST 1.docx",
+      "name": "CAM 18_READING TEST 1.docx",
+      "ext": ".docx",
+      "size": 24911,
+      "role": "paper",
+      "volume": 18
+    },
+    "1f55d5c59c8bbd99": {
+      "id": "1f55d5c59c8bbd99",
+      "source": "cambridge-18",
+      "entry": "Reading/TEST 1/ANSWER KEY-TEST 1.docx",
+      "name": "ANSWER KEY-TEST 1.docx",
+      "ext": ".docx",
+      "size": 42407,
+      "role": "key",
+      "volume": 18
+    },
+    "80fba028784052d7": {
+      "id": "80fba028784052d7",
+      "source": "cambridge-18",
+      "entry": "Reading/TEST 2/CAM 18 - READING TEST 2 - QUESTIONS.docx",
+      "name": "CAM 18 - READING TEST 2 - QUESTIONS.docx",
+      "ext": ".docx",
+      "size": 26354,
+      "role": "paper",
+      "volume": 18
+    },
+    "c2d229e5961b17b4": {
+      "id": "c2d229e5961b17b4",
+      "source": "cambridge-18",
+      "entry": "Reading/TEST 2/CAM 18_READING TEST 2 -ANSWER.docx",
+      "name": "CAM 18_READING TEST 2 -ANSWER.docx",
+      "ext": ".docx",
+      "size": 241446,
+      "role": "key",
+      "volume": 18
+    },
+    "b9fce44915dbc98c": {
+      "id": "b9fce44915dbc98c",
+      "source": "cambridge-18",
+      "entry": "Reading/TEST 3/CAM18_READING TEST 3.docx",
+      "name": "CAM18_READING TEST 3.docx",
+      "ext": ".docx",
+      "size": 34387,
+      "role": "paper",
+      "volume": 18
+    },
+    "386c862ae673da31": {
+      "id": "386c862ae673da31",
+      "source": "cambridge-18",
+      "entry": "Reading/TEST 3/ANSWER KEY-TEST 3.docx",
+      "name": "ANSWER KEY-TEST 3.docx",
+      "ext": ".docx",
+      "size": 29576,
+      "role": "key",
+      "volume": 18
+    },
+    "dc48c33564d71284": {
+      "id": "dc48c33564d71284",
+      "source": "cambridge-18",
+      "entry": "Reading/TEST 4/Cam18_READING TEST 4.docx",
+      "name": "Cam18_READING TEST 4.docx",
+      "ext": ".docx",
+      "size": 31274,
+      "role": "paper",
+      "volume": 18
+    },
+    "1ab8a43b4a29dca4": {
+      "id": "1ab8a43b4a29dca4",
+      "source": "cambridge-18",
+      "entry": "Reading/TEST 4/ANSWER KEY-TEST 4.docx",
+      "name": "ANSWER KEY-TEST 4.docx",
+      "ext": ".docx",
+      "size": 24406,
+      "role": "key",
+      "volume": 18
+    },
+    "9a16478d7062a3d5": {
+      "id": "9a16478d7062a3d5",
+      "source": "cambridge-20",
+      "entry": "Reading/Test 1/T1-Cam20.docx",
+      "name": "T1-Cam20.docx",
+      "ext": ".docx",
+      "size": 18477,
+      "role": "paper",
+      "volume": 20
+    },
+    "ff8380f6fd1e6a63": {
+      "id": "ff8380f6fd1e6a63",
+      "source": "cambridge-20",
+      "entry": "Reading/Test 1/Key-T1 Read.docx",
+      "name": "Key-T1 Read.docx",
+      "ext": ".docx",
+      "size": 7650,
+      "role": "key",
+      "volume": 20
+    },
+    "39b4671d68fdca41": {
+      "id": "39b4671d68fdca41",
+      "source": "cambridge-20",
+      "entry": "Reading/Test 2/T2-Cam20.docx",
+      "name": "T2-Cam20.docx",
+      "ext": ".docx",
+      "size": 18255,
+      "role": "paper",
+      "volume": 20
+    },
+    "7ebb1fcc7e745497": {
+      "id": "7ebb1fcc7e745497",
+      "source": "cambridge-20",
+      "entry": "Reading/Test 2/KEY READING TEST 2.docx",
+      "name": "KEY READING TEST 2.docx",
+      "ext": ".docx",
+      "size": 7580,
+      "role": "key",
+      "volume": 20
+    },
+    "7449c2af94d2e65c": {
+      "id": "7449c2af94d2e65c",
+      "source": "cambridge-20",
+      "entry": "Reading/Test 3/T3-Cam20.docx",
+      "name": "T3-Cam20.docx",
+      "ext": ".docx",
+      "size": 18460,
+      "role": "paper",
+      "volume": 20
+    },
+    "fc80971c6eba89d2": {
+      "id": "fc80971c6eba89d2",
+      "source": "cambridge-20",
+      "entry": "Reading/Test 3/KEY T3-READING.docx",
+      "name": "KEY T3-READING.docx",
+      "ext": ".docx",
+      "size": 7626,
+      "role": "key",
+      "volume": 20
+    },
+    "d0f264fedd1ec08b": {
+      "id": "d0f264fedd1ec08b",
+      "source": "cambridge-20",
+      "entry": "Reading/Test 4/TEST 4.docx",
+      "name": "TEST 4.docx",
+      "ext": ".docx",
+      "size": 18279,
+      "role": "paper",
+      "volume": 20
+    },
+    "45747f05ff1f462f": {
+      "id": "45747f05ff1f462f",
+      "source": "cambridge-20",
+      "entry": "Reading/Test 4/KEY TEST 4 READING.docx",
+      "name": "KEY TEST 4 READING.docx",
+      "ext": ".docx",
+      "size": 7664,
+      "role": "key",
+      "volume": 20
     }
   },
   "issues": []

@@ -154,7 +154,7 @@ with st.container(key='dreamy-nav'):
 
 
 def library():
-    st.html('<section class="hero"><div class="eyebrow">LISTENING & READING / YOUR STUDY JOURNAL</div><h1>Mỗi ngày, một bước tiến.</h1><p>Chọn một bộ đề, dành thời gian cho mình và bắt đầu. Tất cả VOL 1–8 đều ở đây.</p></section>')
+    st.html('<section class="hero"><div class="eyebrow">LISTENING & READING / YOUR STUDY JOURNAL</div><h1>Mỗi ngày, một bước tiến.</h1><p>Chọn một bộ đề, dành thời gian cho mình và bắt đầu. Kho đề gồm VOL 1–8 và Cambridge 14–18, 20.</p></section>')
     a,b,c = st.columns(3)
     a.metric('Bài Reading',sum(t['skill']=='reading' for t in tests))
     b.metric('Bài Listening',sum(t['skill']=='listening' for t in tests))
@@ -162,14 +162,15 @@ def library():
     st.write('')
     a,b,c,d = st.columns([1.2,1,2,1])
     skill = a.selectbox('Kỹ năng',['Tất cả','Reading','Listening'])
-    volumes = sorted({t['volume'] for t in tests})
-    vol = b.selectbox('Bộ đề · VOL 1–8',['Tất cả']+[f'VOL {n}' for n in volumes])
+    collections = {('CAM' if t.get('collection')=='cambridge' else 'VOL',t['volume']) for t in tests}
+    labels = {f'{kind} {n}':(kind,n) for kind,n in sorted(collections,key=lambda x:(x[0]=='CAM',x[1]))}
+    vol = b.selectbox('Bộ đề · VOL / CAM',['Tất cả']+list(labels))
     search = c.text_input('Tìm bài',placeholder='Ví dụ: Test 3')
     favorite_only = d.checkbox('Đã lưu',value=False)
-    shown = [t for t in tests if (skill=='Tất cả' or t['skill']==skill.lower()) and (vol=='Tất cả' or t['volume']==int(vol.split()[1])) and (not search or search.lower() in t['title'].lower()) and (not favorite_only or t['id'] in progress['favorites'])]
+    shown = [t for t in tests if (skill=='Tất cả' or t['skill']==skill.lower()) and (vol=='Tất cả' or labels[vol]==('CAM' if t.get('collection')=='cambridge' else 'VOL',t['volume'])) and (not search or search.lower() in t['title'].lower()) and (not favorite_only or t['id'] in progress['favorites'])]
     st.caption(f'{len(shown)} bài phù hợp · Đề gốc và đáp án được giữ nguyên để đối chiếu.')
     page_count = max(1,(len(shown)+11)//12)
-    st.caption(f'Trang 1–{page_count} · Mỗi trang có tối đa 12 bài. Chọn VOL ở trên để đến thẳng bộ đề bạn cần.')
+    st.caption(f'Trang 1–{page_count} · Mỗi trang có tối đa 12 bài. Chọn VOL hoặc CAM ở trên để đến thẳng bộ đề bạn cần.')
     number = st.number_input(f'Chọn trang (1–{page_count})',min_value=1,max_value=page_count,value=1,step=1)
     st.caption(f'Đang xem trang {number}/{page_count} · Bài {(number-1)*12+1 if shown else 0}–{min(number*12,len(shown))} trên {len(shown)} bài')
     for offset in range(0,len(shown[(number-1)*12:number*12]),3):
