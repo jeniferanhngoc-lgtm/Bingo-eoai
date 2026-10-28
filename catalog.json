@@ -5649,136 +5649,141 @@
       "number": 1,
       "title": "VOL 3 · Test 1",
       "resources": [
+        "d6322e724dda2574",
         "b720448a54351d0f",
         "f52b9add17e0fc30",
-        "320413ae21d14e3d"
+        "320413ae21d14e3d",
+        "f3adceba1c420927"
       ],
       "answers": {
         "1": [
           "F"
         ],
-        "21": [
-          "B"
-        ],
         "2": [
           "T"
-        ],
-        "22": [
-          "A"
         ],
         "3": [
           "F"
         ],
-        "23": [
-          "B"
-        ],
         "4": [
           "T"
-        ],
-        "24": [
-          "threatened"
         ],
         "5": [
           "F"
         ],
-        "25": [
-          "scouts"
-        ],
         "6": [
           "NGV"
-        ],
-        "26": [
-          "leaders"
         ],
         "7": [
           "Roman army"
         ],
-        "27": [
-          "F"
-        ],
         "8": [
           "gardens"
-        ],
-        "28": [
-          "A"
         ],
         "9": [
           "floors"
         ],
-        "29": [
-          "C"
-        ],
         "10": [
           "wall"
-        ],
-        "30": [
-          "B"
         ],
         "11": [
           "93"
         ],
-        "31": [
-          "E"
-        ],
         "12": [
           "gold ring"
-        ],
-        "32": [
-          "G"
         ],
         "13": [
           "modern museum"
         ],
-        "33": [
-          "F"
-        ],
         "14": [
           "vii"
-        ],
-        "34": [
-          "T"
         ],
         "15": [
           "iii"
         ],
-        "35": [
-          "NGV"
-        ],
         "16": [
           "vi"
-        ],
-        "36": [
-          "F"
         ],
         "17": [
           "i"
         ],
-        "37": [
-          "T"
-        ],
         "18": [
           "iv"
-        ],
-        "38": [
-          "C"
         ],
         "19": [
           "ii"
         ],
-        "39": [
-          "A"
-        ],
         "20": [
           "C"
+        ],
+        "21": [
+          "a"
+        ],
+        "22": [
+          "A"
+        ],
+        "23": [
+          "B"
+        ],
+        "24": [
+          "threatened"
+        ],
+        "25": [
+          "scouts"
+        ],
+        "26": [
+          "leaders"
+        ],
+        "27": [
+          "F"
+        ],
+        "28": [
+          "A"
+        ],
+        "29": [
+          "C"
+        ],
+        "30": [
+          "B"
+        ],
+        "31": [
+          "E"
+        ],
+        "32": [
+          "G"
+        ],
+        "33": [
+          "F"
+        ],
+        "34": [
+          "T"
+        ],
+        "35": [
+          "NGV"
+        ],
+        "36": [
+          "F"
+        ],
+        "37": [
+          "T"
+        ],
+        "38": [
+          "C"
+        ],
+        "39": [
+          "A"
         ],
         "40": [
           "D"
         ]
       },
       "groups": [],
-      "key_source": "b720448a54351d0f",
+      "key_source": "f3adceba1c420927",
       "key_count": 40,
-      "has_audio": false
+      "has_audio": false,
+      "preferred_paper": "d6322e724dda2574",
+      "key_import_notes": [],
+      "pack": "reading-v3-t1-2474614d9f25.bingo"
     },
     {
       "id": "reading-v3-t2",
@@ -5787,136 +5792,141 @@
       "number": 2,
       "title": "VOL 3 · Test 2",
       "resources": [
+        "c4b84577c2d95338",
         "b720448a54351d0f",
         "908c610d232f3144",
-        "0474a7d14c5d18b4"
+        "0474a7d14c5d18b4",
+        "f3adceba1c420927"
       ],
       "answers": {
         "1": [
           "D"
         ],
-        "21": [
-          "F"
-        ],
         "2": [
           "D"
-        ],
-        "22": [
-          "T"
         ],
         "3": [
           "C"
         ],
-        "23": [
-          "T"
-        ],
         "4": [
           "C"
-        ],
-        "24": [
-          "NGV"
         ],
         "5": [
           "B"
         ],
-        "25": [
-          "NGV"
-        ],
         "6": [
           "D"
-        ],
-        "26": [
-          "F"
         ],
         "7": [
           "A"
         ],
-        "27": [
-          "iv"
-        ],
         "8": [
           "B"
-        ],
-        "28": [
-          "i"
         ],
         "9": [
           "the royal antelope"
         ],
-        "29": [
-          "vii"
-        ],
         "10": [
           "the auroch"
-        ],
-        "30": [
-          "ii"
         ],
         "11": [
           "long, splayed hooves"
         ],
-        "31": [
-          "iii"
-        ],
         "12": [
           "aird deserts"
-        ],
-        "32": [
-          "F"
         ],
         "13": [
           "the pronghorn"
         ],
-        "33": [
-          "T"
-        ],
         "14": [
           "B"
-        ],
-        "34": [
-          "F"
         ],
         "15": [
           "D"
         ],
-        "35": [
-          "NGV"
-        ],
         "16": [
           "H"
-        ],
-        "36": [
-          "T"
         ],
         "17": [
           "B"
         ],
-        "37": [
-          "E"
-        ],
         "18": [
           "I"
-        ],
-        "38": [
-          "A"
         ],
         "19": [
           "E"
         ],
-        "39": [
-          "G"
-        ],
         "20": [
           "F"
+        ],
+        "21": [
+          "F"
+        ],
+        "22": [
+          "T"
+        ],
+        "23": [
+          "T"
+        ],
+        "24": [
+          "NGV"
+        ],
+        "25": [
+          "NGV"
+        ],
+        "26": [
+          "F"
+        ],
+        "27": [
+          "iv"
+        ],
+        "28": [
+          "i"
+        ],
+        "29": [
+          "vii"
+        ],
+        "30": [
+          "ii"
+        ],
+        "31": [
+          "iii"
+        ],
+        "32": [
+          "F"
+        ],
+        "33": [
+          "T"
+        ],
+        "34": [
+          "F"
+        ],
+        "35": [
+          "NGV"
+        ],
+        "36": [
+          "T"
+        ],
+        "37": [
+          "E"
+        ],
+        "38": [
+          "A"
+        ],
+        "39": [
+          "G"
         ],
         "40": [
           "C"
         ]
       },
       "groups": [],
-      "key_source": "b720448a54351d0f",
+      "key_source": "f3adceba1c420927",
       "key_count": 40,
-      "has_audio": false
+      "has_audio": false,
+      "preferred_paper": "c4b84577c2d95338",
+      "key_import_notes": [],
+      "pack": "reading-v3-t2-b64614d710bc.bingo"
     },
     {
       "id": "reading-v3-t3",
@@ -5925,126 +5935,128 @@
       "number": 3,
       "title": "VOL 3 · Test 3",
       "resources": [
+        "f6282a5e6d6ba67c",
         "b720448a54351d0f",
         "312c2eebb5c516b2",
-        "ddbc0ac844340080"
+        "ddbc0ac844340080",
+        "f3adceba1c420927"
       ],
       "answers": {
         "1": [
           "T"
         ],
-        "21": [
+        "2": [
           "NGV"
         ],
-        "2": [
+        "3": [
+          "F"
+        ],
+        "4": [
+          "T"
+        ],
+        "5": [
+          "evergreen tree"
+        ],
+        "6": [
+          "natural pesticides"
+        ],
+        "7": [
+          "a powder"
+        ],
+        "8": [
+          "overnight"
+        ],
+        "9": [
+          "neem cake"
+        ],
+        "10": [
+          "nitrogen"
+        ],
+        "11": [
+          "2000"
+        ],
+        "12": [
+          "(neem) cakes"
+        ],
+        "13": [
+          "water purification"
+        ],
+        "14": [
+          "clay"
+        ],
+        "15": [
+          "water"
+        ],
+        "16": [
+          "cow manure"
+        ],
+        "17": [
+          "straw"
+        ],
+        "18": [
+          "950 degrees"
+        ],
+        "19": [
+          "60 minutes"
+        ],
+        "20": [
+          "T"
+        ],
+        "21": [
           "NGV"
         ],
         "22": [
           "F"
         ],
-        "3": [
-          "F"
-        ],
         "23": [
           "NGV"
-        ],
-        "4": [
-          "T"
         ],
         "24": [
           "C"
         ],
-        "5": [
-          "evergreen tree"
-        ],
         "25": [
           "B"
-        ],
-        "6": [
-          "natural pesticides"
         ],
         "26": [
           "A"
         ],
-        "7": [
-          "a powder"
-        ],
         "27": [
           "vii"
-        ],
-        "8": [
-          "overnight"
         ],
         "28": [
           "iv"
         ],
-        "9": [
-          "neem cake"
-        ],
         "29": [
           "vi"
-        ],
-        "10": [
-          "nitrogen"
         ],
         "30": [
           "v"
         ],
-        "11": [
-          "2000"
-        ],
         "31": [
           "viii"
-        ],
-        "12": [
-          "(neem) cakes"
         ],
         "32": [
           "iii"
         ],
-        "13": [
-          "water purification"
-        ],
         "33": [
           "combusion engine"
-        ],
-        "14": [
-          "clay"
         ],
         "34": [
           "silent"
         ],
-        "15": [
-          "water"
-        ],
         "35": [
           "battery"
-        ],
-        "16": [
-          "cow manure"
         ],
         "36": [
           "portable computers"
         ],
-        "17": [
-          "straw"
-        ],
         "37": [
           "F"
-        ],
-        "18": [
-          "950 degrees"
         ],
         "38": [
           "NGV"
         ],
-        "19": [
-          "60 minutes"
-        ],
         "39": [
-          "T"
-        ],
-        "20": [
           "T"
         ],
         "40": [
@@ -6052,9 +6064,12 @@
         ]
       },
       "groups": [],
-      "key_source": "b720448a54351d0f",
+      "key_source": "f3adceba1c420927",
       "key_count": 40,
-      "has_audio": false
+      "has_audio": false,
+      "preferred_paper": "f6282a5e6d6ba67c",
+      "key_import_notes": [],
+      "pack": "reading-v3-t3-6bda586be5ea.bingo"
     },
     {
       "id": "reading-v3-t4",
@@ -6063,136 +6078,141 @@
       "number": 4,
       "title": "VOL 3 · Test 4",
       "resources": [
+        "928959ec8bb2d6bd",
         "b720448a54351d0f",
         "aa146e4978da2107",
-        "99ca1f53b4c67172"
+        "99ca1f53b4c67172",
+        "f3adceba1c420927"
       ],
       "answers": {
         "1": [
           "B"
         ],
-        "21": [
-          "B"
-        ],
         "2": [
           "E"
-        ],
-        "22": [
-          "D"
         ],
         "3": [
           "D"
         ],
-        "23": [
-          "A"
-        ],
         "4": [
           "A"
         ],
-        "24": [
-          "C"
-        ],
         "5": [
-          "B"
-        ],
-        "25": [
           "B"
         ],
         "6": [
           "D"
         ],
-        "26": [
-          "C"
-        ],
         "7": [
           "C"
         ],
-        "27": [
-          "F"
-        ],
         "8": [
-          "B"
-        ],
-        "28": [
           "B"
         ],
         "9": [
           "A"
         ],
-        "29": [
-          "E"
-        ],
         "10": [
           "B"
         ],
-        "30": [
-          "C"
-        ],
         "11": [
-          "D"
-        ],
-        "31": [
           "D"
         ],
         "12": [
           "soil erosion"
         ],
-        "32": [
-          "E"
-        ],
         "13": [
           "paper"
-        ],
-        "33": [
-          "C"
         ],
         "14": [
           "F"
         ],
-        "34": [
-          "A"
-        ],
         "15": [
           "T"
-        ],
-        "35": [
-          "C"
         ],
         "16": [
           "NGV"
         ],
-        "36": [
-          "Y"
-        ],
         "17": [
           "T"
-        ],
-        "37": [
-          "N"
         ],
         "18": [
           "F"
         ],
-        "38": [
-          "N"
-        ],
         "19": [
           "T"
         ],
-        "39": [
-          "NGV"
-        ],
         "20": [
           "F"
+        ],
+        "21": [
+          "B"
+        ],
+        "22": [
+          "D"
+        ],
+        "23": [
+          "A"
+        ],
+        "24": [
+          "C"
+        ],
+        "25": [
+          "B"
+        ],
+        "26": [
+          "C"
+        ],
+        "27": [
+          "F"
+        ],
+        "28": [
+          "B"
+        ],
+        "29": [
+          "E"
+        ],
+        "30": [
+          "C"
+        ],
+        "31": [
+          "D"
+        ],
+        "32": [
+          "E"
+        ],
+        "33": [
+          "C"
+        ],
+        "34": [
+          "A"
+        ],
+        "35": [
+          "C"
+        ],
+        "36": [
+          "Y"
+        ],
+        "37": [
+          "N"
+        ],
+        "38": [
+          "N"
+        ],
+        "39": [
+          "NGV"
         ],
         "40": [
           "Y"
         ]
       },
       "groups": [],
-      "key_source": "b720448a54351d0f",
+      "key_source": "f3adceba1c420927",
       "key_count": 40,
-      "has_audio": false
+      "has_audio": false,
+      "preferred_paper": "928959ec8bb2d6bd",
+      "key_import_notes": [],
+      "pack": "reading-v3-t4-0edf8ca4b7d5.bingo"
     },
     {
       "id": "reading-v3-t5",
@@ -6201,136 +6221,141 @@
       "number": 5,
       "title": "VOL 3 · Test 5",
       "resources": [
+        "c5ae327f93cd7166",
         "b720448a54351d0f",
         "bc9b42fa117d8950",
-        "7c029ecf14198481"
+        "7c029ecf14198481",
+        "f3adceba1c420927"
       ],
       "answers": {
         "1": [
           "F"
         ],
-        "21": [
-          "D"
-        ],
         "2": [
           "T"
-        ],
-        "22": [
-          "infrastructure"
         ],
         "3": [
           "F"
         ],
-        "23": [
-          "spaceships"
-        ],
         "4": [
           "T"
-        ],
-        "24": [
-          "communication"
         ],
         "5": [
           "NGV"
         ],
-        "25": [
-          "laboratories"
-        ],
         "6": [
           "F"
-        ],
-        "26": [
-          "colonisation"
         ],
         "7": [
           "seeds"
         ],
-        "27": [
-          "B"
-        ],
         "8": [
           "shells"
-        ],
-        "28": [
-          "C"
         ],
         "9": [
           "fish"
         ],
-        "29": [
-          "E"
-        ],
         "10": [
           "canals"
-        ],
-        "30": [
-          "B"
         ],
         "11": [
           "maize"
         ],
-        "31": [
-          "A"
-        ],
         "12": [
           "cotton"
-        ],
-        "32": [
-          "A"
         ],
         "13": [
           "flotation"
         ],
-        "33": [
-          "D"
-        ],
         "14": [
           "vi"
-        ],
-        "34": [
-          "C"
         ],
         "15": [
           "iii"
         ],
-        "35": [
-          "D"
-        ],
         "16": [
           "i"
-        ],
-        "36": [
-          "NGV"
         ],
         "17": [
           "v"
         ],
-        "37": [
-          "T"
-        ],
         "18": [
           "ix"
-        ],
-        "38": [
-          "T"
         ],
         "19": [
           "viii"
         ],
-        "39": [
-          "F"
-        ],
         "20": [
           "A"
+        ],
+        "21": [
+          "D"
+        ],
+        "22": [
+          "infrastructure"
+        ],
+        "23": [
+          "spaceships"
+        ],
+        "24": [
+          "communication"
+        ],
+        "25": [
+          "laboratories"
+        ],
+        "26": [
+          "colonisation"
+        ],
+        "27": [
+          "B"
+        ],
+        "28": [
+          "C"
+        ],
+        "29": [
+          "E"
+        ],
+        "30": [
+          "B"
+        ],
+        "31": [
+          "A"
+        ],
+        "32": [
+          "A"
+        ],
+        "33": [
+          "D"
+        ],
+        "34": [
+          "C"
+        ],
+        "35": [
+          "D"
+        ],
+        "36": [
+          "NGV"
+        ],
+        "37": [
+          "T"
+        ],
+        "38": [
+          "T"
+        ],
+        "39": [
+          "F"
         ],
         "40": [
           "NGV"
         ]
       },
       "groups": [],
-      "key_source": "b720448a54351d0f",
+      "key_source": "f3adceba1c420927",
       "key_count": 40,
-      "has_audio": false
+      "has_audio": false,
+      "preferred_paper": "c5ae327f93cd7166",
+      "key_import_notes": [],
+      "pack": "reading-v3-t5-7d225cd3fbed.bingo"
     },
     {
       "id": "reading-v3-t6",
@@ -6339,136 +6364,141 @@
       "number": 6,
       "title": "VOL 3 · Test 6",
       "resources": [
+        "08c24298dc0323a5",
         "b720448a54351d0f",
         "54bf5cbb5928b5da",
-        "6495da6e9bce1e6d"
+        "6495da6e9bce1e6d",
+        "f3adceba1c420927"
       ],
       "answers": {
         "1": [
           "B"
         ],
-        "21": [
-          "one third"
-        ],
         "2": [
           "B"
-        ],
-        "22": [
-          "cross-pollination"
         ],
         "3": [
           "A"
         ],
-        "23": [
-          "energy costs"
-        ],
         "4": [
           "A"
-        ],
-        "24": [
-          "tree species"
         ],
         "5": [
           "C"
         ],
-        "25": [
-          "trap-lining"
-        ],
         "6": [
           "B"
         ],
-        "26": [
+        "7": [
           "A"
         ],
-        "7": [
+        "8": [
+          "C"
+        ],
+        "9": [
+          "E"
+        ],
+        "10": [
+          "D"
+        ],
+        "11": [
+          "F"
+        ],
+        "12": [
+          "T"
+        ],
+        "13": [
+          "T"
+        ],
+        "14": [
+          "ii"
+        ],
+        "15": [
+          "v"
+        ],
+        "16": [
+          "i"
+        ],
+        "17": [
+          "iv"
+        ],
+        "18": [
+          "viii"
+        ],
+        "19": [
+          "insects"
+        ],
+        "20": [
+          "nectar"
+        ],
+        "21": [
+          "one third"
+        ],
+        "22": [
+          "cross-pollination"
+        ],
+        "23": [
+          "energy costs"
+        ],
+        "24": [
+          "tree species"
+        ],
+        "25": [
+          "trap-lining"
+        ],
+        "26": [
           "A"
         ],
         "27": [
           "C"
         ],
-        "8": [
-          "C"
-        ],
         "28": [
-          "E"
-        ],
-        "9": [
           "E"
         ],
         "29": [
           "F"
         ],
-        "10": [
-          "D"
-        ],
         "30": [
           "A"
-        ],
-        "11": [
-          "F"
         ],
         "31": [
           "B"
         ],
-        "12": [
-          "T"
-        ],
         "32": [
           "G"
-        ],
-        "13": [
-          "T"
         ],
         "33": [
           "C"
         ],
-        "14": [
-          "ii"
-        ],
         "34": [
           "F"
-        ],
-        "15": [
-          "v"
         ],
         "35": [
           "E"
         ],
-        "16": [
-          "i"
-        ],
         "36": [
           "NGV"
-        ],
-        "17": [
-          "iv"
         ],
         "37": [
           "Y"
         ],
-        "18": [
-          "viii"
-        ],
         "38": [
           "N"
         ],
-        "19": [
-          "insects"
-        ],
         "39": [
           "Y"
-        ],
-        "20": [
-          "nectar"
         ],
         "40": [
           "NGV"
         ]
       },
       "groups": [],
-      "key_source": "b720448a54351d0f",
+      "key_source": "f3adceba1c420927",
       "key_count": 40,
-      "has_audio": false
+      "has_audio": false,
+      "preferred_paper": "08c24298dc0323a5",
+      "key_import_notes": [],
+      "pack": "reading-v3-t6-d87178b6e9a1.bingo"
     },
     {
       "id": "reading-v3-t7",
@@ -6477,136 +6507,141 @@
       "number": 7,
       "title": "VOL 3 · Test 7",
       "resources": [
+        "13a49e5c979ef805",
         "b720448a54351d0f",
         "565f8ce01c3e215a",
-        "ded77a180fc06c16"
+        "ded77a180fc06c16",
+        "f3adceba1c420927"
       ],
       "answers": {
         "1": [
           "D"
         ],
-        "21": [
-          "x"
-        ],
         "2": [
           "E"
-        ],
-        "22": [
-          "T"
         ],
         "3": [
           "D"
         ],
-        "23": [
-          "F"
-        ],
         "4": [
           "E"
-        ],
-        "24": [
-          "NGV"
         ],
         "5": [
           "A"
         ],
-        "25": [
-          "T"
-        ],
         "6": [
-          "F"
-        ],
-        "26": [
           "F"
         ],
         "7": [
           "H"
         ],
-        "27": [
-          "N"
-        ],
         "8": [
           "F"
-        ],
-        "28": [
-          "Y"
         ],
         "9": [
           "C"
         ],
-        "29": [
-          "NGV"
-        ],
         "10": [
           "T"
-        ],
-        "30": [
-          "Y"
         ],
         "11": [
           "T"
         ],
-        "31": [
-          "Y"
-        ],
         "12": [
           "F"
-        ],
-        "32": [
-          "D"
         ],
         "13": [
           "NGV"
         ],
-        "33": [
-          "E"
-        ],
         "14": [
           "iv"
-        ],
-        "34": [
-          "B"
         ],
         "15": [
           "ix"
         ],
-        "35": [
-          "C"
-        ],
         "16": [
           "ii"
-        ],
-        "36": [
-          "processes"
         ],
         "17": [
           "viii"
         ],
-        "37": [
-          "cross-docking"
-        ],
         "18": [
           "vi"
-        ],
-        "38": [
-          "Strategic"
         ],
         "19": [
           "i"
         ],
-        "39": [
-          "Demand"
-        ],
         "20": [
           "xi"
         ],
+        "21": [
+          "x"
+        ],
+        "22": [
+          "T"
+        ],
+        "23": [
+          "F"
+        ],
+        "24": [
+          "NGV"
+        ],
+        "25": [
+          "T"
+        ],
+        "26": [
+          "F"
+        ],
+        "27": [
+          "D"
+        ],
+        "28": [
+          "B"
+        ],
+        "29": [
+          "A"
+        ],
+        "30": [
+          "C"
+        ],
+        "31": [
+          "B"
+        ],
+        "32": [
+          "N"
+        ],
+        "33": [
+          "NGV"
+        ],
+        "34": [
+          "Y"
+        ],
+        "35": [
+          "NGV"
+        ],
+        "36": [
+          "E"
+        ],
+        "37": [
+          "C"
+        ],
+        "38": [
+          "D"
+        ],
+        "39": [
+          "G"
+        ],
         "40": [
-          "management services"
+          "B"
         ]
       },
       "groups": [],
-      "key_source": "b720448a54351d0f",
+      "key_source": "f3adceba1c420927",
       "key_count": 40,
-      "has_audio": false
+      "has_audio": false,
+      "preferred_paper": "13a49e5c979ef805",
+      "key_import_notes": [],
+      "pack": "reading-v3-t7-c09cac01c537.bingo"
     },
     {
       "id": "reading-v3-t8",
@@ -6615,136 +6650,141 @@
       "number": 8,
       "title": "VOL 3 · Test 8",
       "resources": [
+        "e8f3bb385e9d40d9",
         "b720448a54351d0f",
         "3702ae8ffbc13432",
-        "90335dfb72ae995d"
+        "90335dfb72ae995d",
+        "f3adceba1c420927"
       ],
       "answers": {
         "1": [
           "F"
         ],
-        "21": [
-          "D"
-        ],
         "2": [
           "NGV"
-        ],
-        "22": [
-          "B"
         ],
         "3": [
           "T"
         ],
-        "23": [
-          "one-sixth"
-        ],
         "4": [
           "F"
-        ],
-        "24": [
-          "16th century"
         ],
         "5": [
           "F"
         ],
-        "25": [
-          "Mercator"
-        ],
         "6": [
           "T"
-        ],
-        "26": [
-          "John Gould"
         ],
         "7": [
           "1906"
         ],
-        "27": [
-          "K"
-        ],
         "8": [
           "Australia"
-        ],
-        "28": [
-          "H"
         ],
         "9": [
           "family"
         ],
-        "29": [
-          "D"
-        ],
         "10": [
           "bankruptancy"
-        ],
-        "30": [
-          "J"
         ],
         "11": [
           "writers"
         ],
-        "31": [
-          "E"
-        ],
         "12": [
           "reputation"
-        ],
-        "32": [
-          "B"
         ],
         "13": [
           "husband"
         ],
-        "33": [
-          "B"
-        ],
         "14": [
           "I"
-        ],
-        "34": [
-          "C"
         ],
         "15": [
           "F"
         ],
-        "35": [
-          "D"
-        ],
         "16": [
           "G"
-        ],
-        "36": [
-          "C"
         ],
         "17": [
           "D"
         ],
-        "37": [
-          "B"
-        ],
         "18": [
           "C"
-        ],
-        "38": [
-          "YES"
         ],
         "19": [
           "H"
         ],
-        "39": [
-          "NGV"
-        ],
         "20": [
           "C"
+        ],
+        "21": [
+          "D"
+        ],
+        "22": [
+          "B"
+        ],
+        "23": [
+          "one-sixth"
+        ],
+        "24": [
+          "16th century"
+        ],
+        "25": [
+          "Mercator"
+        ],
+        "26": [
+          "John Gould"
+        ],
+        "27": [
+          "K"
+        ],
+        "28": [
+          "H"
+        ],
+        "29": [
+          "D"
+        ],
+        "30": [
+          "J"
+        ],
+        "31": [
+          "E"
+        ],
+        "32": [
+          "B"
+        ],
+        "33": [
+          "B"
+        ],
+        "34": [
+          "C"
+        ],
+        "35": [
+          "D"
+        ],
+        "36": [
+          "C"
+        ],
+        "37": [
+          "B"
+        ],
+        "38": [
+          "YES"
+        ],
+        "39": [
+          "NGV"
         ],
         "40": [
           "YES"
         ]
       },
       "groups": [],
-      "key_source": "b720448a54351d0f",
+      "key_source": "f3adceba1c420927",
       "key_count": 40,
-      "has_audio": false
+      "has_audio": false,
+      "preferred_paper": "e8f3bb385e9d40d9",
+      "key_import_notes": [],
+      "pack": "reading-v3-t8-e8e8609153b5.bingo"
     },
     {
       "id": "reading-v3-t9",
@@ -6753,126 +6793,128 @@
       "number": 9,
       "title": "VOL 3 · Test 9",
       "resources": [
+        "71db9b049321e823",
         "b720448a54351d0f",
         "172ae8fea237b5ff",
-        "be6b5b9f73547b3c"
+        "be6b5b9f73547b3c",
+        "f3adceba1c420927"
       ],
       "answers": {
         "1": [
           "location"
         ],
-        "21": [
-          "D"
-        ],
         "2": [
           "policies"
-        ],
-        "22": [
-          "A"
         ],
         "3": [
           "government"
         ],
-        "23": [
-          "B"
-        ],
         "4": [
           "incomes"
-        ],
-        "24": [
-          "Tasmanian tiger"
         ],
         "5": [
           "land"
         ],
-        "25": [
-          "rabbits"
-        ],
         "6": [
           "suburban"
-        ],
-        "26": [
-          "overpopulation"
         ],
         "7": [
           "F"
         ],
-        "27": [
-          "Y"
-        ],
         "8": [
           "T"
-        ],
-        "28": [
-          "N"
         ],
         "9": [
           "NGV"
         ],
-        "29": [
-          "Y"
-        ],
         "10": [
           "F"
-        ],
-        "30": [
-          "Y"
         ],
         "11": [
           "T"
         ],
-        "31": [
-          "NGV"
-        ],
         "12": [
           "NGV"
-        ],
-        "32": [
-          "A"
         ],
         "13": [
           "T"
         ],
-        "33": [
-          "C"
-        ],
         "14": [
-          "B"
-        ],
-        "34": [
           "B"
         ],
         "15": [
           "D"
         ],
-        "35": [
-          "D"
-        ],
         "16": [
           "C"
         ],
-        "36": [
+        "17": [
           "B"
         ],
-        "17": [
+        "18": [
+          "F"
+        ],
+        "19": [
+          "A"
+        ],
+        "20": [
+          "D"
+        ],
+        "21": [
+          "D"
+        ],
+        "22": [
+          "A"
+        ],
+        "23": [
+          "B"
+        ],
+        "24": [
+          "Tasmanian tiger"
+        ],
+        "25": [
+          "rabbits"
+        ],
+        "26": [
+          "overpopulation"
+        ],
+        "27": [
+          "Y"
+        ],
+        "28": [
+          "N"
+        ],
+        "29": [
+          "Y"
+        ],
+        "30": [
+          "Y"
+        ],
+        "31": [
+          "NGV"
+        ],
+        "32": [
+          "A"
+        ],
+        "33": [
+          "C"
+        ],
+        "34": [
+          "B"
+        ],
+        "35": [
+          "D"
+        ],
+        "36": [
           "B"
         ],
         "37": [
           "C"
         ],
-        "18": [
-          "F"
-        ],
         "38": [
           "A"
         ],
-        "19": [
-          "A"
-        ],
         "39": [
-          "D"
-        ],
-        "20": [
           "D"
         ],
         "40": [
@@ -6880,9 +6922,12 @@
         ]
       },
       "groups": [],
-      "key_source": "b720448a54351d0f",
+      "key_source": "f3adceba1c420927",
       "key_count": 40,
-      "has_audio": false
+      "has_audio": false,
+      "preferred_paper": "71db9b049321e823",
+      "key_import_notes": [],
+      "pack": "reading-v3-t9-1748d28da362.bingo"
     },
     {
       "id": "reading-v3-t10",
@@ -6891,6 +6936,7 @@
       "number": 10,
       "title": "VOL 3 · Test 10",
       "resources": [
+        "b247924146b71246",
         "b4f18232d9722806",
         "030dfa8ef72b1afc"
       ],
@@ -7019,7 +7065,9 @@
       "groups": [],
       "key_source": "b4f18232d9722806",
       "key_count": 40,
-      "has_audio": false
+      "has_audio": false,
+      "preferred_paper": "b247924146b71246",
+      "pack": "reading-v3-t10-63d77d93a9f4.bingo"
     },
     {
       "id": "reading-v4-t1",
@@ -7028,14 +7076,140 @@
       "number": 1,
       "title": "VOL 4 · Test 1",
       "resources": [
+        "b91c4b4747ea429d",
         "c45d3246a4c99e93",
-        "ae9c1238114ad081"
+        "ae9c1238114ad081",
+        "5e4f421a5b2bc949"
       ],
-      "answers": {},
+      "answers": {
+        "1": [
+          "Timetable"
+        ],
+        "2": [
+          "Surface"
+        ],
+        "3": [
+          "Accommodation"
+        ],
+        "4": [
+          "Restaurant"
+        ],
+        "5": [
+          "Region"
+        ],
+        "6": [
+          "Numbers"
+        ],
+        "7": [
+          "TRUE"
+        ],
+        "8": [
+          "TRUE"
+        ],
+        "9": [
+          "NG"
+        ],
+        "10": [
+          "FALSE"
+        ],
+        "11": [
+          "NG"
+        ],
+        "12": [
+          "FALSE"
+        ],
+        "13": [
+          "NG"
+        ],
+        "14": [
+          "E"
+        ],
+        "15": [
+          "I"
+        ],
+        "16": [
+          "A"
+        ],
+        "17": [
+          "G"
+        ],
+        "18": [
+          "C"
+        ],
+        "19": [
+          "F"
+        ],
+        "20": [
+          "A"
+        ],
+        "21": [
+          "E"
+        ],
+        "22": [
+          "A"
+        ],
+        "23": [
+          "B"
+        ],
+        "24": [
+          "Sheltered"
+        ],
+        "25": [
+          "Pengunis"
+        ],
+        "26": [
+          "Permit"
+        ],
+        "27": [
+          "v"
+        ],
+        "28": [
+          "iv"
+        ],
+        "29": [
+          "vii"
+        ],
+        "30": [
+          "ii"
+        ],
+        "31": [
+          "viii"
+        ],
+        "32": [
+          "vi"
+        ],
+        "33": [
+          "iii"
+        ],
+        "34": [
+          "B"
+        ],
+        "35": [
+          "A"
+        ],
+        "36": [
+          "C"
+        ],
+        "37": [
+          "B"
+        ],
+        "38": [
+          "Food"
+        ],
+        "39": [
+          "Children"
+        ],
+        "40": [
+          "Edible"
+        ]
+      },
       "groups": [],
-      "key_source": null,
-      "key_count": 0,
-      "has_audio": false
+      "key_source": "5e4f421a5b2bc949",
+      "key_count": 40,
+      "has_audio": false,
+      "preferred_paper": "b91c4b4747ea429d",
+      "key_import_notes": [],
+      "pack": "reading-v4-t1-a3ecbf243695.bingo"
     },
     {
       "id": "reading-v4-t2",
@@ -7044,14 +7218,140 @@
       "number": 2,
       "title": "VOL 4 · Test 2",
       "resources": [
+        "b81a28032164fbc1",
         "982af4c755fd8cf1",
-        "367809af8dc61502"
+        "367809af8dc61502",
+        "5e4f421a5b2bc949"
       ],
-      "answers": {},
+      "answers": {
+        "1": [
+          "TRUE"
+        ],
+        "2": [
+          "NG"
+        ],
+        "3": [
+          "FALSE"
+        ],
+        "4": [
+          "TRUE"
+        ],
+        "5": [
+          "FALSE"
+        ],
+        "6": [
+          "NG"
+        ],
+        "7": [
+          "NG"
+        ],
+        "8": [
+          "46"
+        ],
+        "9": [
+          "The human eye"
+        ],
+        "10": [
+          "Indo-European"
+        ],
+        "11": [
+          "Richard Brocklesby"
+        ],
+        "12": [
+          "The Royal Institution"
+        ],
+        "13": [
+          "Gas lighting"
+        ],
+        "14": [
+          "v"
+        ],
+        "15": [
+          "ii"
+        ],
+        "16": [
+          "iv"
+        ],
+        "17": [
+          "i"
+        ],
+        "18": [
+          "viii"
+        ],
+        "19": [
+          "iii"
+        ],
+        "20": [
+          "vi"
+        ],
+        "21": [
+          "Sewing machine"
+        ],
+        "22": [
+          "Department stores"
+        ],
+        "23": [
+          "Prices"
+        ],
+        "24": [
+          "Europe"
+        ],
+        "25": [
+          "C"
+        ],
+        "26": [
+          "D"
+        ],
+        "27": [
+          "D"
+        ],
+        "28": [
+          "L"
+        ],
+        "29": [
+          "F"
+        ],
+        "30": [
+          "J"
+        ],
+        "31": [
+          "I"
+        ],
+        "32": [
+          "B"
+        ],
+        "33": [
+          "No"
+        ],
+        "34": [
+          "NG"
+        ],
+        "35": [
+          "Yes"
+        ],
+        "36": [
+          "NG"
+        ],
+        "37": [
+          "D"
+        ],
+        "38": [
+          "A"
+        ],
+        "39": [
+          "B"
+        ],
+        "40": [
+          "C"
+        ]
+      },
       "groups": [],
-      "key_source": null,
-      "key_count": 0,
-      "has_audio": false
+      "key_source": "5e4f421a5b2bc949",
+      "key_count": 40,
+      "has_audio": false,
+      "preferred_paper": "b81a28032164fbc1",
+      "key_import_notes": [],
+      "pack": "reading-v4-t2-b6a0f14abf18.bingo"
     },
     {
       "id": "reading-v4-t3",
@@ -7060,14 +7360,145 @@
       "number": 3,
       "title": "VOL 4 · Test 3",
       "resources": [
+        "341070000ddcfa19",
         "dbd1f49726dfe907",
-        "b79fb09622b1f9ef"
+        "b79fb09622b1f9ef",
+        "5e4f421a5b2bc949"
       ],
-      "answers": {},
+      "answers": {
+        "1": [
+          "FALSE"
+        ],
+        "2": [
+          "NG"
+        ],
+        "3": [
+          "TRUE"
+        ],
+        "4": [
+          "TRUE"
+        ],
+        "5": [
+          "TRUE"
+        ],
+        "6": [
+          "NG"
+        ],
+        "7": [
+          "FALSE"
+        ],
+        "8": [
+          "Regular commuters"
+        ],
+        "9": [
+          "Visual processing"
+        ],
+        "10": [
+          "The secondary images"
+        ],
+        "11": [
+          "The emotional value"
+        ],
+        "12": [
+          "Intrusive product placement"
+        ],
+        "13": [
+          "The holiday season"
+        ],
+        "14": [
+          "C"
+        ],
+        "15": [
+          "D"
+        ],
+        "16": [
+          "E"
+        ],
+        "17": [
+          "G"
+        ],
+        "18": [
+          "D"
+        ],
+        "19": [
+          "F"
+        ],
+        "20": [
+          "B"
+        ],
+        "21": [
+          "B"
+        ],
+        "22": [
+          "D"
+        ],
+        "23": [
+          "Electron-magnetic radiation"
+        ],
+        "24": [
+          "Henri Douche"
+        ],
+        "25": [
+          "Crop failure"
+        ],
+        "26": [
+          "Nutrients"
+        ],
+        "27": [
+          "A"
+        ],
+        "28": [
+          "C"
+        ],
+        "29": [
+          "D"
+        ],
+        "30": [
+          "A"
+        ],
+        "31": [
+          "B"
+        ],
+        "32": [
+          "No"
+        ],
+        "34": [
+          "NG"
+        ],
+        "35": [
+          "Yes"
+        ],
+        "36": [
+          "B"
+        ],
+        "37": [
+          "G"
+        ],
+        "38": [
+          "A"
+        ],
+        "39": [
+          "D"
+        ],
+        "40": [
+          "C"
+        ]
+      },
       "groups": [],
-      "key_source": null,
-      "key_count": 0,
-      "has_audio": false
+      "key_source": "5e4f421a5b2bc949",
+      "key_count": 39,
+      "has_audio": false,
+      "preferred_paper": "341070000ddcfa19",
+      "key_import_notes": [
+        {
+          "sheet": "Test 3",
+          "row": 8,
+          "column": 5,
+          "number": 3,
+          "reason": "Question number out of sequence; not imported"
+        }
+      ],
+      "pack": "reading-v4-t3-2431a4e9da9b.bingo"
     },
     {
       "id": "reading-v4-t4",
@@ -7076,14 +7507,145 @@
       "number": 4,
       "title": "VOL 4 · Test 4",
       "resources": [
+        "2a315beccc3753c6",
         "e508fad9eb668b07",
-        "8e6e98e646b075df"
+        "8e6e98e646b075df",
+        "5e4f421a5b2bc949"
       ],
-      "answers": {},
+      "answers": {
+        "1": [
+          "TRUE"
+        ],
+        "2": [
+          "TRUE"
+        ],
+        "3": [
+          "NG"
+        ],
+        "4": [
+          "FALSE"
+        ],
+        "5": [
+          "Discussions"
+        ],
+        "6": [
+          "Recordings"
+        ],
+        "7": [
+          "Observation skills"
+        ],
+        "8": [
+          "Other people"
+        ],
+        "9": [
+          "Our emotions"
+        ],
+        "10": [
+          "Collections"
+        ],
+        "11": [
+          "Proficiency"
+        ],
+        "12": [
+          "Failure"
+        ],
+        "13": [
+          "Individua differences"
+        ],
+        "14": [
+          "vii"
+        ],
+        "15": [
+          "v"
+        ],
+        "16": [
+          "ix"
+        ],
+        "17": [
+          "i"
+        ],
+        "18": [
+          "iv"
+        ],
+        "19": [
+          "vi"
+        ],
+        "20": [
+          "B"
+        ],
+        "21": [
+          "C"
+        ],
+        "22": [
+          "C"
+        ],
+        "23": [
+          "A"
+        ],
+        "24": [
+          "Bacteria"
+        ],
+        "25": [
+          "Gland"
+        ],
+        "26": [
+          "Force"
+        ],
+        "27": [
+          "C"
+        ],
+        "29": [
+          "B"
+        ],
+        "30": [
+          "B"
+        ],
+        "31": [
+          "C"
+        ],
+        "32": [
+          "H"
+        ],
+        "33": [
+          "A"
+        ],
+        "34": [
+          "I"
+        ],
+        "35": [
+          "B"
+        ],
+        "36": [
+          "E"
+        ],
+        "37": [
+          "NG"
+        ],
+        "38": [
+          "Yes"
+        ],
+        "39": [
+          "No"
+        ],
+        "40": [
+          "No"
+        ]
+      },
       "groups": [],
-      "key_source": null,
-      "key_count": 0,
-      "has_audio": false
+      "key_source": "5e4f421a5b2bc949",
+      "key_count": 39,
+      "has_audio": false,
+      "preferred_paper": "2a315beccc3753c6",
+      "key_import_notes": [
+        {
+          "sheet": "Test 4",
+          "row": 3,
+          "column": 5,
+          "number": 38,
+          "reason": "Question number out of sequence; not imported"
+        }
+      ],
+      "pack": "reading-v4-t4-7d403e8f0f36.bingo"
     },
     {
       "id": "reading-v4-t5",
@@ -7092,14 +7654,140 @@
       "number": 5,
       "title": "VOL 4 · Test 5",
       "resources": [
+        "1d8a1b02ac7c552f",
         "3a0f70ccd9b0a1e4",
-        "babd113cc97cb00b"
+        "babd113cc97cb00b",
+        "5e4f421a5b2bc949"
       ],
-      "answers": {},
+      "answers": {
+        "1": [
+          "TRUE"
+        ],
+        "2": [
+          "NG"
+        ],
+        "3": [
+          "FALSE"
+        ],
+        "4": [
+          "FALSE"
+        ],
+        "5": [
+          "TRUE"
+        ],
+        "6": [
+          "TRUE"
+        ],
+        "7": [
+          "NG"
+        ],
+        "8": [
+          "Tools"
+        ],
+        "9": [
+          "Nomadic"
+        ],
+        "10": [
+          "Grouped"
+        ],
+        "11": [
+          "Foodstuffs"
+        ],
+        "12": [
+          "20,000 persons"
+        ],
+        "13": [
+          "Craft specialists"
+        ],
+        "14": [
+          "v"
+        ],
+        "15": [
+          "viii"
+        ],
+        "16": [
+          "vi"
+        ],
+        "17": [
+          "vii"
+        ],
+        "18": [
+          "iii"
+        ],
+        "19": [
+          "i"
+        ],
+        "20": [
+          "ii"
+        ],
+        "21": [
+          "Equal opportunity"
+        ],
+        "22": [
+          "Internal costs"
+        ],
+        "23": [
+          "C"
+        ],
+        "24": [
+          "C"
+        ],
+        "25": [
+          "A"
+        ],
+        "26": [
+          "B"
+        ],
+        "27": [
+          "B"
+        ],
+        "28": [
+          "C"
+        ],
+        "29": [
+          "H"
+        ],
+        "30": [
+          "G"
+        ],
+        "31": [
+          "E"
+        ],
+        "32": [
+          "D"
+        ],
+        "33": [
+          "A"
+        ],
+        "34": [
+          "Bee-keeping"
+        ],
+        "35": [
+          "Life cycles"
+        ],
+        "36": [
+          "Droughts"
+        ],
+        "37": [
+          "C"
+        ],
+        "38": [
+          "D"
+        ],
+        "39": [
+          "D"
+        ],
+        "40": [
+          "D"
+        ]
+      },
       "groups": [],
-      "key_source": null,
-      "key_count": 0,
-      "has_audio": false
+      "key_source": "5e4f421a5b2bc949",
+      "key_count": 40,
+      "has_audio": false,
+      "preferred_paper": "1d8a1b02ac7c552f",
+      "key_import_notes": [],
+      "pack": "reading-v4-t5-054794fc1d32.bingo"
     },
     {
       "id": "reading-v4-t6",
@@ -7108,15 +7796,141 @@
       "number": 6,
       "title": "VOL 4 · Test 6",
       "resources": [
+        "a31af8898396c815",
         "6dde01e9c22b30f9",
         "f9cde007895a3dec",
-        "5d82486ad22996ec"
+        "5d82486ad22996ec",
+        "5e4f421a5b2bc949"
       ],
-      "answers": {},
+      "answers": {
+        "1": [
+          "TRUE"
+        ],
+        "2": [
+          "NG"
+        ],
+        "3": [
+          "FALSE"
+        ],
+        "4": [
+          "TRUE"
+        ],
+        "5": [
+          "C"
+        ],
+        "6": [
+          "E"
+        ],
+        "7": [
+          "F"
+        ],
+        "8": [
+          "Masons"
+        ],
+        "9": [
+          "Holes"
+        ],
+        "10": [
+          "Metal wedges"
+        ],
+        "11": [
+          "Splits"
+        ],
+        "12": [
+          "Bricks"
+        ],
+        "13": [
+          "Heating"
+        ],
+        "14": [
+          "x"
+        ],
+        "15": [
+          "vi"
+        ],
+        "16": [
+          "v"
+        ],
+        "17": [
+          "ii"
+        ],
+        "18": [
+          "iv"
+        ],
+        "19": [
+          "viii"
+        ],
+        "20": [
+          "iii"
+        ],
+        "21": [
+          "D"
+        ],
+        "22": [
+          "A"
+        ],
+        "23": [
+          "C"
+        ],
+        "24": [
+          "Newspapers"
+        ],
+        "25": [
+          "Appearanace"
+        ],
+        "26": [
+          "Audience"
+        ],
+        "27": [
+          "Yes"
+        ],
+        "28": [
+          "Yes"
+        ],
+        "29": [
+          "NG"
+        ],
+        "30": [
+          "No"
+        ],
+        "31": [
+          "Yes"
+        ],
+        "32": [
+          "A"
+        ],
+        "33": [
+          "C"
+        ],
+        "34": [
+          "D"
+        ],
+        "35": [
+          "B"
+        ],
+        "36": [
+          "A"
+        ],
+        "37": [
+          "B"
+        ],
+        "38": [
+          "E"
+        ],
+        "39": [
+          "G"
+        ],
+        "40": [
+          "A"
+        ]
+      },
       "groups": [],
-      "key_source": null,
-      "key_count": 0,
-      "has_audio": false
+      "key_source": "5e4f421a5b2bc949",
+      "key_count": 40,
+      "has_audio": false,
+      "preferred_paper": "a31af8898396c815",
+      "key_import_notes": [],
+      "pack": "reading-v4-t6-fbb0cb901cf2.bingo"
     },
     {
       "id": "reading-v4-t7",
@@ -7125,14 +7939,140 @@
       "number": 7,
       "title": "VOL 4 · Test 7",
       "resources": [
+        "711e07f6b1a2f4f3",
         "6eeaa94c4af9f1d2",
-        "32a7b4d21f31ce41"
+        "32a7b4d21f31ce41",
+        "5e4f421a5b2bc949"
       ],
-      "answers": {},
+      "answers": {
+        "1": [
+          "Location"
+        ],
+        "2": [
+          "Policies"
+        ],
+        "3": [
+          "Government"
+        ],
+        "4": [
+          "Incomes"
+        ],
+        "5": [
+          "Land"
+        ],
+        "6": [
+          "Competition"
+        ],
+        "7": [
+          "FALSE"
+        ],
+        "8": [
+          "FALSE"
+        ],
+        "9": [
+          "NG"
+        ],
+        "10": [
+          "FALSE"
+        ],
+        "11": [
+          "TRUE"
+        ],
+        "12": [
+          "NG"
+        ],
+        "13": [
+          "TRUE"
+        ],
+        "14": [
+          "E"
+        ],
+        "15": [
+          "D"
+        ],
+        "16": [
+          "C"
+        ],
+        "17": [
+          "B"
+        ],
+        "18": [
+          "F"
+        ],
+        "19": [
+          "A"
+        ],
+        "20": [
+          "D"
+        ],
+        "21": [
+          "D"
+        ],
+        "22": [
+          "A"
+        ],
+        "23": [
+          "B"
+        ],
+        "24": [
+          "Tasmanian tiger"
+        ],
+        "25": [
+          "Rabbit numbers"
+        ],
+        "26": [
+          "Overpopulation"
+        ],
+        "27": [
+          "Yes"
+        ],
+        "28": [
+          "No"
+        ],
+        "29": [
+          "Yes"
+        ],
+        "30": [
+          "Yes"
+        ],
+        "31": [
+          "NG"
+        ],
+        "32": [
+          "A"
+        ],
+        "33": [
+          "C"
+        ],
+        "34": [
+          "B"
+        ],
+        "35": [
+          "D"
+        ],
+        "36": [
+          "B"
+        ],
+        "37": [
+          "C"
+        ],
+        "38": [
+          "A"
+        ],
+        "39": [
+          "D"
+        ],
+        "40": [
+          "E"
+        ]
+      },
       "groups": [],
-      "key_source": null,
-      "key_count": 0,
-      "has_audio": false
+      "key_source": "5e4f421a5b2bc949",
+      "key_count": 40,
+      "has_audio": false,
+      "preferred_paper": "711e07f6b1a2f4f3",
+      "key_import_notes": [],
+      "pack": "reading-v4-t7-18133cf6d9ce.bingo"
     },
     {
       "id": "reading-v4-t8",
@@ -7141,14 +8081,140 @@
       "number": 8,
       "title": "VOL 4 · Test 8",
       "resources": [
+        "eea9392d6ed6aaf5",
         "eb7840dae64219bf",
-        "077085fa1c0514ae"
+        "077085fa1c0514ae",
+        "5e4f421a5b2bc949"
       ],
-      "answers": {},
+      "answers": {
+        "1": [
+          "FALSE"
+        ],
+        "2": [
+          "NG"
+        ],
+        "3": [
+          "NG"
+        ],
+        "4": [
+          "TRUE"
+        ],
+        "5": [
+          "TRUE"
+        ],
+        "6": [
+          "FALSE"
+        ],
+        "7": [
+          "Rule"
+        ],
+        "8": [
+          "River"
+        ],
+        "9": [
+          "Confidence"
+        ],
+        "10": [
+          "Schools"
+        ],
+        "11": [
+          "Statistics"
+        ],
+        "12": [
+          "Clinics"
+        ],
+        "13": [
+          "Language"
+        ],
+        "14": [
+          "iii"
+        ],
+        "15": [
+          "ii"
+        ],
+        "16": [
+          "v"
+        ],
+        "17": [
+          "vi"
+        ],
+        "18": [
+          "i"
+        ],
+        "19": [
+          "vii"
+        ],
+        "20": [
+          "E"
+        ],
+        "21": [
+          "C"
+        ],
+        "22": [
+          "D"
+        ],
+        "23": [
+          "B"
+        ],
+        "24": [
+          "Audience"
+        ],
+        "25": [
+          "Halls"
+        ],
+        "26": [
+          "Soundtrack"
+        ],
+        "27": [
+          "No"
+        ],
+        "28": [
+          "Yes"
+        ],
+        "29": [
+          "NG"
+        ],
+        "30": [
+          "Yes"
+        ],
+        "31": [
+          "No"
+        ],
+        "32": [
+          "Yes"
+        ],
+        "33": [
+          "C"
+        ],
+        "34": [
+          "B"
+        ],
+        "35": [
+          "D"
+        ],
+        "36": [
+          "A"
+        ],
+        "37": [
+          "B"
+        ],
+        "38": [
+          "D"
+        ],
+        "39": [
+          "F"
+        ],
+        "40": [
+          "B"
+        ]
+      },
       "groups": [],
-      "key_source": null,
-      "key_count": 0,
-      "has_audio": false
+      "key_source": "5e4f421a5b2bc949",
+      "key_count": 40,
+      "has_audio": false,
+      "preferred_paper": "eea9392d6ed6aaf5",
+      "key_import_notes": [],
+      "pack": "reading-v4-t8-8844d04b6250.bingo"
     },
     {
       "id": "reading-v4-t9",
@@ -7157,14 +8223,128 @@
       "number": 9,
       "title": "VOL 4 · Test 9",
       "resources": [
+        "eba4bcdab8d511ae",
         "c310fe37f95acab0",
-        "f792ac874daa35ba"
+        "f792ac874daa35ba",
+        "5e4f421a5b2bc949"
       ],
-      "answers": {},
+      "answers": {
+        "1": [
+          "FALSE"
+        ],
+        "2": [
+          "NG"
+        ],
+        "3": [
+          "FALSE"
+        ],
+        "4": [
+          "TRUE"
+        ],
+        "5": [
+          "FALSE"
+        ],
+        "6": [
+          "TRUE"
+        ],
+        "7": [
+          "Pain"
+        ],
+        "8": [
+          "Liquid"
+        ],
+        "9": [
+          "Poison"
+        ],
+        "10": [
+          "Teeth"
+        ],
+        "11": [
+          "Wardrobes"
+        ],
+        "12": [
+          "Recipes"
+        ],
+        "13": [
+          "Pockets"
+        ],
+        "14": [
+          "C"
+        ],
+        "15": [
+          "B"
+        ],
+        "16": [
+          "B"
+        ],
+        "17": [
+          "D"
+        ],
+        "18": [
+          "E"
+        ],
+        "19": [
+          "D"
+        ],
+        "20": [
+          "B"
+        ],
+        "21": [
+          "A"
+        ],
+        "22": [
+          "E"
+        ],
+        "23": [
+          "Decline"
+        ],
+        "24": [
+          "Eggs"
+        ],
+        "25": [
+          "Biodiversity"
+        ],
+        "26": [
+          "Bait"
+        ],
+        "31": [
+          "G"
+        ],
+        "32": [
+          "B"
+        ],
+        "33": [
+          "C"
+        ],
+        "34": [
+          "A"
+        ],
+        "35": [
+          "Yes"
+        ],
+        "36": [
+          "No"
+        ],
+        "37": [
+          "Yes"
+        ],
+        "38": [
+          "NG"
+        ],
+        "39": [
+          "No"
+        ],
+        "40": [
+          "C"
+        ]
+      },
       "groups": [],
-      "key_source": null,
-      "key_count": 0,
-      "has_audio": false
+      "key_source": "5e4f421a5b2bc949",
+      "key_count": 36,
+      "has_audio": false,
+      "preferred_paper": "eba4bcdab8d511ae",
+      "key_import_notes": [],
+      "pack": "reading-v4-t9-cdf33808a1f3.bingo"
     },
     {
       "id": "reading-v4-t10",
@@ -7173,48 +8353,50 @@
       "number": 10,
       "title": "VOL 4 · Test 10",
       "resources": [
+        "3e825c511771126e",
         "e2a2da2d25673da1",
-        "1d6a4d343e036baf"
+        "1d6a4d343e036baf",
+        "5e4f421a5b2bc949"
       ],
       "answers": {
         "1": [
-          "False"
+          "FALSE"
         ],
         "2": [
-          "True"
+          "TRUE"
         ],
         "3": [
-          "True"
+          "TRUE"
         ],
         "4": [
-          "Not given"
+          "NG"
         ],
         "5": [
-          "False ("
+          "FALSE"
         ],
         "6": [
-          "populations"
+          "Populations"
         ],
         "7": [
-          "records"
+          "Records"
         ],
         "8": [
-          "salt"
+          "Salt"
         ],
         "9": [
-          "glass"
+          "Glass"
         ],
         "10": [
-          "texture"
+          "Texture"
         ],
         "11": [
-          "light"
+          "Light"
         ],
         "12": [
-          "chisel"
+          "Chisel"
         ],
         "13": [
-          "meat"
+          "Meat"
         ],
         "14": [
           "B"
@@ -7232,16 +8414,16 @@
           "E"
         ],
         "19": [
-          "movie"
+          "Movie"
         ],
         "20": [
-          "advertising"
+          "Advertising"
         ],
         "21": [
-          "play"
+          "Play"
         ],
         "22": [
-          "beauty"
+          "Beauty"
         ],
         "23": [
           "B"
@@ -7286,22 +8468,25 @@
           "Yes"
         ],
         "37": [
-          "Not given"
+          "NG"
         ],
         "38": [
-          "Not given"
+          "NG"
         ],
         "39": [
-          "Not given"
+          "NG"
         ],
         "40": [
           "Yes"
         ]
       },
       "groups": [],
-      "key_source": "e2a2da2d25673da1",
+      "key_source": "5e4f421a5b2bc949",
       "key_count": 40,
-      "has_audio": false
+      "has_audio": false,
+      "preferred_paper": "3e825c511771126e",
+      "key_import_notes": [],
+      "pack": "reading-v4-t10-4ea717171255.bingo"
     },
     {
       "id": "reading-v5-t1",
@@ -7310,14 +8495,140 @@
       "number": 1,
       "title": "VOL 5 · Test 1",
       "resources": [
+        "1e95b2b9fde143fe",
         "96fba7dde10bb377",
-        "80e83adbe58c0e4e"
+        "80e83adbe58c0e4e",
+        "ddcdbb73fdf990ad"
       ],
-      "answers": {},
+      "answers": {
+        "1": [
+          "TRUE"
+        ],
+        "2": [
+          "FALSE"
+        ],
+        "3": [
+          "TRUE"
+        ],
+        "4": [
+          "Not given"
+        ],
+        "5": [
+          "TRUE"
+        ],
+        "6": [
+          "Trust"
+        ],
+        "7": [
+          "Computers"
+        ],
+        "8": [
+          "Language"
+        ],
+        "9": [
+          "Travel"
+        ],
+        "10": [
+          "Memory"
+        ],
+        "11": [
+          "Status"
+        ],
+        "12": [
+          "Conversation"
+        ],
+        "13": [
+          "Tradition"
+        ],
+        "14": [
+          "iv"
+        ],
+        "15": [
+          "vii"
+        ],
+        "16": [
+          "i"
+        ],
+        "17": [
+          "viiii"
+        ],
+        "18": [
+          "vi"
+        ],
+        "19": [
+          "ii"
+        ],
+        "20": [
+          "C"
+        ],
+        "21": [
+          "D"
+        ],
+        "22": [
+          "Truth"
+        ],
+        "23": [
+          "Jpurnal ists"
+        ],
+        "24": [
+          "Nurses"
+        ],
+        "25": [
+          "Dedication"
+        ],
+        "26": [
+          "Documents"
+        ],
+        "27": [
+          "TRUE"
+        ],
+        "28": [
+          "Not given"
+        ],
+        "29": [
+          "TRUE"
+        ],
+        "30": [
+          "FALSE"
+        ],
+        "31": [
+          "D"
+        ],
+        "32": [
+          "A"
+        ],
+        "33": [
+          "E"
+        ],
+        "34": [
+          "C"
+        ],
+        "35": [
+          "Microscope"
+        ],
+        "36": [
+          "Concepts"
+        ],
+        "37": [
+          "Computer"
+        ],
+        "38": [
+          "Spectral analysis"
+        ],
+        "39": [
+          "Table"
+        ],
+        "40": [
+          "C"
+        ]
+      },
       "groups": [],
-      "key_source": null,
-      "key_count": 0,
-      "has_audio": false
+      "key_source": "ddcdbb73fdf990ad",
+      "key_count": 40,
+      "has_audio": false,
+      "preferred_paper": "1e95b2b9fde143fe",
+      "key_import_notes": [],
+      "pack": "reading-v5-t1-c7bad0a43b9a.bingo"
     },
     {
       "id": "reading-v5-t2",
@@ -7326,14 +8637,140 @@
       "number": 2,
       "title": "VOL 5 · Test 2",
       "resources": [
+        "60a4347abbc4c8d5",
         "64d388ea47d11b9a",
-        "49fcd38c0b20b69f"
+        "49fcd38c0b20b69f",
+        "ddcdbb73fdf990ad"
       ],
-      "answers": {},
+      "answers": {
+        "1": [
+          "NG"
+        ],
+        "2": [
+          "FALSE"
+        ],
+        "3": [
+          "TRUE"
+        ],
+        "4": [
+          "TRUE"
+        ],
+        "5": [
+          "FALSE"
+        ],
+        "6": [
+          "NG"
+        ],
+        "7": [
+          "FALSE"
+        ],
+        "8": [
+          "29 centimeters"
+        ],
+        "9": [
+          "Rocks"
+        ],
+        "10": [
+          "Bill"
+        ],
+        "11": [
+          "Day"
+        ],
+        "12": [
+          "Plovers"
+        ],
+        "13": [
+          "Poision"
+        ],
+        "14": [
+          "G"
+        ],
+        "15": [
+          "E"
+        ],
+        "16": [
+          "A"
+        ],
+        "17": [
+          "J"
+        ],
+        "18": [
+          "C"
+        ],
+        "19": [
+          "D"
+        ],
+        "20": [
+          "G"
+        ],
+        "21": [
+          "A"
+        ],
+        "22": [
+          "E"
+        ],
+        "23": [
+          "FALSE"
+        ],
+        "24": [
+          "TRUE"
+        ],
+        "25": [
+          "FALSE"
+        ],
+        "26": [
+          "NG"
+        ],
+        "27": [
+          "Yes"
+        ],
+        "28": [
+          "NG"
+        ],
+        "29": [
+          "NG"
+        ],
+        "30": [
+          "No"
+        ],
+        "31": [
+          "Beans"
+        ],
+        "32": [
+          "Group"
+        ],
+        "33": [
+          "Match"
+        ],
+        "34": [
+          "Untrue"
+        ],
+        "35": [
+          "Anxious"
+        ],
+        "36": [
+          "Asch"
+        ],
+        "37": [
+          "Internalisation"
+        ],
+        "38": [
+          "Valid"
+        ],
+        "39": [
+          "Identification"
+        ],
+        "40": [
+          "Teenagers"
+        ]
+      },
       "groups": [],
-      "key_source": null,
-      "key_count": 0,
-      "has_audio": false
+      "key_source": "ddcdbb73fdf990ad",
+      "key_count": 40,
+      "has_audio": false,
+      "preferred_paper": "60a4347abbc4c8d5",
+      "key_import_notes": [],
+      "pack": "reading-v5-t2-267614ff55e4.bingo"
     },
     {
       "id": "reading-v5-t3",
@@ -7342,14 +8779,140 @@
       "number": 3,
       "title": "VOL 5 · Test 3",
       "resources": [
+        "82d4e07f9ec557b2",
         "214689e49bd8496d",
-        "0c42e79c34a91b6a"
+        "0c42e79c34a91b6a",
+        "ddcdbb73fdf990ad"
       ],
-      "answers": {},
+      "answers": {
+        "1": [
+          "TRUE"
+        ],
+        "2": [
+          "FALSE"
+        ],
+        "3": [
+          "NG"
+        ],
+        "4": [
+          "TRUE"
+        ],
+        "5": [
+          "C"
+        ],
+        "6": [
+          "F"
+        ],
+        "7": [
+          "C"
+        ],
+        "8": [
+          "G"
+        ],
+        "9": [
+          "B"
+        ],
+        "10": [
+          "C"
+        ],
+        "11": [
+          "A"
+        ],
+        "12": [
+          "B"
+        ],
+        "13": [
+          "D"
+        ],
+        "14": [
+          "B"
+        ],
+        "15": [
+          "A"
+        ],
+        "16": [
+          "B"
+        ],
+        "17": [
+          "D"
+        ],
+        "18": [
+          "C"
+        ],
+        "19": [
+          "A"
+        ],
+        "20": [
+          "D"
+        ],
+        "21": [
+          "C"
+        ],
+        "22": [
+          "D"
+        ],
+        "23": [
+          "A"
+        ],
+        "24": [
+          "Facade"
+        ],
+        "25": [
+          "Escalators"
+        ],
+        "26": [
+          "Atrium"
+        ],
+        "27": [
+          "F"
+        ],
+        "28": [
+          "A"
+        ],
+        "29": [
+          "B"
+        ],
+        "30": [
+          "H"
+        ],
+        "31": [
+          "D"
+        ],
+        "32": [
+          "No"
+        ],
+        "33": [
+          "NG"
+        ],
+        "34": [
+          "Yes"
+        ],
+        "35": [
+          "Yes"
+        ],
+        "36": [
+          "Yes"
+        ],
+        "37": [
+          "G"
+        ],
+        "38": [
+          "Information needs"
+        ],
+        "39": [
+          "Internal records"
+        ],
+        "40": [
+          "Analysis unit"
+        ]
+      },
       "groups": [],
-      "key_source": null,
-      "key_count": 0,
-      "has_audio": false
+      "key_source": "ddcdbb73fdf990ad",
+      "key_count": 40,
+      "has_audio": false,
+      "preferred_paper": "82d4e07f9ec557b2",
+      "key_import_notes": [],
+      "pack": "reading-v5-t3-4e25b3956b7e.bingo"
     },
     {
       "id": "reading-v5-t4",
@@ -7358,14 +8921,134 @@
       "number": 4,
       "title": "VOL 5 · Test 4",
       "resources": [
+        "0d07f1ba0389ffcb",
         "8abb21d440a1d51f",
-        "239eb84cb03e45ec"
+        "239eb84cb03e45ec",
+        "ddcdbb73fdf990ad"
       ],
-      "answers": {},
+      "answers": {
+        "1": [
+          "Tree"
+        ],
+        "2": [
+          "Sheep"
+        ],
+        "3": [
+          "Soft"
+        ],
+        "4": [
+          "Rope"
+        ],
+        "5": [
+          "Mines"
+        ],
+        "6": [
+          "Steal"
+        ],
+        "7": [
+          "TRUE"
+        ],
+        "8": [
+          "NG"
+        ],
+        "9": [
+          "NG"
+        ],
+        "10": [
+          "NG"
+        ],
+        "11": [
+          "FALSE"
+        ],
+        "12": [
+          "TRUE"
+        ],
+        "13": [
+          "FALSE"
+        ],
+        "14": [
+          "vii"
+        ],
+        "15": [
+          "vi"
+        ],
+        "16": [
+          "ix"
+        ],
+        "17": [
+          "iv"
+        ],
+        "18": [
+          "ii"
+        ],
+        "19": [
+          "viii"
+        ],
+        "20": [
+          "iii"
+        ],
+        "21": [
+          "B"
+        ],
+        "22": [
+          "D"
+        ],
+        "23": [
+          "Spirit"
+        ],
+        "24": [
+          "Drag"
+        ],
+        "27": [
+          "F"
+        ],
+        "28": [
+          "B"
+        ],
+        "29": [
+          "H"
+        ],
+        "30": [
+          "I"
+        ],
+        "31": [
+          "A"
+        ],
+        "32": [
+          "D"
+        ],
+        "33": [
+          "B"
+        ],
+        "34": [
+          "F"
+        ],
+        "35": [
+          "C"
+        ],
+        "36": [
+          "D"
+        ],
+        "37": [
+          "E"
+        ],
+        "38": [
+          "F"
+        ],
+        "39": [
+          "A"
+        ],
+        "40": [
+          "D"
+        ]
+      },
       "groups": [],
-      "key_source": null,
-      "key_count": 0,
-      "has_audio": false
+      "key_source": "ddcdbb73fdf990ad",
+      "key_count": 38,
+      "has_audio": false,
+      "preferred_paper": "0d07f1ba0389ffcb",
+      "key_import_notes": [],
+      "pack": "reading-v5-t4-dc0dda826022.bingo"
     },
     {
       "id": "reading-v5-t5",
@@ -7374,14 +9057,140 @@
       "number": 5,
       "title": "VOL 5 · Test 5",
       "resources": [
+        "38b628233e4db4cf",
         "d7277b3a3d004271",
-        "124c2593c9c48402"
+        "124c2593c9c48402",
+        "ddcdbb73fdf990ad"
       ],
-      "answers": {},
+      "answers": {
+        "1": [
+          "Scarcity"
+        ],
+        "2": [
+          "Afford"
+        ],
+        "3": [
+          "Exported"
+        ],
+        "4": [
+          "Stroring"
+        ],
+        "5": [
+          "Technology"
+        ],
+        "6": [
+          "Genetically- engineered"
+        ],
+        "7": [
+          "Credit"
+        ],
+        "8": [
+          "Tools"
+        ],
+        "9": [
+          "FALSE"
+        ],
+        "10": [
+          "TRUE"
+        ],
+        "11": [
+          "NG"
+        ],
+        "12": [
+          "NG"
+        ],
+        "13": [
+          "NG"
+        ],
+        "14": [
+          "F"
+        ],
+        "15": [
+          "A"
+        ],
+        "16": [
+          "E"
+        ],
+        "17": [
+          "F"
+        ],
+        "18": [
+          "Temple"
+        ],
+        "19": [
+          "Harbour"
+        ],
+        "20": [
+          "Entrance"
+        ],
+        "21": [
+          "Holes"
+        ],
+        "22": [
+          "C"
+        ],
+        "23": [
+          "B"
+        ],
+        "24": [
+          "C"
+        ],
+        "25": [
+          "A"
+        ],
+        "26": [
+          "D"
+        ],
+        "27": [
+          "A"
+        ],
+        "28": [
+          "B"
+        ],
+        "29": [
+          "C"
+        ],
+        "30": [
+          "D"
+        ],
+        "31": [
+          "No"
+        ],
+        "32": [
+          "Yes"
+        ],
+        "33": [
+          "NG"
+        ],
+        "34": [
+          "NG"
+        ],
+        "35": [
+          "F"
+        ],
+        "36": [
+          "B"
+        ],
+        "37": [
+          "I"
+        ],
+        "38": [
+          "G"
+        ],
+        "39": [
+          "C"
+        ],
+        "40": [
+          "A"
+        ]
+      },
       "groups": [],
-      "key_source": null,
-      "key_count": 0,
-      "has_audio": false
+      "key_source": "ddcdbb73fdf990ad",
+      "key_count": 40,
+      "has_audio": false,
+      "preferred_paper": "38b628233e4db4cf",
+      "key_import_notes": [],
+      "pack": "reading-v5-t5-507ce621b6a2.bingo"
     },
     {
       "id": "reading-v5-t6",
@@ -7390,14 +9199,140 @@
       "number": 6,
       "title": "VOL 5 · Test 6",
       "resources": [
+        "2de4fe812d465578",
         "d4cc77c341562ae6",
-        "9978d40ae0293ed9"
+        "9978d40ae0293ed9",
+        "ddcdbb73fdf990ad"
       ],
-      "answers": {},
+      "answers": {
+        "1": [
+          "TRUE"
+        ],
+        "2": [
+          "NG"
+        ],
+        "3": [
+          "TRUE"
+        ],
+        "4": [
+          "FALSE"
+        ],
+        "5": [
+          "TRUE"
+        ],
+        "6": [
+          "Puberty"
+        ],
+        "7": [
+          "Sleepiness"
+        ],
+        "8": [
+          "Alterness"
+        ],
+        "9": [
+          "Hunger"
+        ],
+        "10": [
+          "Soda"
+        ],
+        "11": [
+          "Five hours"
+        ],
+        "12": [
+          "Quality"
+        ],
+        "13": [
+          "Brains"
+        ],
+        "14": [
+          "iv"
+        ],
+        "15": [
+          "iii"
+        ],
+        "16": [
+          "vi"
+        ],
+        "17": [
+          "ii"
+        ],
+        "18": [
+          "v"
+        ],
+        "19": [
+          "B"
+        ],
+        "20": [
+          "D"
+        ],
+        "21": [
+          "D"
+        ],
+        "22": [
+          "I ( species )"
+        ],
+        "23": [
+          "F ( respect )"
+        ],
+        "24": [
+          "A ( competitiveness )"
+        ],
+        "25": [
+          "J ( city )"
+        ],
+        "26": [
+          "H ( ancestors)"
+        ],
+        "27": [
+          "C"
+        ],
+        "28": [
+          "D"
+        ],
+        "29": [
+          "B"
+        ],
+        "30": [
+          "D"
+        ],
+        "31": [
+          "A"
+        ],
+        "32": [
+          "B"
+        ],
+        "33": [
+          "C"
+        ],
+        "34": [
+          "D"
+        ],
+        "35": [
+          "B"
+        ],
+        "36": [
+          "E"
+        ],
+        "37": [
+          "Yes"
+        ],
+        "38": [
+          "Not"
+        ],
+        "39": [
+          "No"
+        ],
+        "40": [
+          "Yes"
+        ]
+      },
       "groups": [],
-      "key_source": null,
-      "key_count": 0,
-      "has_audio": false
+      "key_source": "ddcdbb73fdf990ad",
+      "key_count": 40,
+      "has_audio": false,
+      "preferred_paper": "2de4fe812d465578",
+      "key_import_notes": [],
+      "pack": "reading-v5-t6-83a329848c96.bingo"
     },
     {
       "id": "reading-v5-t7",
@@ -7406,14 +9341,145 @@
       "number": 7,
       "title": "VOL 5 · Test 7",
       "resources": [
+        "576d2261416ff473",
         "a1a94650c27150e2",
-        "049074d6a46e6805"
+        "049074d6a46e6805",
+        "ddcdbb73fdf990ad"
       ],
-      "answers": {},
+      "answers": {
+        "1": [
+          "Adaptation"
+        ],
+        "2": [
+          "Pong"
+        ],
+        "3": [
+          "Atari"
+        ],
+        "4": [
+          "Graphics"
+        ],
+        "5": [
+          "Females"
+        ],
+        "6": [
+          "Plastation"
+        ],
+        "7": [
+          "FALSE"
+        ],
+        "8": [
+          "TRUE"
+        ],
+        "9": [
+          "FALSE"
+        ],
+        "10": [
+          "TRUE"
+        ],
+        "11": [
+          "FALSE"
+        ],
+        "12": [
+          "NG"
+        ],
+        "13": [
+          "NG"
+        ],
+        "14": [
+          "E"
+        ],
+        "15": [
+          "G"
+        ],
+        "16": [
+          "A"
+        ],
+        "17": [
+          "B"
+        ],
+        "18": [
+          "F"
+        ],
+        "19": [
+          "A"
+        ],
+        "20": [
+          "G"
+        ],
+        "21": [
+          "A"
+        ],
+        "22": [
+          "E"
+        ],
+        "23": [
+          "Stone"
+        ],
+        "24": [
+          "Abraham Darby"
+        ],
+        "25": [
+          "River severn"
+        ],
+        "26": [
+          "Michael Rooker"
+        ],
+        "27": [
+          "C"
+        ],
+        "28": [
+          "D"
+        ],
+        "29": [
+          "B"
+        ],
+        "30": [
+          "D"
+        ],
+        "31": [
+          "B"
+        ],
+        "32": [
+          "Yes"
+        ],
+        "33": [
+          "No"
+        ],
+        "34": [
+          "NG"
+        ],
+        "35": [
+          "No"
+        ],
+        "37": [
+          "B"
+        ],
+        "38": [
+          "E"
+        ],
+        "39": [
+          "G"
+        ],
+        "40": [
+          "I"
+        ]
+      },
       "groups": [],
-      "key_source": null,
-      "key_count": 0,
-      "has_audio": false
+      "key_source": "ddcdbb73fdf990ad",
+      "key_count": 39,
+      "has_audio": false,
+      "preferred_paper": "576d2261416ff473",
+      "key_import_notes": [
+        {
+          "sheet": "Test 7 ",
+          "row": 40,
+          "column": 1,
+          "number": 26,
+          "reason": "Question number out of sequence; not imported"
+        }
+      ],
+      "pack": "reading-v5-t7-cdba097a4314.bingo"
     },
     {
       "id": "reading-v5-t8",
@@ -7422,14 +9488,140 @@
       "number": 8,
       "title": "VOL 5 · Test 8",
       "resources": [
+        "fac525819a9a37aa",
         "9e89bf856214b92c",
-        "4bd9212a3f98c9ee"
+        "4bd9212a3f98c9ee",
+        "ddcdbb73fdf990ad"
       ],
-      "answers": {},
+      "answers": {
+        "1": [
+          "TRUE"
+        ],
+        "2": [
+          "NG"
+        ],
+        "3": [
+          "FALSE"
+        ],
+        "4": [
+          "TRUE"
+        ],
+        "5": [
+          "TRUE"
+        ],
+        "6": [
+          "NG"
+        ],
+        "7": [
+          "FALSE"
+        ],
+        "8": [
+          "Strips"
+        ],
+        "9": [
+          "Sheep"
+        ],
+        "10": [
+          "Stretched"
+        ],
+        "11": [
+          "Bark"
+        ],
+        "12": [
+          "Samarkand"
+        ],
+        "13": [
+          "Stone"
+        ],
+        "14": [
+          "iv"
+        ],
+        "15": [
+          "ix"
+        ],
+        "16": [
+          "i"
+        ],
+        "17": [
+          "x"
+        ],
+        "18": [
+          "iii"
+        ],
+        "19": [
+          "v"
+        ],
+        "20": [
+          "vii"
+        ],
+        "21": [
+          "D"
+        ],
+        "22": [
+          "A"
+        ],
+        "23": [
+          "C"
+        ],
+        "24": [
+          "Density"
+        ],
+        "25": [
+          "Architects"
+        ],
+        "26": [
+          "Budget"
+        ],
+        "27": [
+          "B"
+        ],
+        "28": [
+          "C"
+        ],
+        "29": [
+          "D"
+        ],
+        "30": [
+          "A"
+        ],
+        "31": [
+          "C"
+        ],
+        "32": [
+          "B"
+        ],
+        "33": [
+          "C"
+        ],
+        "34": [
+          "A"
+        ],
+        "35": [
+          "A"
+        ],
+        "36": [
+          "Age"
+        ],
+        "37": [
+          "Two weeks old"
+        ],
+        "38": [
+          "Human beings"
+        ],
+        "39": [
+          "Good motor"
+        ],
+        "40": [
+          "Mature monkeys"
+        ]
+      },
       "groups": [],
-      "key_source": null,
-      "key_count": 0,
-      "has_audio": false
+      "key_source": "ddcdbb73fdf990ad",
+      "key_count": 40,
+      "has_audio": false,
+      "preferred_paper": "fac525819a9a37aa",
+      "key_import_notes": [],
+      "pack": "reading-v5-t8-101064446c9e.bingo"
     },
     {
       "id": "reading-v5-t9",
@@ -7438,14 +9630,140 @@
       "number": 9,
       "title": "VOL 5 · Test 9",
       "resources": [
+        "0ac6a150ca6ed42f",
         "d1ea79963e9210de",
-        "363ccd82b6ce9dc8"
+        "363ccd82b6ce9dc8",
+        "ddcdbb73fdf990ad"
       ],
-      "answers": {},
+      "answers": {
+        "1": [
+          "C"
+        ],
+        "2": [
+          "A"
+        ],
+        "3": [
+          "D"
+        ],
+        "4": [
+          "C"
+        ],
+        "5": [
+          "Customers"
+        ],
+        "6": [
+          "Public relation skills"
+        ],
+        "7": [
+          "Museology"
+        ],
+        "8": [
+          "Tourist attractions"
+        ],
+        "9": [
+          "A"
+        ],
+        "10": [
+          "C"
+        ],
+        "11": [
+          "C"
+        ],
+        "12": [
+          "E"
+        ],
+        "13": [
+          "G"
+        ],
+        "14": [
+          "i"
+        ],
+        "15": [
+          "viii"
+        ],
+        "16": [
+          "v"
+        ],
+        "17": [
+          "ii"
+        ],
+        "18": [
+          "vii"
+        ],
+        "19": [
+          "iv"
+        ],
+        "20": [
+          "vi"
+        ],
+        "21": [
+          "1950"
+        ],
+        "22": [
+          "Shy"
+        ],
+        "23": [
+          "Starvation"
+        ],
+        "24": [
+          "Fish"
+        ],
+        "25": [
+          "Otters"
+        ],
+        "26": [
+          "D"
+        ],
+        "27": [
+          "D"
+        ],
+        "28": [
+          "A"
+        ],
+        "29": [
+          "H"
+        ],
+        "30": [
+          "B"
+        ],
+        "31": [
+          "G"
+        ],
+        "32": [
+          "D"
+        ],
+        "33": [
+          "A"
+        ],
+        "34": [
+          "C"
+        ],
+        "35": [
+          "No"
+        ],
+        "36": [
+          "NG"
+        ],
+        "37": [
+          "Yes"
+        ],
+        "38": [
+          "Yes"
+        ],
+        "39": [
+          "NG"
+        ],
+        "40": [
+          "Yes"
+        ]
+      },
       "groups": [],
-      "key_source": null,
-      "key_count": 0,
-      "has_audio": false
+      "key_source": "ddcdbb73fdf990ad",
+      "key_count": 40,
+      "has_audio": false,
+      "preferred_paper": "0ac6a150ca6ed42f",
+      "key_import_notes": [],
+      "pack": "reading-v5-t9-8163434f337f.bingo"
     },
     {
       "id": "reading-v5-t10",
@@ -7454,14 +9772,140 @@
       "number": 10,
       "title": "VOL 5 · Test 10",
       "resources": [
+        "e86d0f318027a0cd",
         "a903021f73778b94",
-        "d0d310954999ed1e"
+        "d0d310954999ed1e",
+        "ddcdbb73fdf990ad"
       ],
-      "answers": {},
+      "answers": {
+        "1": [
+          "FALSE"
+        ],
+        "2": [
+          "TRUE"
+        ],
+        "3": [
+          "NG"
+        ],
+        "4": [
+          "TRUE"
+        ],
+        "5": [
+          "FALSE"
+        ],
+        "6": [
+          "TRUE"
+        ],
+        "7": [
+          "NG"
+        ],
+        "8": [
+          "Animals"
+        ],
+        "9": [
+          "Emotion"
+        ],
+        "10": [
+          "Gene"
+        ],
+        "11": [
+          "Left"
+        ],
+        "12": [
+          "Laboratory"
+        ],
+        "13": [
+          "Cheating"
+        ],
+        "14": [
+          "North America"
+        ],
+        "15": [
+          "Overkill model"
+        ],
+        "16": [
+          "Hunting"
+        ],
+        "17": [
+          "Deadly disease"
+        ],
+        "18": [
+          "Empirical evidence"
+        ],
+        "19": [
+          "Climate instability"
+        ],
+        "20": [
+          "Communities"
+        ],
+        "21": [
+          "B"
+        ],
+        "22": [
+          "C"
+        ],
+        "23": [
+          "B"
+        ],
+        "24": [
+          "A"
+        ],
+        "25": [
+          "B"
+        ],
+        "26": [
+          "C"
+        ],
+        "27": [
+          "iv"
+        ],
+        "28": [
+          "viii"
+        ],
+        "29": [
+          "ii"
+        ],
+        "30": [
+          "iii"
+        ],
+        "31": [
+          "i"
+        ],
+        "32": [
+          "vi"
+        ],
+        "33": [
+          "Weight position"
+        ],
+        "34": [
+          "Reasonance frequency"
+        ],
+        "35": [
+          "Three axes"
+        ],
+        "36": [
+          "Headaches"
+        ],
+        "37": [
+          "Coriolis illusion"
+        ],
+        "38": [
+          "No"
+        ],
+        "39": [
+          "NG"
+        ],
+        "40": [
+          "Yes"
+        ]
+      },
       "groups": [],
-      "key_source": null,
-      "key_count": 0,
-      "has_audio": false
+      "key_source": "ddcdbb73fdf990ad",
+      "key_count": 40,
+      "has_audio": false,
+      "preferred_paper": "e86d0f318027a0cd",
+      "key_import_notes": [],
+      "pack": "reading-v5-t10-8647f6c8b8b3.bingo"
     },
     {
       "id": "reading-v6-t1",
@@ -16192,6 +18636,336 @@
       "ext": ".mp3",
       "size": 4775291,
       "role": "audio",
+      "volume": 5
+    },
+    "f3adceba1c420927": {
+      "id": "f3adceba1c420927",
+      "source": "reading-word-v3",
+      "entry": "Reading/Key/Dap an reading 9 tests.xlsx",
+      "name": "Dap an reading 9 tests.xlsx",
+      "ext": ".xlsx",
+      "size": 49231,
+      "role": "key",
+      "volume": 3
+    },
+    "b247924146b71246": {
+      "id": "b247924146b71246",
+      "source": "reading-word-v3",
+      "entry": "Reading/Test 10/Test10-vol3.docx",
+      "name": "Test10-vol3.docx",
+      "ext": ".docx",
+      "size": 19146,
+      "role": "paper",
+      "volume": 3
+    },
+    "08c24298dc0323a5": {
+      "id": "08c24298dc0323a5",
+      "source": "reading-word-v3",
+      "entry": "Reading/Test 6/Test6-vol3.docx",
+      "name": "Test6-vol3.docx",
+      "ext": ".docx",
+      "size": 18686,
+      "role": "paper",
+      "volume": 3
+    },
+    "e8f3bb385e9d40d9": {
+      "id": "e8f3bb385e9d40d9",
+      "source": "reading-word-v3",
+      "entry": "Reading/Test 8/Test8-vol3.docx",
+      "name": "Test8-vol3.docx",
+      "ext": ".docx",
+      "size": 18846,
+      "role": "paper",
+      "volume": 3
+    },
+    "13a49e5c979ef805": {
+      "id": "13a49e5c979ef805",
+      "source": "reading-word-v3",
+      "entry": "Reading/Test 7/Test7-vol3.docx",
+      "name": "Test7-vol3.docx",
+      "ext": ".docx",
+      "size": 19278,
+      "role": "paper",
+      "volume": 3
+    },
+    "c5ae327f93cd7166": {
+      "id": "c5ae327f93cd7166",
+      "source": "reading-word-v3",
+      "entry": "Reading/Test 5/Test5-vol3.docx",
+      "name": "Test5-vol3.docx",
+      "ext": ".docx",
+      "size": 19261,
+      "role": "paper",
+      "volume": 3
+    },
+    "f6282a5e6d6ba67c": {
+      "id": "f6282a5e6d6ba67c",
+      "source": "reading-word-v3",
+      "entry": "Reading/Test 3/Test3-vol3.docx",
+      "name": "Test3-vol3.docx",
+      "ext": ".docx",
+      "size": 17764,
+      "role": "paper",
+      "volume": 3
+    },
+    "d6322e724dda2574": {
+      "id": "d6322e724dda2574",
+      "source": "reading-word-v3",
+      "entry": "Reading/Test 1/Test1-v3.docx",
+      "name": "Test1-v3.docx",
+      "ext": ".docx",
+      "size": 17686,
+      "role": "paper",
+      "volume": 3
+    },
+    "c4b84577c2d95338": {
+      "id": "c4b84577c2d95338",
+      "source": "reading-word-v3",
+      "entry": "Reading/Test 2/Test2-vol3.docx",
+      "name": "Test2-vol3.docx",
+      "ext": ".docx",
+      "size": 158440,
+      "role": "paper",
+      "volume": 3
+    },
+    "928959ec8bb2d6bd": {
+      "id": "928959ec8bb2d6bd",
+      "source": "reading-word-v3",
+      "entry": "Reading/Test 4/Test4-vol3.docx",
+      "name": "Test4-vol3.docx",
+      "ext": ".docx",
+      "size": 18425,
+      "role": "paper",
+      "volume": 3
+    },
+    "71db9b049321e823": {
+      "id": "71db9b049321e823",
+      "source": "reading-word-v3",
+      "entry": "Reading/Test 9/Test9-vol3.docx",
+      "name": "Test9-vol3.docx",
+      "ext": ".docx",
+      "size": 19222,
+      "role": "paper",
+      "volume": 3
+    },
+    "5e4f421a5b2bc949": {
+      "id": "5e4f421a5b2bc949",
+      "source": "reading-word-v4",
+      "entry": "Reading/Full key reading vol4.xlsx",
+      "name": "Full key reading vol4.xlsx",
+      "ext": ".xlsx",
+      "size": 128963,
+      "role": "key",
+      "volume": 4
+    },
+    "2a315beccc3753c6": {
+      "id": "2a315beccc3753c6",
+      "source": "reading-word-v4",
+      "entry": "Reading/Test 4/Test4-vol4.docx",
+      "name": "Test4-vol4.docx",
+      "ext": ".docx",
+      "size": 20328,
+      "role": "paper",
+      "volume": 4
+    },
+    "1d8a1b02ac7c552f": {
+      "id": "1d8a1b02ac7c552f",
+      "source": "reading-word-v4",
+      "entry": "Reading/Test 5/Test5-vol4.docx",
+      "name": "Test5-vol4.docx",
+      "ext": ".docx",
+      "size": 20197,
+      "role": "paper",
+      "volume": 4
+    },
+    "3e825c511771126e": {
+      "id": "3e825c511771126e",
+      "source": "reading-word-v4",
+      "entry": "Reading/Test 10/Test10-vol4.docx",
+      "name": "Test10-vol4.docx",
+      "ext": ".docx",
+      "size": 18970,
+      "role": "paper",
+      "volume": 4
+    },
+    "341070000ddcfa19": {
+      "id": "341070000ddcfa19",
+      "source": "reading-word-v4",
+      "entry": "Reading/Test 3/Test 3-vol4.docx",
+      "name": "Test 3-vol4.docx",
+      "ext": ".docx",
+      "size": 18954,
+      "role": "paper",
+      "volume": 4
+    },
+    "b81a28032164fbc1": {
+      "id": "b81a28032164fbc1",
+      "source": "reading-word-v4",
+      "entry": "Reading/Test 2/Test2-vol4.docx",
+      "name": "Test2-vol4.docx",
+      "ext": ".docx",
+      "size": 19518,
+      "role": "paper",
+      "volume": 4
+    },
+    "a31af8898396c815": {
+      "id": "a31af8898396c815",
+      "source": "reading-word-v4",
+      "entry": "Reading/Test 6/Test6-vol4.docx",
+      "name": "Test6-vol4.docx",
+      "ext": ".docx",
+      "size": 116524,
+      "role": "paper",
+      "volume": 4
+    },
+    "eea9392d6ed6aaf5": {
+      "id": "eea9392d6ed6aaf5",
+      "source": "reading-word-v4",
+      "entry": "Reading/Test 8/Test8-vol4.docx",
+      "name": "Test8-vol4.docx",
+      "ext": ".docx",
+      "size": 18628,
+      "role": "paper",
+      "volume": 4
+    },
+    "711e07f6b1a2f4f3": {
+      "id": "711e07f6b1a2f4f3",
+      "source": "reading-word-v4",
+      "entry": "Reading/Test 7/Test7-vol4.docx",
+      "name": "Test7-vol4.docx",
+      "ext": ".docx",
+      "size": 19076,
+      "role": "paper",
+      "volume": 4
+    },
+    "eba4bcdab8d511ae": {
+      "id": "eba4bcdab8d511ae",
+      "source": "reading-word-v4",
+      "entry": "Reading/Test 9/Test9-vol4.docx",
+      "name": "Test9-vol4.docx",
+      "ext": ".docx",
+      "size": 17902,
+      "role": "paper",
+      "volume": 4
+    },
+    "b91c4b4747ea429d": {
+      "id": "b91c4b4747ea429d",
+      "source": "reading-word-v4",
+      "entry": "Reading/Test 1/Test1-vol4.docx",
+      "name": "Test1-vol4.docx",
+      "ext": ".docx",
+      "size": 16949,
+      "role": "paper",
+      "volume": 4
+    },
+    "ddcdbb73fdf990ad": {
+      "id": "ddcdbb73fdf990ad",
+      "source": "reading-word-v5",
+      "entry": "Reading/Full Key reading vol5.xlsx",
+      "name": "Full Key reading vol5.xlsx",
+      "ext": ".xlsx",
+      "size": 77096,
+      "role": "key",
+      "volume": 5
+    },
+    "e86d0f318027a0cd": {
+      "id": "e86d0f318027a0cd",
+      "source": "reading-word-v5",
+      "entry": "Reading/Test 10/Test10-vol5.docx",
+      "name": "Test10-vol5.docx",
+      "ext": ".docx",
+      "size": 18443,
+      "role": "paper",
+      "volume": 5
+    },
+    "2de4fe812d465578": {
+      "id": "2de4fe812d465578",
+      "source": "reading-word-v5",
+      "entry": "Reading/Test 6/Test6-vol5.docx",
+      "name": "Test6-vol5.docx",
+      "ext": ".docx",
+      "size": 19315,
+      "role": "paper",
+      "volume": 5
+    },
+    "0d07f1ba0389ffcb": {
+      "id": "0d07f1ba0389ffcb",
+      "source": "reading-word-v5",
+      "entry": "Reading/Test 4/Test4-vol5.docx",
+      "name": "Test4-vol5.docx",
+      "ext": ".docx",
+      "size": 18535,
+      "role": "paper",
+      "volume": 5
+    },
+    "0ac6a150ca6ed42f": {
+      "id": "0ac6a150ca6ed42f",
+      "source": "reading-word-v5",
+      "entry": "Reading/Test 9/Test9-vol5.docx",
+      "name": "Test9-vol5.docx",
+      "ext": ".docx",
+      "size": 19013,
+      "role": "paper",
+      "volume": 5
+    },
+    "fac525819a9a37aa": {
+      "id": "fac525819a9a37aa",
+      "source": "reading-word-v5",
+      "entry": "Reading/Test 8/Test8-vol5.docx",
+      "name": "Test8-vol5.docx",
+      "ext": ".docx",
+      "size": 20066,
+      "role": "paper",
+      "volume": 5
+    },
+    "1e95b2b9fde143fe": {
+      "id": "1e95b2b9fde143fe",
+      "source": "reading-word-v5",
+      "entry": "Reading/Test 1/Test1-vol5.docx",
+      "name": "Test1-vol5.docx",
+      "ext": ".docx",
+      "size": 18819,
+      "role": "paper",
+      "volume": 5
+    },
+    "576d2261416ff473": {
+      "id": "576d2261416ff473",
+      "source": "reading-word-v5",
+      "entry": "Reading/Test 7/Test7-vol5.docx",
+      "name": "Test7-vol5.docx",
+      "ext": ".docx",
+      "size": 19667,
+      "role": "paper",
+      "volume": 5
+    },
+    "60a4347abbc4c8d5": {
+      "id": "60a4347abbc4c8d5",
+      "source": "reading-word-v5",
+      "entry": "Reading/Test 2/Test2-vol5.docx",
+      "name": "Test2-vol5.docx",
+      "ext": ".docx",
+      "size": 18460,
+      "role": "paper",
+      "volume": 5
+    },
+    "38b628233e4db4cf": {
+      "id": "38b628233e4db4cf",
+      "source": "reading-word-v5",
+      "entry": "Reading/Test 5/Test5-vol5.docx",
+      "name": "Test5-vol5.docx",
+      "ext": ".docx",
+      "size": 229414,
+      "role": "paper",
+      "volume": 5
+    },
+    "82d4e07f9ec557b2": {
+      "id": "82d4e07f9ec557b2",
+      "source": "reading-word-v5",
+      "entry": "Reading/Test 3/Test3-vol5.docx",
+      "name": "Test3-vol5.docx",
+      "ext": ".docx",
+      "size": 132311,
+      "role": "paper",
       "volume": 5
     }
   },

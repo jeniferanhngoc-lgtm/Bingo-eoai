@@ -104,3 +104,7 @@ Giao diện hiện tại thích nghi từ **Dreamy / Ginger Ninja!** của [Donn
 Khi đề là file `.docx`, `questions.py` tự tách câu hỏi (câu "N nội dung", trắc nghiệm A–D, ô điền "N ………", chọn 2–3 chữ cái, danh sách lựa chọn) và phiếu trả lời hiện nội dung câu ngay cạnh từng ô. Tích "Hiện câu hỏi" ở đầu phiếu để bật/tắt. Câu nào không tách được vẫn hiện ô trống như cũ. File gộp nhiều test chỉ lấy test đầu tiên.
 
 Đề dùng số tự động của Word (1. 2. 3. không nằm trong chữ) cũng được tách: số câu được đếm theo từng nhóm "Questions a–b".
+
+## Reading Word: VOL 3–5
+
+Đã bổ sung 30 đề Word (Test 1–10 của VOL 3, 4, 5). Mỗi bài ưu tiên mở Word để dùng giao diện câu hỏi và highlight chữ, đồng thời giữ PDF gốc trong danh sách tài liệu. Đáp án Excel được nhập theo số câu trong từng sheet; ô có số câu trùng/lệch hoặc thiếu được bỏ qua, không suy đoán. Chi tiết kỹ thuật nằm trong `key_import_notes` của catalog. Hai catalog triển khai (`data/catalog.json` và `catalog.json`) được đồng bộ. Các highlight cũ vẫn gắn với tài liệu gốc của chúng.
