@@ -11,7 +11,7 @@ from pathlib import Path
 
 import streamlit as st
 
-from core import ROOT, audio_files, audio_part, missing_audio_parts, band, docx_html, grade, read_json, resource_bytes, write_json
+from core import ROOT, audio_files, audio_part, clean_answers, missing_audio_parts, band, docx_html, grade, read_json, resource_bytes, write_json
 
 st.set_page_config(page_title='Bingo · IELTS Practice', page_icon='🎯', layout='wide')
 css_path = ROOT/'assets/bingo.css' if (ROOT/'assets/bingo.css').exists() else ROOT/'bingo.css'
@@ -79,7 +79,9 @@ def save():
 
 
 def draft(test):
-    return progress['drafts'].setdefault(test['id'], {'answers':{},'remaining':3600 if test['skill']=='reading' else 2400,'deadline':None})
+    d = progress['drafts'].setdefault(test['id'], {'answers':{},'remaining':3600 if test['skill']=='reading' else 2400,'deadline':None})
+    d.setdefault('created',time.time_ns())
+    return d
 
 
 def record(test):
@@ -97,6 +99,11 @@ def record(test):
 @st.cache_data(max_entries=4, show_spinner=False)
 def load_resource(rid, tid, config):
     return resource_bytes(resources[rid], tid, config)
+
+
+@st.cache_data(max_entries=4, show_spinner=False)
+def load_word_html(rid, tid, config):
+    return docx_html(load_resource(rid, tid, config))
 
 
 @st.fragment
@@ -184,23 +191,6 @@ def library():
                     st.rerun()
 
 
-@st.fragment(run_every=1)
-def clock_panel(test):
-    d = draft(test)
-    left = max(0,int(d['deadline']-time.time())) if d.get('deadline') else d['remaining']
-    st.html(f'<div class="timer">{left//60:02d}:{left%60:02d}</div>')
-    if d.get('deadline') and left==0:
-        record(test)
-        st.rerun()
-    if st.button('Tạm dừng' if d.get('deadline') else 'Bắt đầu / Tiếp tục',key='timer-button-'+test['id']):
-        if d.get('deadline'):
-            d.update(remaining=left,deadline=None)
-        else:
-            d['deadline']=time.time()+left
-        save()
-        st.rerun(scope='fragment')
-
-
 @st.fragment
 def audio_panel(test):
     audio = audio_files(test,resources)
@@ -208,48 +198,140 @@ def audio_panel(test):
         st.warning('Chưa có audio trong ZIP cho bài này. Bạn có thể luyện bài khác hoặc bổ sung audio sau.')
         return
     missing = missing_audio_parts(test,resources)
-    if missing:
-        st.warning('ZIP này chưa có audio phần '+', '.join(map(str,missing))+'. Bạn có thể luyện các phần đang có.')
-    rid = st.selectbox('Bản ghi',audio,format_func=lambda r:(f'Phần {audio_part(resources[r])} · ' if audio_part(resources[r]) else '')+resources[r]['name'],key='audio-'+test['id'])
+    with st.container(key='exam-audio'):
+        pick,player = st.columns([1,2],vertical_alignment='center')
+        rid = pick.selectbox('Bản ghi',audio,format_func=lambda r:(f'Phần {audio_part(resources[r])} · ' if audio_part(resources[r]) else '')+resources[r]['name'],key='audio-'+test['id'],label_visibility='collapsed')
+        try:
+            data = load_resource(rid,test['id'],settings(test['id']))
+            ext = resources[rid]['ext']
+            with player:
+                if ext == '.wma':
+                    st.download_button('Tải audio WMA (trình duyệt có thể không phát được)',data,file_name=resources[rid]['name'])
+                else:
+                    st.audio(data,format={'.mp3':'audio/mpeg','.m4a':'audio/mp4','.mp4':'audio/mp4'}.get(ext,'audio/mpeg'))
+        except Exception:
+            player.error('Chưa tải được audio. Kiểm tra kho dữ liệu và kết nối mạng.')
+        if missing:
+            st.caption('ZIP chưa có audio phần '+', '.join(map(str,missing))+'. Bạn có thể luyện các phần đang có.')
+
+
+def reset_exam_view(tid):
+    for k in [k for k in st.session_state if k==f'exam-frozen-{tid}' or k==f'exam-event-{tid}']:
+        del st.session_state[k]
+
+
+def exam_state(test,rid,page,view,session):
+    """Arguments for the exam component. They stay identical between reruns, because Streamlit
+    derives the component's identity from them and would reload the page whenever they change."""
+    tid=test['id']
+    request=(rid,page,view)
+    frozen=st.session_state.get('exam-frozen-'+tid)
+    if frozen and frozen['session']==session and frozen['request']==request:
+        return frozen
+    d=draft(test)
+    now=time.time()
+    if d.get('deadline'):
+        remaining,running=max(0,int(d['deadline']-now)),True
+    else:
+        remaining,running=int(d['remaining']),not d.get('paused')
+        if running and remaining>0:
+            d['deadline']=now+remaining
+            save()
     try:
-        data = load_resource(rid,test['id'],settings(test['id']))
-        ext = resources[rid]['ext']
-        if ext == '.mp4':
-            st.video(data)
-        elif ext == '.wma':
-            st.warning('Audio WMA có thể không phát trong trình duyệt. Tải xuống để nghe bằng ứng dụng trên máy.')
-            st.download_button('Tải audio WMA',data,file_name=resources[rid]['name'])
+        ext=resources[rid]['ext']
+        data=load_resource(rid,tid,settings(tid))
+        from reader import prepare_document
+        doc,stored,section=prepare_document(data,ext,rid,progress,page,view,load_word_html(rid,tid,settings(tid)) if ext=='.docx' else None)
+    except Exception as e:
+        message=str(e) if isinstance(e,FileNotFoundError) else 'Chưa mở được tài liệu. Kiểm tra cấu hình dữ liệu hoặc kết nối mạng trong mục Hướng dẫn.'
+        doc={'kind':'empty','message':message,'page':1,'pages':0,'can_text':False,'view':'image','document_key':rid+':error'}
+        stored={'marks':[],'updated':0}
+    frozen={'session':session,'request':request,'doc':doc,'annotations':stored,'answers':dict(d['answers']),'answers_updated':d.get('updated',0),'remaining':remaining,'running':running,'stamp':int(now*1000)}
+    st.session_state['exam-frozen-'+tid]=frozen
+    return frozen
+
+
+def apply_exam_event(test,event,rid,doc):
+    tid=test['id']
+    d=draft(test)
+    try:
+        d['answers']=clean_answers(event.get('answers',{}))
+    except ValueError:
+        st.warning('Phiếu trả lời chưa hợp lệ nên chưa được lưu.')
+        return
+    now=time.time()
+    d['updated']=int(now*1000)
+    remaining=event.get('remaining')
+    if isinstance(remaining,(int,float)) and not isinstance(remaining,bool) and remaining==remaining:
+        remaining=max(0,min(int(remaining),7200))
+        d['remaining']=remaining
+        if event.get('running') and event.get('type') not in {'back'}:
+            d['deadline']=now+remaining
+            d['paused']=False
         else:
-            st.audio(data,format={'.mp3':'audio/mpeg','.m4a':'audio/mp4'}.get(ext,'audio/mpeg'))
-        st.caption('Chọn bản ghi tiếp theo khi kết thúc. Bạn có thể nghe lại khi luyện tập.')
-    except Exception:
-        st.error('Chưa tải được audio. Kiểm tra kho dữ liệu và kết nối mạng.')
-
-
-def answer_changed(tid,number,key):
-    progress['drafts'][tid]['answers'][number] = st.session_state[key]
+            d['deadline']=None
+            d['paused']=event.get('type')!='back'
+    kind=event.get('type')
+    if kind=='highlight':
+        from reader import store_highlight
+        if event.get('document_key')==doc['document_key'] and doc['kind'] in {'image','text'}:
+            section=doc['document_key'].split(':',1)[1]
+            try:
+                store_highlight(progress,rid,section,doc['kind'],(event.get('annotations') or {}))
+            except ValueError:
+                st.warning('Highlight chưa hợp lệ nên chưa được lưu.')
     save()
+    if kind in {'submit','solution'}:
+        record(test)
+        reset_exam_view(tid)
+        st.rerun()
+    elif kind=='back':
+        reset_exam_view(tid)
+        st.session_state.pop('active',None)
+        st.session_state.pop('result_id',None)
+        st.session_state.pop('show_review',None)
+        st.rerun()
+    elif kind=='page' and isinstance(event.get('page'),int):
+        st.session_state['exam-page-'+rid]=max(1,event['page'])
+        st.rerun(scope='fragment')
+    elif kind=='view' and event.get('view') in {'image','text'}:
+        st.session_state['exam-view-'+rid]=event['view']
+        st.rerun(scope='fragment')
+    elif kind=='paper' and event.get('paper') in [r for r in test['resources'] if resources[r]['role']=='paper']:
+        st.session_state['paper-'+tid]=event['paper']
+        st.rerun(scope='fragment')
 
 
 @st.fragment
-def answers_panel(test):
-    d = draft(test)
-    count = sum(bool(a.strip()) for a in d['answers'].values())
-    st.subheader('Phiếu trả lời')
-    st.progress(min(count/40,1),text=f'{count}/40 câu đã điền · tự lưu khi rời ô')
-    st.caption('Nhập chữ cái cho câu lựa chọn; TRUE / FALSE / NOT GIVEN cho câu nhận định. Làm theo giới hạn từ trong đề.')
-    part = st.radio('Nhóm câu',['1–10','11–20','21–30','31–40'],horizontal=True,key='part-'+test['id'])
-    start = int(part.split('–')[0])
-    for i in range(start,start+10):
-        number = str(i)
-        key = f'ans-{test["id"]}-{number}'
-        if key not in st.session_state:
-            st.session_state[key] = d['answers'].get(number,'')
-        st.text_input(f'Câu {i}',key=key,max_chars=120,on_change=answer_changed,args=(test['id'],number,key))
-    if st.button('Nộp bài & xem kết quả',type='primary',width='stretch',key='submit-'+test['id']):
-        record(test)
-        st.rerun()
-    st.caption('Hết giờ sẽ tự nộp bài khi trang đang mở. Thời gian vẫn trôi nếu bạn đóng trang khi đồng hồ đang chạy.')
+def exam_screen(test):
+    from reader import exam_component
+    tid=test['id']
+    d=draft(test)
+    papers=[r for r in test['resources'] if resources[r]['role']=='paper']
+    rid=st.session_state.get('paper-'+tid)
+    if rid not in papers:
+        rid=papers[0]
+    session=f"{tid}:{d['created']}"
+    frozen=exam_state(test,rid,int(st.session_state.get('exam-page-'+rid,1)),st.session_state.get('exam-view-'+rid,'image'),session)
+    event=exam_component(
+        session=session,
+        created=str(d['created']),
+        test={'id':tid,'title':test['title'],'skill':test['skill']},
+        papers=[{'id':r,'name':resources[r]['name']} for r in papers],
+        paper=rid,
+        doc=frozen['doc'],
+        annotations=frozen['annotations'],
+        answers=frozen['answers'],
+        answers_updated=frozen['answers_updated'],
+        remaining=frozen['remaining'],
+        running=frozen['running'],
+        stamp=frozen['stamp'],
+        key='exam-'+tid,
+        default=None,
+    )
+    if isinstance(event,dict) and event.get('session')==session and event.get('nonce')!=st.session_state.get('exam-event-'+tid):
+        st.session_state['exam-event-'+tid]=event['nonce']
+        apply_exam_event(test,event,rid,frozen['doc'])
 
 
 def result_view(item,test):
@@ -280,29 +362,27 @@ def result_view(item,test):
         st.rerun()
 
 
+def exam_css():
+    return '<style>'+(ROOT/'assets/exam.css').read_text(encoding='utf-8')+'</style>'
+
+
 def practice(test):
-    if st.button('← Về kho đề'):
-        st.session_state.pop('active',None)
-        st.session_state.pop('result_id',None)
-        st.session_state.pop('show_review',None)
-        st.rerun()
-    st.html(f'<div class="eyebrow">{test["skill"].upper()} / YOUR PRACTICE</div>')
-    st.title(test['title'])
     item=next((h for h in progress['history'] if h['id']==st.session_state.get('result_id')),None)
     if item:
+        if st.button('← Về kho đề'):
+            st.session_state.pop('active',None)
+            st.session_state.pop('result_id',None)
+            st.session_state.pop('show_review',None)
+            st.rerun()
+        st.html(f'<div class="eyebrow">{test["skill"].upper()} / YOUR PRACTICE</div>')
+        st.title(test['title'])
         result_view(item,test)
         return
-    main,side=st.columns([2.3,1],gap='large')
-    with main:
-        if test['skill']=='listening':
-            audio_panel(test)
-        papers=[r for r in test['resources'] if resources[r]['role']=='paper']
-        rid=st.selectbox('Đề gốc',papers,format_func=lambda r:resources[r]['name'])
-        st.caption('Đọc và làm theo số câu trong đề gốc. Một số PDF chứa cả Listening và Reading; chuyển đến phần tương ứng. Dùng công cụ highlight bên dưới để tô bài đọc và câu hỏi.')
-        viewer(rid,test['id'])
-    with side:
-        clock_panel(test)
-        answers_panel(test)
+    # Exam mode: the browser window is the exam room. Only the two panes scroll, never the page.
+    st.html(exam_css())
+    if test['skill']=='listening':
+        audio_panel(test)
+    exam_screen(test)
 
 
 def history():

@@ -11,6 +11,7 @@ import streamlit.components.v1 as components
 
 ROOT=Path(__file__).parent
 component=components.declare_component('bingo_highlight_reader',path=str(ROOT/'components/reader'))
+exam_component=components.declare_component('bingo_exam',path=str(ROOT/'components/exam'))
 COLORS={'yellow','green','blue','pink'}
 
 
@@ -107,3 +108,40 @@ def highlight_reader(data,extension,rid,progress,save_callback,word_html=None):
         except ValueError:
             st.warning('Highlight chưa hợp lệ nên chưa được lưu.')
     st.caption('Highlight tự lưu theo tài liệu; cũng có trong file sao lưu tiến độ. Trình duyệt này giữ thêm bản lưu để khôi phục khi cloud khởi động lại.')
+
+
+def prepare_document(data,extension,rid,progress,page=1,view='image',word_html=None):
+    """Return what the exam screen needs to show one document, plus its stored highlights."""
+    doc={'kind':'text','content':'','page':1,'pages':0,'can_text':False,'view':'text'}
+    if extension=='.pdf':
+        info=pdf_page(data,max(0,int(page)-1))
+        count=info['count']
+        page=max(1,min(int(page),count))
+        can_text=len(info['text'].strip())>30
+        if view=='text' and not can_text:
+            view='image'
+        doc.update(pages=count,page=page,can_text=can_text,view=view)
+        if view=='image':
+            doc.update(kind='image',content=info['image'])
+            section=f'pdf-region-{page}'
+        else:
+            doc.update(kind='text',content='<p>'+html.escape(info['text']).replace('\n','<br>')+'</p>')
+            section=f'pdf-text-{page}'
+    elif extension=='.docx':
+        doc['content']=re.search(r'<body>(.*)</body>',word_html,flags=re.S)[1]
+        section='word-text'
+    else:
+        raise ValueError('Định dạng tài liệu không hỗ trợ trong màn hình làm bài.')
+    doc['document_key']=rid+':'+section
+    stored=progress.setdefault('highlights',{}).setdefault(rid,{}).get(section,{'marks':[],'updated':0})
+    try:
+        stored=validate_annotations(stored,doc['kind'])
+    except ValueError:
+        stored={'marks':[],'updated':0}
+    return doc,stored,section
+
+
+def store_highlight(progress,rid,section,kind,annotations):
+    """Validate and store one highlight state; raises ValueError when invalid."""
+    clean=validate_annotations(annotations,kind)
+    progress.setdefault('highlights',{}).setdefault(rid,{})[section]=clean

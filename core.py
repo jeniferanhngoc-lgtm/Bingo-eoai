@@ -69,6 +69,21 @@ def grade(test, responses):
     return results
 
 
+def clean_answers(raw):
+    """Validate an answer sheet sent by the browser; returns only non-empty answers 1-40."""
+    if not isinstance(raw, dict):
+        raise ValueError('Phiếu trả lời không hợp lệ.')
+    allowed = {str(i) for i in range(1, 41)}
+    cleaned = {}
+    for key, value in raw.items():
+        key = str(key)
+        if key not in allowed or not isinstance(value, str) or len(value) > 120:
+            raise ValueError('Phiếu trả lời không hợp lệ.')
+        if value.strip():
+            cleaned[key] = value
+    return cleaned
+
+
 def band(score, skill):
     # Average conversion tables; actual thresholds vary between exam versions.
     # https://ielts.idp.com/vietnam/results/scores/listening/en-gb

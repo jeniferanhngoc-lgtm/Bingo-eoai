@@ -1,0 +1,10 @@
+.venv/
+.deps/
+__pycache__/
+.streamlit/secrets.toml
+.bingo/
+data/local_sources.json
+data/packs/
+*.zip
+*.log
+test-results/

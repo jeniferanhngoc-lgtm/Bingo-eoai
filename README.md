@@ -31,6 +31,19 @@ DATA_KEY = "key-generated-by-pack-data"
 
 Giữ nguyên cấu trúc thư mục của repo khi triển khai. Giao diện dùng `assets/dreamy/`, catalog ở `data/catalog.json`, và trình highlight dùng `reader.py` cùng `components/reader/index.html`. Không chỉ tải riêng app.py.
 
+## Màn hình làm bài
+
+Khi bấm **Luyện ngay**, Bingo mở màn hình làm bài toàn cửa sổ, bố cục theo mini-ielts:
+
+- Khung trái là đề gốc (PDF/Word), khung phải là phiếu trả lời 40 câu. **Mỗi khung cuộn độc lập; cả trang không cuộn**. Kéo thanh xám ở giữa để đổi tỉ lệ hai khung (được nhớ lại lần sau).
+- Thanh **Question Palette** phía dưới: vòng tròn xanh là câu đã trả lời; bấm vào số để nhảy đến câu đó. Có đồng hồ đếm ngược và các nút **Submit**, **Review** (tổng quan câu đã/chưa làm), **Solution** (nộp bài và xem lời giải).
+- Đồng hồ chạy trong trình duyệt nên không còn rerun mỗi giây; tự nộp khi hết giờ. Nút ❚❚ để tạm dừng.
+- Phím ↑/↓/Enter chuyển giữa các ô đáp án. Khi đang ở một ô, các nút gợi ý nhanh (TRUE / FALSE / NOT GIVEN, YES / NO, A–H, i–viii) hiện bên dưới.
+- Công cụ highlight nằm trên đầu khung trái. Chế độ "Bút tô" bật thì bôi chọn chữ (Word/văn bản) hoặc kéo vùng (trang gốc PDF) là tô ngay.
+- Câu trả lời, highlight, đồng hồ và vị trí cuộn còn được trình duyệt giữ bản lưu phòng khi trang tải lại.
+
+Màn hình này là một component riêng ở `components/exam/index.html`, CSS cho phần Streamlit bao quanh ở `assets/exam.css`. Các tham số truyền vào component được giữ cố định giữa các lần rerun, vì Streamlit dùng chúng để định danh component và sẽ tải lại iframe (mất vị trí cuộn, mất con trỏ) nếu chúng đổi.
+
 ## Dữ liệu
 
 Đã lập danh mục từ hai ZIP do chủ ứng dụng cung cấp:
@@ -40,7 +53,7 @@ Giữ nguyên cấu trúc thư mục của repo khi triển khai. Giao diện d�
 - 57 bài Listening có audio; bài chưa có audio được gắn cảnh báo.
 - Nhiều bài chỉ có audio một số phần. Bingo hiển thị các phần còn thiếu theo tên file và sắp xếp bản ghi theo số phần.
 - Một số PDF chứa cả Listening và Reading: chọn đúng trang/phần theo kỹ năng.
-- Giữ nguyên file đề, đáp án và lời giải. Chưa chuyển mọi câu hỏi thành dạng tương tác trực tiếp trong văn bản; trả lời bằng phiếu bên cạnh.
+- Giữ nguyên file đề, đáp án và lời giải. Chưa chuyển mọi câu hỏi thành dạng tương tác trực tiếp trong văn bản; trả lời bằng phiếu ở khung bên phải.
 - Đáp án được trích tự động, chưa được giáo viên kiểm định. Luôn có tài liệu gốc để đối chiếu. Band chỉ là tham khảo; bảng Reading áp dụng cho Academic.
 - Tham khảo bảng điểm trung bình của [IDP Listening](https://ielts.idp.com/vietnam/results/scores/listening/en-gb) và [IELTS scoring](https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail); ngưỡng thực tế có thể thay đổi theo phiên bản đề.
 - Các file WMA có nút tải xuống vì hỗ trợ trình duyệt không đồng nhất.
