@@ -77,17 +77,39 @@ mark{color:inherit;border-radius:2px;padding:1px 0}
 .group:first-of-type{margin-top:0}
 .group h2{margin:18px 0 4px;font:400 30px Arial,sans-serif;color:#222}
 .group .sub{color:#777;font-size:13px;margin-bottom:10px}
-.row{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:6px 8px;margin:0 -8px;border-radius:6px}
+.row{display:flex;align-items:flex-start;gap:10px;padding:8px 8px;margin:0 -8px;border-radius:6px}
 .row.active{background:#eef5fd}
-.row .n{flex:none;width:30px;font-weight:700;font-size:17px;color:#333;text-align:right}
-.row input{flex:1 1 220px;min-width:0;max-width:340px;font:16px Arial,sans-serif;padding:7px 10px;border:1px solid #aaa;border-radius:4px;background:#fff}
+.row .n{flex:none;width:30px;font-weight:700;font-size:17px;color:#333;text-align:right;padding-top:7px}
+.row.hasq .n{padding-top:1px}
+.row .body{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px}
+.row input{width:100%;max-width:340px;font:16px Arial,sans-serif;padding:7px 10px;border:1px solid #aaa;border-radius:4px;background:#fff}
 .row input:focus{outline:2px solid #2f78c4;outline-offset:-1px;border-color:#2f78c4}
 .row.done input{border-color:#2f78c4;background:#f3f8fe}
-.chips{flex:1 0 100%;display:none;gap:5px;flex-wrap:wrap;padding-left:40px;margin-top:2px}
+.chips{display:none;gap:5px;flex-wrap:wrap}
 .row.active .chips{display:flex}
 .chips button{padding:3px 9px;border:1px solid #bbb;border-radius:12px;background:#fff;font-size:12px;color:#444}
 .chips button:hover{background:#eaf2fb;border-color:#2f78c4}
 .chips .gap{width:8px}
+
+.qt{font-size:15px;line-height:1.5;color:#222;overflow-wrap:anywhere;cursor:text}
+.qt .gap{font-weight:700;letter-spacing:1px;color:#2f78c4}
+.qt .note{color:#888;font-size:13px}
+.opts{display:flex;flex-direction:column;gap:3px;margin-top:5px}
+.opt{display:flex;gap:8px;text-align:left;border:1px solid #ddd;background:#fafafa;border-radius:5px;padding:4px 8px;font-size:14px;color:#333}
+.opt b{flex:none;width:16px}
+.opt:hover{border-color:#2f78c4;background:#f1f7fd}
+.opt.sel{border-color:#2f78c4;background:#dcebfa}
+.noq .qt,.noq .qg{display:none}
+.qg{margin:14px 0 6px;padding:10px 12px;background:#f6f6f6;border-left:3px solid #f5a623;border-radius:0 6px 6px 0;font-size:14px;color:#333}
+.qg .qgh{font-weight:700;font-size:15px;margin-bottom:2px}
+.qg details{margin:4px 0;color:#555}
+.qg summary{cursor:pointer;color:#2f78c4;font-size:13px}
+.qg .ins{white-space:pre-wrap;margin-top:4px}
+.qg .lst{margin-top:6px}
+.qg .lst .lt{font-weight:700;margin-bottom:2px}
+.qg .li{display:flex;gap:8px;padding:1px 0}
+.qg .li b{flex:none;min-width:18px}
+#showQBox{margin-left:auto;display:flex;align-items:center;gap:6px;font-size:13px;color:#444;cursor:pointer}
 
 /* ---------- bottom palette ---------- */
 #bottom{flex:none;display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:6px 14px 7px;background:#fcebd2;border-top:1px solid #f0c98d}
@@ -197,7 +219,7 @@ mark{color:inherit;border-radius:2px;padding:1px 0}
  </section>
  <div id="divider" role="separator" aria-orientation="vertical" aria-label="Kéo để đổi kích thước hai khung" tabindex="0"></div>
  <section id="right" aria-label="Phiếu trả lời">
-  <div class="paneHead"><strong id="sheetTitle">Phiếu trả lời</strong><span id="sheetCount" style="color:#666"></span></div>
+  <div class="paneHead"><strong id="sheetTitle">Phiếu trả lời</strong><span id="sheetCount" style="color:#666"></span><label id="showQBox" hidden><input type="checkbox" id="showQ" checked>Hiện câu hỏi</label></div>
   <div class="scroll" id="rightScroll"><div id="sheet"></div></div>
  </section>
 </div>
@@ -315,9 +337,53 @@ function buildSheet(){
    input.addEventListener('focus',()=>setCurrent(q,false));
    input.addEventListener('blur',()=>{if(sendTimer){emit('answers');setStatus('Đã lưu')}});
    input.addEventListener('keydown',e=>{if(e.key==='Enter'||(e.key==='ArrowDown')){e.preventDefault();goTo(Math.min(TOTAL,q+1))}else if(e.key==='ArrowUp'){e.preventDefault();goTo(Math.max(1,q-1))}});
-   row.append(n,input,chips);sec.append(row);
+   const body=document.createElement('div');body.className='body';
+   const qt=document.createElement('div');qt.className='qt';qt.hidden=true;
+   qt.addEventListener('click',e=>{if(!e.target.closest('button'))input.focus()});
+   body.append(qt,input,chips);
+   row.append(n,body);sec.append(row);
   }
   sheet.append(sec);
+ });
+ updateAll();
+}
+/* ---------- question text next to each answer box (best-effort, from the Word file) ---------- */
+let qSig='';
+function el(tag,cls,text){const e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e}
+function blanks(box,text){String(text).split(/(_{3,})/).forEach(part=>{if(/^_{3,}$/.test(part))box.append(el('span','gap',part));else if(part)box.append(document.createTextNode(part))})}
+function optionList(opts,q){
+ const list=el('div','opts');
+ opts.forEach(([l,t])=>{
+  const b=el('button','opt');b.type='button';b.tabIndex=-1;
+  if(q){b.dataset.q=q;b.dataset.l=l;b.addEventListener('mousedown',e=>e.preventDefault());b.addEventListener('click',()=>{const i=$('in-'+q);i.value=l;setAnswer(q,l);i.focus()})}
+  else b.disabled=true;
+  b.append(el('b',null,l),document.createTextNode(t));list.append(b);
+ });
+ return list;
+}
+function paintQuestions(){
+ const Q=(args&&args.questions)||{},qs=Q.questions||{},gs=Q.groups||[];
+ const found=Object.keys(qs).length>0;
+ $('showQBox').hidden=!found;
+ document.querySelectorAll('#sheet .qg').forEach(x=>x.remove());
+ for(let q=1;q<=TOTAL;q++){
+  const row=$('row-'+q);if(!row)continue;
+  const box=row.querySelector('.qt');box.replaceChildren();
+  const it=qs[q];box.hidden=!it;row.classList.toggle('hasq',!!it);if(!it)continue;
+  if(it.shared){box.append(el('span','note','Chọn nhiều đáp án — xem lựa chọn ở đầu nhóm câu hỏi.'));continue}
+  blanks(box,it.text);
+  if(it.options&&it.options.length)box.append(optionList(it.options,q));
+ }
+ gs.forEach(g=>{
+  const row=$('row-'+g.from);if(!row)return;
+  const stem=qs[g.from]&&qs[g.from].shared?qs[g.from]:null;
+  if(!(g.instructions&&g.instructions.length)&&!(g.list&&g.list.length)&&!stem)return;
+  const box=el('div','qg');
+  box.append(el('div','qgh',`Questions ${g.from} – ${g.to}`));
+  if(g.instructions&&g.instructions.length){const d=el('details');d.append(el('summary',null,'Hướng dẫn làm bài'),el('div','ins',g.instructions.join('\n')));box.append(d)}
+  if(stem){const s=el('div','ins',stem.text);box.append(s);if(stem.options.length)box.append(optionList(stem.options,0))}
+  if(g.list&&g.list.length){const l=el('div','lst');if(g.list_title)l.append(el('div','lt',g.list_title));g.list.forEach(([a,t])=>{const r=el('div','li');r.append(el('b',null,a),document.createTextNode(t));l.append(r)});box.append(l)}
+  row.parentNode.insertBefore(box,row);
  });
  updateAll();
 }
@@ -339,6 +405,7 @@ function goTo(q){
 }
 function updateAll(){
  for(let q=1;q<=TOTAL;q++){const r=$('row-'+q);if(r)r.classList.toggle('done',has(q))}
+ document.querySelectorAll('.opt[data-q]').forEach(b=>b.classList.toggle('sel',String(answers[b.dataset.q]||'').trim().toUpperCase()===b.dataset.l));
  $('sheetCount').textContent=` · ${answeredCount()}/${TOTAL} câu đã trả lời`;
  paintPalette();
 }
@@ -388,6 +455,8 @@ function showTimeout(){
  openModal(`<h3>Hết giờ</h3><p>Thời gian làm bài đã kết thúc. Bài làm của bạn sẽ được nộp và chấm.</p><div class="btns"><button class="go" id="mOk" data-focus>Xem kết quả</button></div>`,b=>{b.querySelector('#mOk').onclick=()=>{closeModal();emit('submit',{reason:'timeout'})}});
  emit('submit',{reason:'timeout'});
 }
+$('showQ').addEventListener('change',e=>{$('sheet').classList.toggle('noq',!e.target.checked);try{localStorage.setItem('bingo-exam-showq',e.target.checked?'1':'0')}catch(_){}});
+try{if(localStorage.getItem('bingo-exam-showq')==='0'){$('showQ').checked=false;$('sheet').classList.add('noq')}}catch(_){}
 $('submit').addEventListener('click',()=>confirmSubmit('submit'));
 $('solution').addEventListener('click',()=>confirmSubmit('solution'));
 $('review').addEventListener('click',showReview);
@@ -537,6 +606,7 @@ function onRender(next){
   try{const sp=parseFloat(localStorage.getItem('bingo-exam-split'));if(sp)setSplit(sp);const z=parseInt(localStorage.getItem('bingo-exam-zoom')||'0',10);if(z>0&&z<ZOOMS.length){zoomLevel=z;document.documentElement.style.setProperty('--zoom',ZOOMS[z]);$('zoom').setAttribute('aria-pressed','true')}}catch(e){}
  }
  renderHeader();
+ {const sig=JSON.stringify(args.questions||null);if(firstForSession||sig!==qSig){qSig=sig;paintQuestions()}}
  if(docKey!==args.doc.document_key||firstForSession){
   docKey=args.doc.document_key;undoStack=[];
   state=args.annotations||{marks:[],updated:0};

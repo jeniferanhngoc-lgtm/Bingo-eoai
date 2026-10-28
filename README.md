@@ -97,3 +97,8 @@ Giao diện hiện tại thích nghi từ **Dreamy / Ginger Ninja!** của [Donn
 - Có bốn màu, xóa từng nét, hoàn tác và xóa hết highlight trên trang/tài liệu đang xem.
 - Dấu tô được lưu theo tài liệu và trang trong tiến độ và file sao lưu JSON. Trình duyệt giữ thêm bản localStorage và tự khôi phục bản mới hơn nếu cloud reboot. Chuyển trình duyệt hoặc xóa dữ liệu trình duyệt cần dùng bản sao lưu để khôi phục.
 - Khi đổi kiểu xem PDF, dấu tô vùng và dấu tô chữ được lưu riêng để tọa độ không bị sai lệch.
+
+
+## Câu hỏi cạnh ô đáp án (Word)
+
+Khi đề là file `.docx`, `questions.py` tự tách câu hỏi (câu "N nội dung", trắc nghiệm A–D, ô điền "N ………", chọn 2–3 chữ cái, danh sách lựa chọn) và phiếu trả lời hiện nội dung câu ngay cạnh từng ô. Tích "Hiện câu hỏi" ở đầu phiếu để bật/tắt. Câu nào không tách được vẫn hiện ô trống như cũ. File gộp nhiều test chỉ lấy test đầu tiên.

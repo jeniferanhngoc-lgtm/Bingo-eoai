@@ -106,6 +106,12 @@ def load_word_html(rid, tid, config):
     return docx_html(load_resource(rid, tid, config))
 
 
+@st.cache_data(max_entries=8, show_spinner=False)
+def load_questions(rid, tid, config):
+    from questions import extract_questions
+    return extract_questions(load_resource(rid, tid, config))
+
+
 @st.fragment
 def viewer(rid, tid):
     r = resources[rid]
@@ -242,11 +248,16 @@ def exam_state(test,rid,page,view,session):
         data=load_resource(rid,tid,settings(tid))
         from reader import prepare_document
         doc,stored,section=prepare_document(data,ext,rid,progress,page,view,load_word_html(rid,tid,settings(tid)) if ext=='.docx' else None)
+        try:
+            questions=load_questions(rid,tid,settings(tid)) if ext=='.docx' else None
+        except Exception:
+            questions=None
     except Exception as e:
         message=str(e) if isinstance(e,FileNotFoundError) else 'Chưa mở được tài liệu. Kiểm tra cấu hình dữ liệu hoặc kết nối mạng trong mục Hướng dẫn.'
+        questions=None
         doc={'kind':'empty','message':message,'page':1,'pages':0,'can_text':False,'view':'image','document_key':rid+':error'}
         stored={'marks':[],'updated':0}
-    frozen={'session':session,'request':request,'doc':doc,'annotations':stored,'answers':dict(d['answers']),'answers_updated':d.get('updated',0),'remaining':remaining,'running':running,'stamp':int(now*1000)}
+    frozen={'session':session,'request':request,'doc':doc,'questions':questions,'annotations':stored,'answers':dict(d['answers']),'answers_updated':d.get('updated',0),'remaining':remaining,'running':running,'stamp':int(now*1000)}
     st.session_state['exam-frozen-'+tid]=frozen
     return frozen
 
@@ -320,6 +331,7 @@ def exam_screen(test):
         papers=[{'id':r,'name':resources[r]['name']} for r in papers],
         paper=rid,
         doc=frozen['doc'],
+        questions=frozen['questions'],
         annotations=frozen['annotations'],
         answers=frozen['answers'],
         answers_updated=frozen['answers_updated'],

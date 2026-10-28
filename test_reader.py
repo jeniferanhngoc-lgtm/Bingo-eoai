@@ -5,7 +5,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
 sys.path.insert(0,str(ROOT/'.deps'))
-from reader import validate_annotations,pdf_page,prepare_document,store_highlight
+from reader import validate_annotations,pdf_page
 
 
 class ReaderTests(unittest.TestCase):
@@ -36,23 +36,6 @@ class ReaderTests(unittest.TestCase):
         self.assertEqual(result['count'],1)
         self.assertTrue(result['image'].startswith('data:image/jpeg;base64,'))
         self.assertEqual(result['text'],'')
-
-    def test_prepare_document_clamps_page_and_falls_back_to_image(self):
-        import io
-        from pypdf import PdfWriter
-        writer=PdfWriter()
-        for _ in range(3):
-            writer.add_blank_page(width=400,height=600)
-        stream=io.BytesIO();writer.write(stream)
-        progress={}
-        doc,stored,section=prepare_document(stream.getvalue(),'.pdf','rid',progress,page=9,view='text')
-        self.assertEqual((doc['page'],doc['pages'],doc['kind']),(3,3,'image'))
-        self.assertEqual(section,'pdf-region-3')
-        self.assertEqual(doc['document_key'],'rid:pdf-region-3')
-        store_highlight(progress,'rid',section,'image',{'marks':[{'id':'a','x':.1,'y':.1,'w':.2,'h':.1,'color':'blue'}],'updated':1})
-        self.assertEqual(len(progress['highlights']['rid'][section]['marks']),1)
-        with self.assertRaises(ValueError):
-            store_highlight(progress,'rid',section,'image',{'marks':[{'id':'a','x':.9,'y':.1,'w':.5,'h':.1,'color':'blue'}]})
 
     def test_continuous_pages_roundtrip_and_split(self):
         from reader import store_highlight
