@@ -66,6 +66,23 @@ class QuestionTests(unittest.TestCase):
             'TEST 2', 'READING PASSAGE 1', 'Questions 1-1', '1 second test']))
         self.assertEqual(r['questions']['1']['text'], 'first test')
 
+    def test_word_auto_numbering(self):
+        W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'
+        item = lambda t: f'<w:p><w:pPr><w:numPr><w:ilvl w:val="0"/><w:numId w:val="1"/></w:numPr></w:pPr><w:r><w:t>{t}</w:t></w:r></w:p>'
+        head = lambda t: f'<w:p><w:r><w:t>{t}</w:t></w:r></w:p>'
+        doc = (f'<?xml version="1.0"?><w:document xmlns:w="{W}"><w:body>' + head('Questions 1-2') + head('Decide TRUE or FALSE.')
+               + item('Cats sleep a lot.') + item('Dogs fly.') + head('Question 3') + head('Choose the correct letter, A, B, C or D.')
+               + head('Why?') + head('A. one\nB. two') + '</w:body></w:document>')
+        numbering = (f'<w:numbering xmlns:w="{W}"><w:abstractNum w:abstractNumId="0"><w:lvl w:ilvl="0"><w:numFmt w:val="decimal"/></w:lvl></w:abstractNum>'
+                     '<w:num w:numId="1"><w:abstractNumId w:val="0"/></w:num></w:numbering>')
+        buf = io.BytesIO()
+        with zipfile.ZipFile(buf, 'w') as z:
+            z.writestr('word/document.xml', doc)
+            z.writestr('word/numbering.xml', numbering)
+        q = extract_questions(buf.getvalue())['questions']
+        self.assertEqual(q['2']['text'], 'Dogs fly.')
+        self.assertEqual(q['3']['text'], 'Why?')
+
     def test_garbage_input_is_harmless(self):
         self.assertEqual(extract_questions(b'not a zip'), {'questions': {}, 'groups': []})
 

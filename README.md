@@ -102,3 +102,5 @@ Giao diện hiện tại thích nghi từ **Dreamy / Ginger Ninja!** của [Donn
 ## Câu hỏi cạnh ô đáp án (Word)
 
 Khi đề là file `.docx`, `questions.py` tự tách câu hỏi (câu "N nội dung", trắc nghiệm A–D, ô điền "N ………", chọn 2–3 chữ cái, danh sách lựa chọn) và phiếu trả lời hiện nội dung câu ngay cạnh từng ô. Tích "Hiện câu hỏi" ở đầu phiếu để bật/tắt. Câu nào không tách được vẫn hiện ô trống như cũ. File gộp nhiều test chỉ lấy test đầu tiên.
+
+Đề dùng số tự động của Word (1. 2. 3. không nằm trong chữ) cũng được tách: số câu được đếm theo từng nhóm "Questions a–b".

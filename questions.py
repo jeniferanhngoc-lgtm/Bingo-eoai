@@ -36,10 +36,43 @@ def _lines(paragraph):
     return [re.sub(r'[ \t ]+', ' ', x).strip() for x in out if x.strip()]
 
 
+def _decimal_lists(z):
+    """{(numId, ilvl)} of Word lists that count 1, 2, 3 ... (their numbers are not stored in the text)."""
+    try:
+        root = ET.fromstring(z.read('word/numbering.xml'))
+    except (KeyError, ET.ParseError):
+        return set()
+    decimal = set()
+    for a in root.iter(W + 'abstractNum'):
+        for lvl in a.iter(W + 'lvl'):
+            fmt = lvl.find(W + 'numFmt')
+            if fmt is not None and fmt.get(W + 'val') == 'decimal':
+                decimal.add((a.get(W + 'abstractNumId'), lvl.get(W + 'ilvl')))
+    mapping = {}
+    for n in root.iter(W + 'num'):
+        ref = n.find(W + 'abstractNumId')
+        if ref is not None:
+            mapping[n.get(W + 'numId')] = ref.get(W + 'val')
+    return {(nid, il) for nid, abs_id in mapping.items() for (aid, il) in decimal if aid == abs_id}
+
+
 def _paragraphs(data):
+    """[(lines, auto)] for every paragraph; auto is True when Word numbers it automatically (1. 2. 3.)."""
     with zipfile.ZipFile(io.BytesIO(data)) as z:
         body = ET.fromstring(z.read('word/document.xml')).find(W + 'body')
-    return [lines for p in body.iter(W + 'p') if (lines := _lines(p))]
+        decimal = _decimal_lists(z)
+    out = []
+    for p in body.iter(W + 'p'):
+        lines = _lines(p)
+        if not lines:
+            continue
+        num = p.find(W + 'pPr/' + W + 'numPr')
+        auto = False
+        if num is not None and num.find(W + 'numId') is not None:
+            ilvl = num.find(W + 'ilvl')
+            auto = (num.find(W + 'numId').get(W + 'val'), ilvl.get(W + 'val') if ilvl is not None else '0') in decimal
+        out.append((lines, auto))
+    return out
 
 
 def _sentence_with_gap(text, target):
@@ -83,7 +116,7 @@ def extract_questions(data):
         groups.append(group)
         last = None
 
-    for lines in paragraphs:
+    for lines, auto in paragraphs:
         first = lines[0]
         # A second test or a second "Passage 1" means the file bundles several tests: keep the first.
         if re.match(r'^TEST\s+\d+\b', first, re.I):
@@ -96,8 +129,12 @@ def extract_questions(data):
                 break
 
         m = HEADING.match(first)
-        if m and int(m.group(1)) <= int(m.group(2)) <= 40:
-            new_group(int(m.group(1)), int(m.group(2)), re.sub(r'\s*\(.*', '', first).strip())
+        span = (int(m.group(1)), int(m.group(2))) if m else None
+        single = re.match(r'^Question\s+(\d{1,2})\s*$', first, re.I)
+        if single:
+            span = (int(single.group(1)),) * 2
+        if span and span[0] <= span[1] <= 40:
+            new_group(span[0], span[1], re.sub(r'\s*\(.*', '', first).strip())
             rest = lines[1:]
             if not rest:
                 continue
@@ -111,6 +148,12 @@ def extract_questions(data):
             continue
 
         lo, hi = group['from'], group['to']
+        if auto and not NUMBERED.match(lines[0]):
+            # Word's own numbering: the number is not in the text, so count the items ourselves.
+            group['auto'] = group.get('auto', lo - 1) + 1
+            if group['auto'] <= 40:
+                lines = ['%d %s' % (group['auto'], lines[0])] + lines[1:]
+                first = lines[0]
         text = ' '.join(lines)
 
         def accept(n):
@@ -138,6 +181,11 @@ def extract_questions(data):
             group['started'] = True
             continue
         if pick_options is not None:
+            if not pick_options and not any(LETTERED.match(ln) for ln in lines):
+                for n in range(lo, hi + 1):
+                    if n in questions and not questions[n]['text']:
+                        questions[n]['text'] = ' '.join(lines)
+                continue
             if all(LETTERED.match(ln) for ln in lines):
                 for ln in lines:
                     lm = LETTERED.match(ln)
@@ -163,6 +211,12 @@ def extract_questions(data):
 
         letters = [LETTERED.match(ln) for ln in lines]
         numbered = NUMBERED.match(first)
+        if not numbered:
+            for ln in lines[1:]:
+                nm = NUMBERED.match(ln)
+                if nm and lo <= int(nm.group(1)) <= hi and int(nm.group(1)) not in questions:
+                    numbered = nm
+                    break
         if numbered and accept(int(numbered.group(1))):
             current = None
             tail_letters = []
@@ -171,7 +225,7 @@ def extract_questions(data):
                 lm = LETTERED.match(ln)
                 if nm and accept(int(nm.group(1))) and int(nm.group(1)) not in questions:
                     n = int(nm.group(1))
-                    current = {'text': ln[nm.end():].strip(), 'options': [], 'shared': False}
+                    current = {'text': ANY_GAP.sub('_____', ln[nm.end():].strip()), 'options': [], 'shared': False}
                     questions[n] = current
                     last = n
                     tail_letters = []
@@ -208,6 +262,13 @@ def extract_questions(data):
                 group['list'] = [[r.group(1), r.group(2)] for r in roman]
                 group['list_title'] = first
                 continue
+
+        if lo == hi and lo not in questions and group['instructions'] and not re.match(r'^(?:Choose|Write|Complete|Look)\b', first):
+            # "Question 26" on its own: the unnumbered paragraph after the instructions is the question.
+            questions[lo] = {'text': ' '.join(lines), 'options': [], 'shared': False}
+            last = lo
+            group['started'] = True
+            continue
 
         if not group['started']:
             if MCQ_HINT.search(text):
