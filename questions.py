@@ -13,7 +13,7 @@ W = '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}'
 HEADING = re.compile(r'^Questions?\s+(\d{1,2})\s*(?:[-–—]|to|and|&)\s*(\d{1,2})\b', re.I)
 NUMBERED = re.compile(r'^(\d{1,2})[.)]?\s+(?=\S)')
 LETTERED = re.compile(r'^([A-J])[.)]?\s+(?=\S)')
-GAP = re.compile(r'(?<![\d\w])(\d{1,2})\s*(?:[….]{3,}|_{3,}|(?:\.\s){3,}\.?)')
+GAP = re.compile(r'(?<![\d\w])(\d{1,2})[.:)]?\s*(?:[….]{3,}|_{3,}|(?:\.\s){3,}\.?)')
 ANY_GAP = re.compile(r'(?:[….]{3,}|_{3,})')
 PICK_N = re.compile(r'choose\s+(two|three|four)\s+letters', re.I)
 MCQ_HINT = re.compile(r'\bA,\s*B,\s*C,?\s*(?:or|and)?\s*D\b', re.I)
@@ -148,6 +148,10 @@ def extract_questions(data):
             continue
 
         lo, hi = group['from'], group['to']
+        # Blanks written as "(5)" instead of dots: treat them like "5 ………".
+        lines = [re.sub(r'\((\d{1,2})\)', lambda m: '%s \u2026\u2026\u2026' % m.group(1) if lo <= int(m.group(1)) <= hi else m.group(0), ln)
+                 for ln in lines]
+        first = lines[0]
         if auto and not NUMBERED.match(lines[0]):
             # Word's own numbering: the number is not in the text, so count the items ourselves.
             group['auto'] = group.get('auto', lo - 1) + 1
